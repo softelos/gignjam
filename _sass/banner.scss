@@ -1,0 +1,14 @@
+$banner-minimum-height:50px;
+
+div#banner{
+	position: relative;
+	margin-top: -$header-expanded-height;
+	width:50px;
+	height:$banner-minimum-height;
+	z-index: -10;
+	background:url('../img/banner-large.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}

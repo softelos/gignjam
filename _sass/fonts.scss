@@ -1,0 +1,37 @@
+
+@font-face {
+  font-family: 'Jaden';
+  src: url('../fonts/Jaden.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Jaden.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Jaden.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Jaden.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Jaden.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Jaden.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+$font-light: 300;
+$font-medium: 500;
+$font-bold: 700;
+
+$h1-font-size: 50pt;
+$h2-font-size: 28pt;
+$h3-font-size: 18px;
+$h4-font-size: 24pt;
+$h5-font-size: 20pt;
+$h6-font-size: 18pt;
+
+html,body{
+	font-family: 'Work Sans', sans-serif;
+}
+
+h1 {font-size: 50pt;}
+h2 {font-size: 28pt;}
+h3 {font-size: 18px;}
+h4 {font-size: 24pt;}
+h5 {font-size: 20pt;}
+h6 {font-size: 18pt;}
+
+
+
+

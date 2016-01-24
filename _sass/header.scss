@@ -1,0 +1,273 @@
+$header-expanded-height: 100px;
+$header-collapsed-height: 75px;
+$header-expanded-bg-color: transparent;
+$header-collapsed-bg-color: #282828;
+
+$menu-text-color: #ffffff;
+$menu-font-size: 18px;
+$menu-top-expanded-padding: ($header-expanded-height/2)-($menu-font-size*2);
+$menu-top-collapsed-padding: ($header-collapsed-height/2)-($menu-font-size*2);
+$menu-link-color: #DB4D21;
+$menu-link-color-light: #ff3d00;
+$menu-expanded-padding:30px;
+$menu-collapsed-padding:10px;
+
+$minimenu-bg-color: rgba(0,0,0,0.6);
+$minimenu-width: 175px;
+$minimenu-padding: 20px;
+
+
+header{
+	position: fixed;
+	top:0px;
+	right:0px;
+	width:100%;
+	height: $header-expanded-height;
+	z-index: 500;
+	background-color: $header-collapsed-bg-color;
+	padding:20px;
+
+	ul{
+		list-style-type: none;
+		padding: 0px;
+		margin:0px;
+		li{
+			display: inline;
+		}
+	}
+
+	nav#navbar a{
+		position: relative;
+		//font-family: 'Jaden',Fallback, sans-serif;
+		font-family: 'Work Sans', sans-serif;;
+		font-size: $menu-font-size;
+		text-decoration: none;
+		text-transform: uppercase;
+		color:$menu-text-color;
+
+		&:before{
+			content:"";
+			position:absolute;
+			width: 100%;
+			height: 3px;
+			bottom:-5px;
+			left:0px;
+			background-color: $menu-link-color;
+			visibility: hidden;
+			 -webkit-transform: scaleX(0);
+  			transform: scaleX(0);
+  			-webkit-transition: all 0.2s ease-in-out 0s;
+  			transition: all 0.2s ease-in-out 0s;
+		}
+
+		&.active:before{
+		  	visibility: visible;
+			-webkit-transform: scaleX(1);
+		  	transform: scaleX(1);		  	
+		}
+
+		&:hover:before{
+		  	visibility: visible;
+		  	-webkit-transform: scaleX(1);
+		  	transform: scaleX(1);
+		}
+
+	}
+	
+	ul#navlogo{
+		float:left;		
+	}
+
+	ul#usermenu{
+		float:right;
+	}
+
+	ul#menu{
+		float:left;		
+	}
+
+	ul#minimenu{
+		float:right;
+		display: none;
+		cursor: pointer;
+
+		div.hamburger-menu{
+			width:30px;
+    		height:5px;
+    		background-color:$menu-text-color;
+    		border-radius:5px;
+    		position:relative;
+    		margin-top: 5px;
+
+			&:after,&:before{
+			   	content: '';
+			    width: 100%;
+			    height:5px;
+			    background-color:$menu-text-color;
+			    position:absolute;
+			    border-radius:5px;
+			}
+
+			&:before{
+				margin-top:-10px;
+			}
+
+			&:after{
+				top:10px;
+			}
+
+		}
+	}
+
+
+	div#minimenubox{
+		position:absolute;
+		display: none;
+		width: $minimenu-width;
+		background-color: $minimenu-bg-color;
+		padding: $minimenu-padding;
+
+		li{
+			display: block;
+			padding: 5px 0px 5px 0px;
+			cursor: pointer;
+
+			&.separator{
+				border-bottom: 2px dotted $menu-text-color;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+			}
+
+			&:hover a{
+				color: $menu-link-color;
+				-moz-transition: color 0.3s;
+				-webkit-transition: color 0.3s;
+				transition: color 0.3s;
+			}
+
+			a{
+				position: relative;
+				//font-family: 'Jaden',Fallback, sans-serif;
+				font-family: 'Work Sans', sans-serif;
+				font-size: $menu-font-size;
+				text-transform: uppercase;
+				text-decoration: none;
+				color:$menu-text-color;
+
+				&.active{
+					color: $menu-link-color;
+				}
+			}
+
+		}
+
+		div#minimenupullbutton{
+			width: 100%;
+			position: relative;
+			padding: 10px 0px 10px 0px;
+
+			div#button{
+				width: 35px;
+				height: 30px;
+				margin-left: auto;
+				margin-right: auto;
+				cursor: pointer;
+				background: url(/assets/img/minimenu-pullbutton.png) no-repeat;
+			}
+
+			div#button:hover{
+				background: url(/assets/img/minimenu-pullbutton-active.png) no-repeat;
+				-moz-transition: background 0.3s;
+				-webkit-transition: background 0.3s;
+				transition: background 0.3s;
+			}
+		}
+	}
+
+	&.expanded{		
+		height: $header-expanded-height;
+		background-color: $header-expanded-bg-color;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+
+		ul#navlogo img{
+			width: 230;
+			height: 65px;
+			-webkit-transition: all 0.3s ease;
+   			-moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;				
+		}
+
+		ul#usermenu{
+			padding-top: $menu-top-expanded-padding;
+		}
+
+		ul#menu{
+			padding-top: $menu-top-expanded-padding;
+		}
+
+		ul#minimenu{
+			padding-top: $menu-top-expanded-padding;
+		}
+
+		ul#usermenu li{
+			padding: 0px $menu-expanded-padding 0px $menu-expanded-padding;
+			-webkit-transition: padding 0.3s ease;
+			-moz-transition: padding 0.3s ease;
+			transition: padding 0.3s ease;
+		}
+
+		ul#menu li{
+			padding: 0px $menu-expanded-padding 0px $menu-expanded-padding;
+			-webkit-transition: padding 0.3s ease;
+			-moz-transition: padding 0.3s ease;
+			transition: padding 0.3s ease;
+		}
+
+	}
+
+	&.collapsed{		
+		height: $header-collapsed-height;
+		background-color: $header-collapsed-bg-color;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+
+		ul#navlogo img{
+			width: 150px;
+			height: 42px;
+			-webkit-transition: all 0.3s ease;
+   			-moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;				
+		}
+
+		ul#usermenu{
+			padding-top: $menu-top-collapsed-padding;
+		}
+
+		ul#menu{
+			padding-top: $menu-top-collapsed-padding;
+		}
+
+		ul#minimenu{
+			padding-top: $menu-top-collapsed-padding;
+		}
+
+		ul#usermenu li{
+			padding: 0px $menu-collapsed-padding 0px $menu-collapsed-padding;
+			-webkit-transition: padding 0.3s ease;
+			-moz-transition: padding 0.3s ease;
+			transition: padding 0.3s ease;
+		}
+
+		ul#menu li{
+			padding: 0px $menu-collapsed-padding 0px $menu-collapsed-padding;
+			-webkit-transition: padding 0.3s ease;
+			-moz-transition: padding 0.3s ease;
+			transition: padding 0.3s ease;
+		}
+
+	}
+
+}

@@ -1,0 +1,76 @@
+<footer>
+
+	<div class="visible-md-block visible-lg-block">
+		<div class="row">
+			<div class="col-md-3 col-lg-3">
+				{% include home/_menu-meetus.html %}
+			</div>
+			<div class="col-md-3 col-lg-3">
+				{% include home/_menu-company.html %}
+			</div>
+			<div class="col-md-3 col-lg-3 social">
+				{% include home/_menu-stay-connected.html %}
+			</div>
+			<div class="col-md-3 col-lg-3 news-signup">
+				{% include home/_menu-signup.html %}
+			</div>
+		</div>
+	</div>
+
+	<div class="visible-sm-block">
+		<div class="row">
+			<div class="col-sm-6 news-signup">
+				{% include home/_menu-signup.html %}
+			</div>
+			<div class="col-sm-6 social">
+				{% include home/_menu-stay-connected.html %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				{% include home/_menu-meetus.html %}
+			</div>
+			<div class="col-sm-6">
+				{% include home/_menu-company.html %}
+			</div>
+		</div>
+	</div>
+
+	<div class="visible-xs-block">
+		<div class="row">	
+			<div class="col-xs-12 news-signup">
+				{% include home/_menu-signup.html %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 social">
+				{% include home/_menu-stay-connected.html %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				{% include home/_menu-meetus.html %}
+			</div>
+			<div class="col-xs-6">
+				{% include home/_menu-company.html %}
+			</div>
+		</div>
+	
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<h3>GOT A QUESTION? <a id="email" href="mailto:{{ site.email }}">{{ site.email | upcase }}</a></h3>
+		</div>
+	</div>
+
+	<div id="info" class="row">
+		<div class="col-sm-12 text-center">
+			<h3>GIGNJAM INC.<sup>TM</sup></h3>
+			<p id="trademark">All trademarks are the property of the respective owners. GIGNJAM is not affiliated with the trademark owners</p>
+			<p id="powered">powered by <a href="http://www.softelos.com"> softelos</a></p>
+		</div>
+	</div>
+
+</footer>

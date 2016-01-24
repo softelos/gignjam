@@ -1,0 +1,15 @@
+# Site settings
+title: GignJam
+email: info@gignjam.com
+description: "This is the description of the site"
+baseurl: ""
+url: "http://www.gignjam.com" # the base hostname & protocol for your site
+
+
+facebook: https://www.facebook.com/gignjam
+twitter: https://twitter.com/gignjam/
+instagram: https://www.instagram.com/gignjam/
+youtube: https://www.youtube.com/gignjam
+
+# Build settings
+markdown: kramdown
