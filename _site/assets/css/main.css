@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Jaden';
+  src: url("../fonts/Jaden.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Jaden.eot?#iefix") format("embedded-opentype"), url("../fonts/Jaden.woff2") format("woff2"), url("../fonts/Jaden.woff") format("woff"), url("../fonts/Jaden.ttf") format("truetype"), url("../fonts/Jaden.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+html, body {
+  font-family: 'Work Sans', sans-serif; }
+
+h1 {
+  font-size: 50pt; }
+
+h2 {
+  font-size: 28pt; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 24pt; }
+
+h5 {
+  font-size: 20pt; }
+
+h6 {
+  font-size: 18pt; }
+
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100px;
+  z-index: 500;
+  background-color: #282828;
+  padding: 20px; }
+  header ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+    header ul li {
+      display: inline; }
+  header nav#navbar a {
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff; }
+    header nav#navbar a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: -5px;
+      left: 0px;
+      background-color: #DB4D21;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s; }
+    header nav#navbar a.active:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+    header nav#navbar a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+  header ul#navlogo {
+    float: left; }
+  header ul#usermenu {
+    float: right; }
+  header ul#menu {
+    float: left; }
+  header ul#minimenu {
+    float: right;
+    display: none;
+    cursor: pointer; }
+    header ul#minimenu div.hamburger-menu {
+      width: 30px;
+      height: 5px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      position: relative;
+      margin-top: 5px; }
+      header ul#minimenu div.hamburger-menu:after, header ul#minimenu div.hamburger-menu:before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        border-radius: 5px; }
+      header ul#minimenu div.hamburger-menu:before {
+        margin-top: -10px; }
+      header ul#minimenu div.hamburger-menu:after {
+        top: 10px; }
+  header div#minimenubox {
+    position: absolute;
+    display: none;
+    width: 175px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px; }
+    header div#minimenubox li {
+      display: block;
+      padding: 5px 0px 5px 0px;
+      cursor: pointer; }
+      header div#minimenubox li.separator {
+        border-bottom: 2px dotted #ffffff;
+        padding-bottom: 10px;
+        margin-bottom: 10px; }
+      header div#minimenubox li:hover a {
+        color: #DB4D21;
+        -moz-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s; }
+      header div#minimenubox li a {
+        position: relative;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff; }
+        header div#minimenubox li a.active {
+          color: #DB4D21; }
+    header div#minimenubox div#minimenupullbutton {
+      width: 100%;
+      position: relative;
+      padding: 10px 0px 10px 0px; }
+      header div#minimenubox div#minimenupullbutton div#button {
+        width: 35px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        background: url(/assets/img/minimenu-pullbutton.png) no-repeat; }
+      header div#minimenubox div#minimenupullbutton div#button:hover {
+        background: url(/assets/img/minimenu-pullbutton-active.png) no-repeat;
+        -moz-transition: background 0.3s;
+        -webkit-transition: background 0.3s;
+        transition: background 0.3s; }
+  header.expanded {
+    height: 100px;
+    background-color: transparent;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    header.expanded ul#navlogo img {
+      width: 230;
+      height: 65px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    header.expanded ul#usermenu {
+      padding-top: 14px; }
+    header.expanded ul#menu {
+      padding-top: 14px; }
+    header.expanded ul#minimenu {
+      padding-top: 14px; }
+    header.expanded ul#usermenu li {
+      padding: 0px 30px 0px 30px;
+      -webkit-transition: padding 0.3s ease;
+      -moz-transition: padding 0.3s ease;
+      transition: padding 0.3s ease; }
+    header.expanded ul#menu li {
+      padding: 0px 30px 0px 30px;
+      -webkit-transition: padding 0.3s ease;
+      -moz-transition: padding 0.3s ease;
+      transition: padding 0.3s ease; }
+  header.collapsed {
+    height: 75px;
+    background-color: #282828;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    header.collapsed ul#navlogo img {
+      width: 150px;
+      height: 42px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    header.collapsed ul#usermenu {
+      padding-top: 1.5px; }
+    header.collapsed ul#menu {
+      padding-top: 1.5px; }
+    header.collapsed ul#minimenu {
+      padding-top: 1.5px; }
+    header.collapsed ul#usermenu li {
+      padding: 0px 10px 0px 10px;
+      -webkit-transition: padding 0.3s ease;
+      -moz-transition: padding 0.3s ease;
+      transition: padding 0.3s ease; }
+    header.collapsed ul#menu li {
+      padding: 0px 10px 0px 10px;
+      -webkit-transition: padding 0.3s ease;
+      -moz-transition: padding 0.3s ease;
+      transition: padding 0.3s ease; }
+
+div#banner {
+  position: relative;
+  margin-top: -100px;
+  width: 50px;
+  height: 50px;
+  z-index: -10;
+  background: url("../img/banner-large.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+footer {
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff; }
+  @media (max-width: 599px) {
+    footer {
+      height: 600px;
+      background: url("../img/footer-home_mobile_background.jpg") no-repeat center center;
+      padding-top: 80px;
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 600px) {
+    footer {
+      height: 390px;
+      background: url("../img/footer-home_background.jpg") no-repeat center center;
+      padding: 70px 80px 30px 80px; } }
+  footer h3.title {
+    text-transform: uppercase;
+    position: relative; }
+    footer h3.title:before {
+      content: '';
+      position: absolute;
+      height: 18px;
+      width: 5px;
+      left: -10px;
+      background-color: #DB4D21; }
+  footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff; }
+    footer a:hover {
+      color: #DB4D21;
+      text-decoration: none;
+      -moz-transition: color 0.3s;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+    footer a#email {
+      color: #DB4D21; }
+      footer a#email:hover {
+        color: #ff3d00;
+        -moz-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s; }
+  footer ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px; }
+    footer ul li {
+      padding-bottom: 5px; }
+  footer div#info h3 {
+    margin-bottom: 0px; }
+    footer div#info h3 sup {
+      font-weight: 300; }
+  footer div#info p#trademark {
+    font-weight: 300; }
+  footer div#info p#powered {
+    font-weight: 300;
+    margin-top: 30px;
+    color: #666666; }
+    footer div#info p#powered a {
+      text-transform: none; }
+  footer div.social ul li {
+    display: inline; }
+  footer div.social div.facebook, footer div.social div.twitter, footer div.social div.instagram, footer div.social div.youtube {
+    float: left;
+    -moz-transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s; }
+  footer div.social div.twitter, footer div.social div.instagram, footer div.social div.youtube {
+    margin-left: 20px; }
+  footer div.social div.facebook {
+    width: 15px;
+    height: 30px;
+    background: url("../img/facebook.png") no-repeat; }
+    footer div.social div.facebook:hover {
+      background: url("../img/facebooko.png") no-repeat; }
+  footer div.social div.twitter {
+    width: 36px;
+    height: 30px;
+    background: url("../img/twitter.png") no-repeat; }
+    footer div.social div.twitter:hover {
+      background: url("../img/twittero.png") no-repeat; }
+  footer div.social div.instagram {
+    width: 29px;
+    height: 30px;
+    background: url("../img/instagram.png") no-repeat; }
+    footer div.social div.instagram:hover {
+      background: url("../img/instagramo.png") no-repeat; }
+  footer div.social div.youtube {
+    width: 27px;
+    height: 30px;
+    background: url("../img/youtube.png") no-repeat; }
+    footer div.social div.youtube:hover {
+      background: url("../img/youtubeo.png") no-repeat; }
+  footer div.news-signup div {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px; }
+  footer div.news-signup div.row {
+    width: 100%; }
+  footer div.news-signup input {
+    width: 100%; }
+  footer div.news-signup button {
+    width: 100%;
+    border: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #DB4D21;
+    color: #ffffff; }
+    footer div.news-signup button:hover {
+      background-color: #ff3d00;
+      -moz-transition: background-color 0.3s;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s; }
+  footer div.visible-xs-inline h3 {
+    float: left; }
+  footer div.visible-xs-inline ul {
+    float: left;
+    padding-left: 20px; }
+
+html {
+  overflow-x: hidden; }
+
+body.home {
+  background-color: #89664a; }
