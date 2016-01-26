@@ -14,12 +14,19 @@ $screen-md-max: ($screen-lg-min - 1);
 @import 'banner';
 @import 'footer';
 
+@import 'home';
+
 html
 {
 	overflow-x: hidden;
 }
 body.home{
 	background-color: #89664a;
+}
+
+section{
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 

@@ -18,6 +18,8 @@ $(function(){
 	// When the window scrolls
 	$(window).scroll(function(){
 		var vPos=$(this).scrollTop();
+		// Hide mini menu in case it was visible
+		$('div#minimenubox').hide();
 		if(vPos>headerTriggerPos){
 			$('header').removeClass('expanded');
 			$('header').addClass('collapsed');
@@ -36,32 +38,46 @@ $(function(){
 
 	// Checks the nav width, if small, shows the small menu button
 	function checkNavSize(width){
-		//document.title=width+'px';
-		if(width<1200){
+		var isHome=$('header').hasClass('home');
+		if(!isHome){
+			if(width<1200){
+				$('ul#menu').hide();
+				$('ul#usermenu').hide();
+				$('ul#minimenu').show();
+			}else{
+				$('ul#menu').show();
+				$('ul#usermenu').show();
+				$('ul#minimenu').hide();			
+			}
+		}else{
 			$('ul#menu').hide();
 			$('ul#usermenu').hide();
-			$('ul#minimenu').show();
-		}else{
-			$('ul#menu').show();
-			$('ul#usermenu').show();
-			$('ul#minimenu').hide();			
+			$('ul#minimenu').show();			
 		}
-
 	}
 
 
 	// Mini menu link clicked
-	$('ul#minimenu div.hamburger-menu').on('click',function(e){
+	$('ul#minimenu').on('click',function(e){
 		var pos=$(this).position();
 		var menu=$('div#minimenubox');
 		menu.css('left',pos.left-menu.width());
-		menu.css('top',pos.top+30);
+		menu.css('top',pos.top+40);
 		menu.slideToggle('fast');
 	});
 
 	$('div#minimenupullbutton div#button').on('click',function(){
 		var menu=$('div#minimenubox');
 		menu.slideToggle('fast');
+	});
+
+	$('div#banner').on('click',function(){
+		// Hide mini menu in case it was visible
+		$('div#minimenubox').hide();
+	});
+
+	$('div.flip').flip({
+		trigger:'hover'
 	});
 
 });

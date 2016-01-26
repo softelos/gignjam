@@ -3,22 +3,93 @@ layout: home
 title: Home
 ---
 
-<div id="home-wrapper">
+<section class="hex">
+  
+  <div id="hex-first" class="row">
+   
+    <div class="col-sm-12">
 
-  <h1 class="page-heading">Posts</h1>
+      <div id="fans" class="flip">
+        <div class="front">
+          <div class="title">FANS</div>
+        </div>        
+        <div class="back">
+          <div class="text">
+            Social Calendar<br>
+            Create Playlists<br>
+            Track and vote for your faves<br>
+            Raate and review events, artists and more<br>
+            Search the directory
+          </div>
+          <div class="button"><a href="{{ site.baseurl }}/fans">Learn More</a></div>
+        </div>      
+      </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div id="musicians" class="flip">
+        <div class="front">
+          <div class="title">MUSICIANS</div>
+        </div>
+        <div class="back">
+          <div class="text">
+            Get found and noticed<br>
+            Let your music be heard<br>
+            Network Oportunities<br>
+            Private Events<br>
+            Find And Apply to gigs<br>
+            Promote your tours<br>
+            Manage your band
+          </div>
+          <div class="button"><a href="{{ site.baseurl }}/musicians">Learn More</a></div>
+        </div>      
+      </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <div id="howitworks" class="flip">
+        <div class="front">
+          <div class="title">HOW IT WORKS</div>
+        </div>
+        <div class="back">
+          <div class="text">
+            
+          </div>
+          <div class="button"><a href="{{ site.baseurl }}/how-it-works">Learn More</a></div>
+        </div>      
+      </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
 
-</div>
+  </div>
+
+  <div id="hex-second" class="row">
+
+    <div class="col-sm-2">
+
+      <div id="promoters" class="flip">
+        <div class="front">
+          <div class="title">PROMOTERS</div>
+        </div>
+        <div class="back">
+          <div class="text">
+            
+          </div>
+          <div class="button"><a href="{{ site.baseurl }}/promoters">Learn More</a></div>
+        </div>      
+      </div>
+
+      <div id="events" class="flip">
+        <div class="front">
+          <div class="title">EVENTS</div>
+        </div>
+        <div class="back">
+          <div class="text">
+            
+          </div>          
+           <div class="button"><a href="{{ site.baseurl }}/events">Learn More</a></div>
+        </div>      
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+

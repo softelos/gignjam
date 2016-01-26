@@ -13,8 +13,11 @@ $menu-expanded-padding:30px;
 $menu-collapsed-padding:10px;
 
 $minimenu-bg-color: rgba(0,0,0,0.6);
-$minimenu-width: 175px;
+$minimenu-width: 250px;
 $minimenu-padding: 20px;
+
+
+
 
 
 header{
@@ -24,7 +27,6 @@ header{
 	width:100%;
 	height: $header-expanded-height;
 	z-index: 500;
-	background-color: $header-collapsed-bg-color;
 	padding:20px;
 
 	ul{
@@ -90,6 +92,7 @@ header{
 		float:right;
 		display: none;
 		cursor: pointer;
+		height: 35px;
 
 		div.hamburger-menu{
 			width:30px;
@@ -184,9 +187,10 @@ header{
 		}
 	}
 
+
+
 	&.expanded{		
 		height: $header-expanded-height;
-		background-color: $header-expanded-bg-color;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
@@ -229,7 +233,6 @@ header{
 
 	&.collapsed{		
 		height: $header-collapsed-height;
-		background-color: $header-collapsed-bg-color;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;

@@ -1,0 +1,133 @@
+section{
+
+	margin-top:-185px;
+	margin-bottom: -60px;
+
+	&.hex div.row{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div#hex-first div.col-sm-12{
+		margin-bottom: -60px;
+	}
+
+	div#hex-second div.col-sm-2{
+		float:none;
+		margin:0 auto;
+		width: 700px;
+	}
+}
+
+
+div#fans,div#musicians,div#howitworks,div#promoters,div#events{
+	width: 280px;
+	height: 324px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float:left;
+
+	&.right{
+		float:right;
+		margin-right: 50px;
+	}
+	&.left{
+		float:left;
+		margin-left: 50px;
+	}
+
+	&:hover{
+		-moz-transition: opacity 0.3s;
+		-webkit-transition: opacity 0.3s;
+		transition: opacity 0.3s;
+	}
+
+	div.title{
+		padding-top: 145px;
+		font-size: 20px;
+		font-family: 'Jaden';
+		color:white;
+		text-align: center;
+	}
+
+	
+
+	div.front{
+		height: 100%;
+	}
+	div.back{
+		position: relative;
+		height: 100%;
+
+		div.text{
+			margin-top: 70px;
+			padding-left:15px;
+			padding-right:15px;
+			color:#ffffff;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		div.button{
+			padding-top: 20px;
+			text-align: center;
+			a{
+				background-color: $menu-link-color;
+				color:#ffffff;
+				border: 1pt solid #ffffff;
+				padding: 10px 20px 10px 20px;
+				text-decoration: none;
+
+				&:hover{
+					background-color:$menu-link-color-light;
+					-moz-transition: background-color 0.3s;
+					-webkit-transition: background-color 0.3s;
+					transition: background-color 0.3s;
+				}
+			}
+		}
+	}
+}
+div#fans{
+	div.front{
+		background: url(../img/hex_fans.png) center center no-repeat;
+	}
+	div.back{
+		background: url(../img/hex_black.png) center center no-repeat;
+	}
+}
+
+div#musicians{
+	div.front{
+		background: url(../img/hex_musicians.png) center center no-repeat;
+	}
+	div.back{
+		background: url(../img/hex_black.png) center center no-repeat;
+	}
+}
+div#howitworks{
+
+	div.front{
+		background: url(../img/hex_how_it_works.png) center center no-repeat;
+	}
+	div.back{
+		background: url(../img/hex_black.png) center center no-repeat;
+	}
+}
+div#promoters{
+	div.front{
+		background: url(../img/hex_promoters.png) center center no-repeat;
+	}
+	div.back{
+		background: url(../img/hex_black.png) center center no-repeat;
+	}
+}
+div#events{
+	div.front{
+		background: url(../img/hex_events.png) center center no-repeat;
+	}
+	div.back{
+		background: url(../img/hex_black.png) center center no-repeat;
+	}
+}

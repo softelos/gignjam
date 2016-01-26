@@ -7,6 +7,9 @@
 html, body {
   font-family: 'Work Sans', sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: white; }
+
 h1 {
   font-size: 50pt; }
 
@@ -32,7 +35,6 @@ header {
   width: 100%;
   height: 100px;
   z-index: 500;
-  background-color: #282828;
   padding: 20px; }
   header ul {
     list-style-type: none;
@@ -77,7 +79,8 @@ header {
   header ul#minimenu {
     float: right;
     display: none;
-    cursor: pointer; }
+    cursor: pointer;
+    height: 35px; }
     header ul#minimenu div.hamburger-menu {
       width: 30px;
       height: 5px;
@@ -99,7 +102,7 @@ header {
   header div#minimenubox {
     position: absolute;
     display: none;
-    width: 175px;
+    width: 250px;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px; }
     header div#minimenubox li {
@@ -142,7 +145,6 @@ header {
         transition: background 0.3s; }
   header.expanded {
     height: 100px;
-    background-color: transparent;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
@@ -170,7 +172,6 @@ header {
       transition: padding 0.3s ease; }
   header.collapsed {
     height: 75px;
-    background-color: #282828;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
@@ -202,12 +203,33 @@ div#banner {
   margin-top: -100px;
   width: 50px;
   height: 50px;
-  z-index: -10;
   background: url("../img/banner-large.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  div#banner div#text {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+    text-align: center; }
+    div#banner div#text #title {
+      font-size: 18px; }
+    div#banner div#text #subtitle {
+      margin-bottom: 20px; }
+    div#banner div#text #title, div#banner div#text #subtitle {
+      font-family: 'Jaden'; }
+  div#banner a#signup {
+    background-color: #000000;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none; }
+    div#banner a#signup:hover {
+      background-color: #333333;
+      -moz-transition: background-color 0.3s;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s; }
 
 footer {
   width: 100%;
@@ -330,8 +352,100 @@ footer {
     float: left;
     padding-left: 20px; }
 
+section {
+  margin-top: -185px;
+  margin-bottom: -60px; }
+  section.hex div.row {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+  section div#hex-first div.col-sm-12 {
+    margin-bottom: -60px; }
+  section div#hex-second div.col-sm-2 {
+    float: none;
+    margin: 0 auto;
+    width: 700px; }
+
+div#fans, div#musicians, div#howitworks, div#promoters, div#events {
+  width: 280px;
+  height: 324px;
+  margin-right: 10px;
+  margin-left: 10px;
+  float: left; }
+  div#fans.right, div#musicians.right, div#howitworks.right, div#promoters.right, div#events.right {
+    float: right;
+    margin-right: 50px; }
+  div#fans.left, div#musicians.left, div#howitworks.left, div#promoters.left, div#events.left {
+    float: left;
+    margin-left: 50px; }
+  div#fans:hover, div#musicians:hover, div#howitworks:hover, div#promoters:hover, div#events:hover {
+    -moz-transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+  div#fans div.title, div#musicians div.title, div#howitworks div.title, div#promoters div.title, div#events div.title {
+    padding-top: 145px;
+    font-size: 20px;
+    font-family: 'Jaden';
+    color: white;
+    text-align: center; }
+  div#fans div.front, div#musicians div.front, div#howitworks div.front, div#promoters div.front, div#events div.front {
+    height: 100%; }
+  div#fans div.back, div#musicians div.back, div#howitworks div.back, div#promoters div.back, div#events div.back {
+    position: relative;
+    height: 100%; }
+    div#fans div.back div.text, div#musicians div.back div.text, div#howitworks div.back div.text, div#promoters div.back div.text, div#events div.back div.text {
+      margin-top: 70px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase; }
+    div#fans div.back div.button, div#musicians div.back div.button, div#howitworks div.back div.button, div#promoters div.back div.button, div#events div.back div.button {
+      padding-top: 20px;
+      text-align: center; }
+      div#fans div.back div.button a, div#musicians div.back div.button a, div#howitworks div.back div.button a, div#promoters div.back div.button a, div#events div.back div.button a {
+        background-color: #DB4D21;
+        color: #ffffff;
+        border: 1pt solid #ffffff;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none; }
+        div#fans div.back div.button a:hover, div#musicians div.back div.button a:hover, div#howitworks div.back div.button a:hover, div#promoters div.back div.button a:hover, div#events div.back div.button a:hover {
+          background-color: #ff3d00;
+          -moz-transition: background-color 0.3s;
+          -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s; }
+
+div#fans div.front {
+  background: url(../img/hex_fans.png) center center no-repeat; }
+div#fans div.back {
+  background: url(../img/hex_black.png) center center no-repeat; }
+
+div#musicians div.front {
+  background: url(../img/hex_musicians.png) center center no-repeat; }
+div#musicians div.back {
+  background: url(../img/hex_black.png) center center no-repeat; }
+
+div#howitworks div.front {
+  background: url(../img/hex_how_it_works.png) center center no-repeat; }
+div#howitworks div.back {
+  background: url(../img/hex_black.png) center center no-repeat; }
+
+div#promoters div.front {
+  background: url(../img/hex_promoters.png) center center no-repeat; }
+div#promoters div.back {
+  background: url(../img/hex_black.png) center center no-repeat; }
+
+div#events div.front {
+  background: url(../img/hex_events.png) center center no-repeat; }
+div#events div.back {
+  background: url(../img/hex_black.png) center center no-repeat; }
+
 html {
   overflow-x: hidden; }
 
 body.home {
   background-color: #89664a; }
+
+section {
+  padding-left: 20px;
+  padding-right: 20px; }

@@ -4,6 +4,7 @@ email: info@gignjam.com
 description: "This is the description of the site"
 baseurl: ""
 url: "http://www.gignjam.com" # the base hostname & protocol for your site
+app: "http://app.gignjam.com"
 
 
 facebook: https://www.facebook.com/gignjam
