@@ -8,16 +8,30 @@ footer{
 
 	@media (max-width: $screen-xs-max){
 		height: $footer-height-xs;
-		background:url('../img/footer-home_mobile_background.jpg') no-repeat center center;
 		padding-top: 80px;
 		padding-left: 20px;
 		padding-right: 20px;
+
+		&.light{
+			background:url('../img/footer-mobile-background.jpg') no-repeat center center;
+		}
+		&.dark{
+			background:url('../img/footer-mobile-background-dark.jpg') no-repeat center center;
+		}
+
 	}
 
 	@media (min-width: $screen-sm-min){
 		height: $footer-height;
-		background:url('../img/footer-home_background.jpg') no-repeat center center;
 		padding: 70px 80px 30px 80px;
+
+		&.light{
+			background:url('../img/footer-background.jpg') no-repeat center center;
+		}
+		&.dark{
+			background:url('../img/footer-background-dark.jpg') no-repeat center center;
+		}
+
 	}
 
 	h3.title{

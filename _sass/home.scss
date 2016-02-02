@@ -1,7 +1,11 @@
 section{
 
-	margin-top:-185px;
-	margin-bottom: -60px;
+	&.hex{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top:-200px;
+		margin-bottom: -60px;
+	}
 
 	&.hex div.row{
 		width: 1000px;
@@ -10,7 +14,7 @@ section{
 	}
 
 	div#hex-first div.col-sm-12{
-		margin-bottom: -60px;
+		//margin-bottom: -60px;
 	}
 
 	div#hex-second div.col-sm-2{
@@ -24,9 +28,13 @@ section{
 div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 	width: 280px;
 	height: 324px;
+
+	//width: 180px;
+	//height: 224px;
+
 	margin-right: 10px;
 	margin-left: 10px;
-	float:left;
+	display: inline-block;
 
 	&.right{
 		float:right;
@@ -45,10 +53,11 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 
 	div.title{
 		padding-top: 145px;
-		font-size: 20px;
+		font-size: 24px;
 		font-family: 'Jaden';
 		color:white;
 		text-align: center;
+		text-shadow: 2px 2px 5px black;
 	}
 
 	

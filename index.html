@@ -1,5 +1,6 @@
 ---
 layout: home
+pageName: home
 title: Home
 ---
 
@@ -7,11 +8,11 @@ title: Home
   
   <div id="hex-first" class="row">
    
-    <div class="col-sm-12">
+    <div class="col-sm-12 text-center">
 
       <div id="fans" class="flip">
         <div class="front">
-          <div class="title">FANS</div>
+          <div class="title">{ FANS }</div>
         </div>        
         <div class="back">
           <div class="text">
@@ -27,7 +28,7 @@ title: Home
 
       <div id="musicians" class="flip">
         <div class="front">
-          <div class="title">MUSICIANS</div>
+          <div class="title">{ MUSICIANS }</div>
         </div>
         <div class="back">
           <div class="text">
@@ -43,6 +44,27 @@ title: Home
         </div>      
       </div>
 
+      <div id="promoters" class="flip">
+        <div class="front">
+          <div class="title">{ PROMOTERS }</div>
+        </div>
+        <div class="back">
+          <div class="text">
+            
+          </div>
+          <div class="button"><a href="{{ site.baseurl }}/promoters">Learn More</a></div>
+        </div>      
+      </div>
+
+    </div>
+
+  </div>
+
+  {% comment %}
+  <div id="hex-second" class="row">
+
+    <div class="col-sm-2">
+
       <div id="howitworks" class="flip">
         <div class="front">
           <div class="title">HOW IT WORKS</div>
@@ -55,25 +77,6 @@ title: Home
         </div>      
       </div>
 
-    </div>
-
-  </div>
-
-  <div id="hex-second" class="row">
-
-    <div class="col-sm-2">
-
-      <div id="promoters" class="flip">
-        <div class="front">
-          <div class="title">PROMOTERS</div>
-        </div>
-        <div class="back">
-          <div class="text">
-            
-          </div>
-          <div class="button"><a href="{{ site.baseurl }}/promoters">Learn More</a></div>
-        </div>      
-      </div>
 
       <div id="events" class="flip">
         <div class="front">
@@ -90,6 +93,7 @@ title: Home
     </div>
 
   </div>
+  {% endcomment %}
 
 </section>
 

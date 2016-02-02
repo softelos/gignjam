@@ -5,42 +5,90 @@ div#banner{
 	margin-top: -$header-expanded-height;
 	width:50px;
 	height:$banner-minimum-height;
-	background:url('../img/banner-large.jpg') no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-
+	
 	div#text{
-		width: 700px;
-    	margin-left: auto;
-    	margin-right: auto;
-    	padding-top: 300px;
-    	text-align: center;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 300px;
+		text-align: center;
 
-    	#title{
-    		font-size: $h3-font-size;
-    	}
-    	#subtitle{
-    		margin-bottom: 20px;
-    	}
-    	#title,#subtitle{
-    		font-family: 'Jaden';
-    	}
+		#subtitle{
+			margin-bottom: 20px;
+		}
+
+		#title,#subtitle{
+			font-family: 'Jaden';
+			text-shadow: 2px 2px black;
+		}
 	}
+	
 
 	a#signup{
-		background-color: #000000;
+
 		color:white;
 		padding: 5px 15px 5px 15px;
 		text-decoration: none;
+		font-size: $h3-font-size;
+		border:1pt solid white;
+
+		&.black{
+			background-color: #000000;
+
+			&:hover{
+				background-color: #333333;
+			}
+		}
+
+		&.orange{
+			background-color: $menu-link-color;
+
+			&:hover{
+				background-color: $menu-link-color-light;
+			}
+
+		}
 
 		&:hover{
-			background-color: #333333;
 			-moz-transition: background-color 0.3s;
 			-webkit-transition: background-color 0.3s;
 			transition: background-color 0.3s;
 		}
 	}
+
+	&.home{
+		background:url('../img/banner-home-large.jpg') no-repeat center center;
+		
+		#title{
+  			font-size: $h2-font-size;
+  		}
+  		#subtitle{
+  			font-size: $h1-font-size;
+  		}		
+  	}
+
+  	&.fans{
+  		background:url('../img/banner-fans-large.jpg') no-repeat center center;
+  	}
+
+	&.musicians{
+  		background:url('../img/banner-musicians-large.jpg') no-repeat center center;
+  		
+  		#title{
+  			font-size: $h2-font-size;
+  		}
+  		#subtitle{
+  			font-size: $h1-font-size;
+  		}
+  	}
+
+	&.promoters{
+  		background:url('../img/banner-promoters-large.jpg') no-repeat center center;
+  	}
+
 
 }

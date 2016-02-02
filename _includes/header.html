@@ -2,30 +2,29 @@
 
   <nav id="navbar">
     <ul id="navlogo">
-      <li><a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
+      <li><a href="/{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
     </ul>
     <ul id="minimenu">
     	<li><div class="hamburger-menu"></div></li>
 	</ul>
     <ul id="usermenu">
-      <li><a href="">Sign In</a></li>
-      <li><a href="">Join Now</a></li>
+     
     </ul>
   </nav>
 
   <div id="minimenubox">
   	<ul>
-      <li class="separator"><a class="active" href="">Home</a></li>
-      <li><a href="">Fans</a></li>
-      <li><a href="">Musicians</a></li>
-      <li class="separator"><a href="">Promoters</a></li>
-      <li><a href="">Events</a></li>
-      <li><a href="">Directory</a></li>
-      <li><a href="">Gigs</a></li>
-      <li><a href="">Songs</a></li>
+      <li class="separator"><a {% if page.pageName == 'home' %} class="active" {% endif %} href="{{site.baseUrl}}/">Home</a></li>
+      <li><a {% if page.pageName == 'fans' %} class="active" {% endif %} href="{{site.baseurl}}/fans">Fans</a></li>
+      <li><a {% if page.pageName == 'musicians' %} class="active" {% endif %} href="{{site.baseurl}}/musicians">Musicians</a></li>
+      <li class="separator"><a {% if page.pageName == 'promoters' %} class="active" {% endif %} href="{{site.baseurl}}/promoters">Promoters</a></li>
+      <li><a href="{{site.app}}/events">Events</a></li>
+      <li><a href="{{site.app}}/directory">Directory</a></li>
+      <li><a href="{{site.app}}/gigs">Gigs</a></li>
+      <li><a href="{{site.app}}/songs">Songs</a></li>
       <li class="separator"><a href="">Post a Gig</a></li>
-      <li><a href="">Sign In</a></li>
-      <li><a href="">Join Now</a></li>
+      <li><a href="{{site.app}}/signin">Sign In</a></li>
+      <li><a href="{{site.app}}/signup">Join Now</a></li>
   	</ul>
   	<div id="minimenupullbutton"><div id="button"></div></div>
   </div>

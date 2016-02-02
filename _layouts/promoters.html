@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  
+    <div id="wrapper">
+
+    {% include header.html page="promoters" %}  
+    {% include promoters/banner.html %}
+
+    {{ content }}
+
+    {% include footer.html class="light" %}
+
+    {% include scripts.html %}
+    </div>
+
+    <script src="{{ site.baseurl }}/assets/js/home.js"></script>
+
+  </body>
+
+</html>

@@ -32,8 +32,8 @@ $(function(){
 
 	// Set right size for banner
 	function updateBanner(){	
-		$('div#banner').css('width',window.innerWidth);
-		$('div#banner').css('height',parseInt(window.innerWidth/1.778)); // Image used is 1366px x 768px 
+		$('div#banner').css('width',parseInt(window.innerWidth));
+		$('div#banner').css('height',parseInt(window.innerWidth/1.778)+100); // Image used is 1366px x 768px 
 	}
 
 	// Checks the nav width, if small, shows the small menu button
@@ -47,7 +47,7 @@ $(function(){
 			}else{
 				$('ul#menu').show();
 				$('ul#usermenu').show();
-				$('ul#minimenu').hide();			
+				$('ul#minimenu').show();			
 			}
 		}else{
 			$('ul#menu').hide();

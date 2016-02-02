@@ -9,25 +9,39 @@ $screen-sm-max: ($screen-md-min - 1);
 $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1);
 
+$brown: #89664A;
+$dark-brown: #644b28;
+$black: #000000;
+$light-black: #333333;
+
 @import 'fonts';
 @import 'header';
 @import 'banner';
 @import 'footer';
-
 @import 'home';
+@import 'fans';
+@import 'musicians';
 
-html
-{
+
+html{
 	overflow-x: hidden;
 }
-body.home{
-	background-color: #89664a;
+
+body.home, body.fans{
+	background-color: $brown;
 }
 
-section{
-	padding-left: 20px;
-	padding-right: 20px;
+body.musicians{
+	background-color: $black;	
 }
 
 
+p{
+	&.subtitle{
+		text-align: center;
+		margin-top: -25px;
+		margin-bottom: 40px;
+		font-size: $h2-font-size;
+	}
+}
 

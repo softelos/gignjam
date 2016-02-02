@@ -1,0 +1,44 @@
+div#fans-content{
+	margin-top:-185px;
+	margin-bottom: -60px;
+
+	section.fans{
+
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-bottom: 60px;
+
+		&.dark{
+			background-color: $dark-brown;
+		}
+
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			padding-bottom: 20px;
+			font-family: 'Jaden'
+		}
+		h3{
+			text-transform: uppercase;
+			
+			&:before{
+				content:'';
+				position: absolute;
+				height: $h3-font-size;
+				width:5px;
+				left:0px;
+				background-color: $menu-link-color;
+			}
+		}
+
+		div#testimony-pictures{
+			padding-bottom: 40px;
+
+			img{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		
+	}
+}

@@ -21,42 +21,41 @@
 
   <nav id="navbar">
     <ul id="navlogo">
-      <li><a href=""><img src="/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
+      <li><a href="/"><img src="/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
     </ul>
     <ul id="minimenu">
     	<li><div class="hamburger-menu"></div></li>
 	</ul>
     <ul id="usermenu">
-      <li><a href="">Sign In</a></li>
-      <li><a href="">Join Now</a></li>
+     
     </ul>
   </nav>
 
   <div id="minimenubox">
   	<ul>
-      <li class="separator"><a class="active" href="">Home</a></li>
-      <li><a href="">Fans</a></li>
-      <li><a href="">Musicians</a></li>
-      <li class="separator"><a href="">Promoters</a></li>
-      <li><a href="">Events</a></li>
-      <li><a href="">Directory</a></li>
-      <li><a href="">Gigs</a></li>
-      <li><a href="">Songs</a></li>
+      <li class="separator"><a  class="active"  href="/">Home</a></li>
+      <li><a  href="/fans">Fans</a></li>
+      <li><a  href="/musicians">Musicians</a></li>
+      <li class="separator"><a  href="/promoters">Promoters</a></li>
+      <li><a href="http://localhost:3000/events">Events</a></li>
+      <li><a href="http://localhost:3000/directory">Directory</a></li>
+      <li><a href="http://localhost:3000/gigs">Gigs</a></li>
+      <li><a href="http://localhost:3000/songs">Songs</a></li>
       <li class="separator"><a href="">Post a Gig</a></li>
-      <li><a href="">Sign In</a></li>
-      <li><a href="">Join Now</a></li>
+      <li><a href="http://localhost:3000/signin">Sign In</a></li>
+      <li><a href="http://localhost:3000/signup">Join Now</a></li>
   	</ul>
   	<div id="minimenupullbutton"><div id="button"></div></div>
   </div>
 
 </header>  
-    <div id="banner">
+    <div id="banner" class="home">
 
 	<div id="text" class="row">
 		<div class="col-sm-12">
 			<h1 id="title">GLOBAL ONLINE MUSIC COMMUNITY</h1>
 			<h2 id="subtitle">EXPLORE. DISCOVER.ENGAGE</h2>
-			<a href="http://app.gignjam.com/signup" id="signup">SIGN UP FOR FREE</a>
+			<a href="http://localhost:3000/signup" id="signup" class="black">SIGN UP FOR FREE</a>
 		</div>
 	</div>
 
@@ -66,11 +65,11 @@
   
   <div id="hex-first" class="row">
    
-    <div class="col-sm-12">
+    <div class="col-sm-12 text-center">
 
       <div id="fans" class="flip">
         <div class="front">
-          <div class="title">FANS</div>
+          <div class="title">{ FANS }</div>
         </div>        
         <div class="back">
           <div class="text">
@@ -86,7 +85,7 @@
 
       <div id="musicians" class="flip">
         <div class="front">
-          <div class="title">MUSICIANS</div>
+          <div class="title">{ MUSICIANS }</div>
         </div>
         <div class="back">
           <div class="text">
@@ -102,29 +101,9 @@
         </div>      
       </div>
 
-      <div id="howitworks" class="flip">
-        <div class="front">
-          <div class="title">HOW IT WORKS</div>
-        </div>
-        <div class="back">
-          <div class="text">
-            
-          </div>
-          <div class="button"><a href="/how-it-works">Learn More</a></div>
-        </div>      
-      </div>
-
-    </div>
-
-  </div>
-
-  <div id="hex-second" class="row">
-
-    <div class="col-sm-2">
-
       <div id="promoters" class="flip">
         <div class="front">
-          <div class="title">PROMOTERS</div>
+          <div class="title">{ PROMOTERS }</div>
         </div>
         <div class="back">
           <div class="text">
@@ -134,27 +113,17 @@
         </div>      
       </div>
 
-      <div id="events" class="flip">
-        <div class="front">
-          <div class="title">EVENTS</div>
-        </div>
-        <div class="back">
-          <div class="text">
-            
-          </div>          
-           <div class="button"><a href="/events">Learn More</a></div>
-        </div>      
-      </div>
-
     </div>
 
   </div>
+
+  
 
 </section>
 
 
 
-    <footer>
+    <footer class="light">
 
 	<div class="visible-md-block visible-lg-block">
 		<div class="row">
