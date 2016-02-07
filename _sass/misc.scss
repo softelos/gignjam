@@ -1,0 +1,40 @@
+div#misc-content{
+	//margin-top:-100px;
+	margin-bottom: -60px;
+
+	section.misc{
+
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+
+		
+
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			padding-bottom: 20px;
+			font-family: 'Jaden';
+			border-bottom: 1pt solid $h2-border-color;
+			text-shadow:1px 1px  black;
+		}
+		h3{
+			text-transform: uppercase;
+			
+			&:before{
+				content:'';
+				position: absolute;
+				height: $h3-font-size;
+				width:5px;
+				left:0px;
+				background-color: $menu-link-color;
+			}
+		}
+		
+	}
+
+	div.dark{
+		background-color: $dark-brown;
+	}
+}

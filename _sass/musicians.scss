@@ -1,16 +1,13 @@
 div#musicians-content{
-	//margin-top:-185px;
+	margin-top:-185px;
 	//margin-bottom: -60px;
 
 	section.musicians{
 
-		padding-left: 100px;
-		padding-right: 100px;
-		padding-bottom: 60px;
-
-		&.light{
-			background-color: $light-black;
-		}
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
 
 		h2{
 			text-align: center;
@@ -42,4 +39,8 @@ div#musicians-content{
 		}
 		
 	}
+	div.light{
+		background-color: $light-black;
+	}
+
 }

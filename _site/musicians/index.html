@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Musicians · GignJam</title>
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="/assets/css/animate.css">
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:300,500,700' rel='stylesheet' type='text/css'>
 </head>
 
 
 
-  <body class="musicians">
+  <body class="musicians animated fadeIn">
   
     <div id="wrapper">
 
@@ -23,10 +25,10 @@
     <ul id="navlogo">
       <li><a href="/"><img src="/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
     </ul>
-    <ul id="minimenu">
+    <ul id="minimenu" class="border-animated">
     	<li><div class="hamburger-menu"></div></li>
 	</ul>
-    <ul id="usermenu">
+    <ul id="usermenu" class="border-animated">
      
     </ul>
   </nav>
@@ -50,19 +52,25 @@
 
 </header>  
     <div id="banner" class="musicians">
-
-	<div id="text" class="row">
-		<div class="col-sm-12">
-			<h1 id="title">Launch your music career with</h1>
-			<h2 id="subtitle">GIG N JAM Manager</h2>
-			<a href="http://localhost:3000/signup" id="signup" class="orange">JOIN NOW!</a>
+	<div class="animated fadeInDown">
+		<div id="text" class="row">
+			<div class="col-sm-12">
+				<h1 id="title">Launch your music career with</h1>
+				<h2 id="subtitle">GIG N JAM Manager</h2>
+				<a href="http://localhost:3000/signup" id="signup" class="orange">JOIN NOW!</a>
+			</div>
 		</div>
+		<div id="go-down" class="row animated infinite pulse">
+			<div class="col-sm-12 text-center">
+				<a href="" class="learn-more"><i class="fa fa-arrow-circle-o-down"></i></a>
+			</div>
+		</div>		
 	</div>
-
 </div>
 
     <div id="musicians-content">
-
+	
+	<section class="first"></section>
 	<section class="musicians">
 		<div class="row">
 			<div class="col-sm-12">
@@ -114,36 +122,38 @@
 		</div>
 	</section>
 
-	<section class="musicians light">
-		
-		<div class="row">
-			<div class="col-sm-12">
-				<h2>Find & Apply to Gigs</h2>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>				
+	<div class="light">
+		<section class="musicians light">
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Find & Apply to Gigs</h2>
+					<p class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>				
+				</div>
 			</div>
-		</div>
 
 
-		<div class="row">
-			<div class="col-sm-3 text-center">
-				<img src="http://placehold.it/125x125" alt="">
-				<h3>Find a Gig</h3>
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<img src="http://placehold.it/125x125" alt="">
+					<h3>Find a Gig</h3>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="http://placehold.it/125x125" alt="">
+					<h3>Apply Online</h3>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="http://placehold.it/125x125" alt="">
+					<h3>Add Gig To Schedule</h3>
+				</div>
+				<div class="col-sm-3 text-center">
+					<img src="http://placehold.it/125x125" alt="">
+					<h3>Share & Invite Fans</h3>
+				</div>
 			</div>
-			<div class="col-sm-3 text-center">
-				<img src="http://placehold.it/125x125" alt="">
-				<h3>Apply Online</h3>
-			</div>
-			<div class="col-sm-3 text-center">
-				<img src="http://placehold.it/125x125" alt="">
-				<h3>Add Gig To Schedule</h3>
-			</div>
-			<div class="col-sm-3 text-center">
-				<img src="http://placehold.it/125x125" alt="">
-				<h3>Share & Invite Fans</h3>
-			</div>
-		</div>
 
-	</section>
+		</section>
+	</div>
 
 	<section class="musicians">
 		
@@ -186,29 +196,31 @@
 
 	</section>
 
-	<section class="musicians light">
+	<div class="light">
+		<section class="musicians">
 
-		<div class="row">
-			<div class="col-sm-12">
-				<h2>What are musicians saying?</h2>
-				<p class="subtitle">How GignJam manager help reach fans and sell more tickets!</p>
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>What are musicians saying?</h2>
+					<p class="subtitle">How GignJam manager help reach fans and sell more tickets!</p>
+				</div>
 			</div>
-		</div>
 
-		<div id="testimony-pictures" class="row">
-			<div class="col-sm-12 text-center">
-				<img src="http://placehold.it/75x75" alt="">
-				<img src="http://placehold.it/75x75" alt="">
-				<img src="http://placehold.it/75x75" alt="">
+			<div id="testimony-pictures" class="row">
+				<div class="col-sm-12 text-center">
+					<img src="http://placehold.it/75x75" alt="">
+					<img src="http://placehold.it/75x75" alt="">
+					<img src="http://placehold.it/75x75" alt="">
+				</div>
 			</div>
-		</div>
 
-		<div id="testimony-content" class="row">
-			<div class="col-sm-6"><img src="http://placehold.it/300x300" alt=""></div>
-			<div class="col-sm-6"><p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p></div>
-		</div>
+			<div id="testimony-content" class="row">
+				<div class="col-sm-6"><img src="http://placehold.it/300x300" alt=""></div>
+				<div class="col-sm-6"><p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p></div>
+			</div>
 
-	</section>
+		</section>
+	</div>
 
 	<section class="musicians">
 
@@ -452,6 +464,7 @@
 
     <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-scrollto.js"></script>
 <script type="text/javascript" src="/assets/js/main.js"></script>
 
 

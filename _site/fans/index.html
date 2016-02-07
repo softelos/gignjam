@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Fans · GignJam</title>
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="/assets/css/animate.css">
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:300,500,700' rel='stylesheet' type='text/css'>
 </head>
 
 
 
-  <body class="fans">
+  <body class="fans animated fadeIn">
   
     <div id="wrapper">
 
@@ -23,10 +25,10 @@
     <ul id="navlogo">
       <li><a href="/"><img src="/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
     </ul>
-    <ul id="minimenu">
+    <ul id="minimenu" class="border-animated">
     	<li><div class="hamburger-menu"></div></li>
 	</ul>
-    <ul id="usermenu">
+    <ul id="usermenu" class="border-animated">
      
     </ul>
   </nav>
@@ -50,23 +52,29 @@
 
 </header>  
     <div id="banner" class="fans">
-
-	<div id="text" class="row">
-		<div class="col-sm-12">
-			<h1 id="title">EXPLORE & ENGAGE</h1>
-			<h2 id="subtitle">Experience GIG-N-JAM online music community</h2>
-			<a href="http://localhost:3000/signup" id="signup" class="orange">JOIN NOW!</a>
+	<div class="animated fadeInDown">
+		<div id="text" class="row">
+			<div class="col-sm-12">
+				<h1 id="title">EXPLORE & ENGAGE</h1>
+				<h2 id="subtitle">Experience GIG-N-JAM online music community</h2>
+				<a href="http://localhost:3000/signup" id="signup" class="orange">JOIN NOW!</a>
+			</div>
+		</div>
+		<div id="go-down" class="row animated infinite pulse">
+			<div class="col-sm-12 text-center">
+				<a href="" class="learn-more"><i class="fa fa-arrow-circle-o-down"></i></a>
+			</div>
 		</div>
 	</div>
-
 </div>
 
     <div id="fans-content">
-
+	
+	<section class="first"></section>
 	<section class="fans">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>Gig N JAM for fans</h2>
+				<h2>GignJam for fans</h2>
 				<p class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
 			</div>
 		</div>
@@ -136,45 +144,47 @@
 	</section>
 
 
-	<section class="fans dark">
-		
-		<div class="row">
-			<div class="col-sm-12">
-				<h2>Entretain your guests</h2>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>				
-			</div>
-		</div>
-
-
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="row">
-					<div class="col-sm-12">
-						<h3>Book live music</h3>
-						<p>Let's us help you entertain your guests. Book live music for your parties, weddings and special occassions.</p>
-					</div>
+	<div class="dark">
+		<section class="fans">
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Entretain your guests</h2>
+					<p class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>				
 				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<h3>Book a venue</h3>
-						<p>Read reviews and ratings and find the perfect local venue to host your events.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<h3>Guest feedback</h3>
-						<p>Find out what your guests have to say about your event. Host a bigger and better event next time.</p>
-					</div>
-				</div>
-				
 			</div>
 
-			<div class="col-sm-6">
-				<img src="http://placehold.it/300x300" alt="">
-			</div>
-		</div>
 
-	</section>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Book live music</h3>
+							<p>Let's us help you entertain your guests. Book live music for your parties, weddings and special occassions.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Book a venue</h3>
+							<p>Read reviews and ratings and find the perfect local venue to host your events.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Guest feedback</h3>
+							<p>Find out what your guests have to say about your event. Host a bigger and better event next time.</p>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="col-sm-6 text-center">
+					<img src="http://placehold.it/300x300" alt="">
+				</div>
+			</div>
+
+		</section>
+	</div>
 
 	<section class="fans">
 		
@@ -194,8 +204,8 @@
 		</div>
 
 		<div id="testimony-content" class="row">
-			<div class="col-sm-6"><img src="http://placehold.it/300x300" alt=""></div>
-			<div class="col-sm-6"><p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p></div>
+			<div class="col-sm-6 text-center"><img src="http://placehold.it/300x300" alt=""></div>
+			<div class="col-sm-6 text-left"><p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p></div>
 		</div>
 
 	</section>
@@ -415,6 +425,7 @@
 
     <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-scrollto.js"></script>
 <script type="text/javascript" src="/assets/js/main.js"></script>
 
 

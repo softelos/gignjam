@@ -1,26 +1,91 @@
-section{
+$h2-border-color:#75573E;
 
-	&.hex{
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-top:-200px;
-		margin-bottom: -60px;
-	}
 
-	&.hex div.row{
+section.hex{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top:0px;
+	margin-bottom: -60px;
+
+	div.row{
 		width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	div#hex-first div.col-sm-12{
-		//margin-bottom: -60px;
+		margin-bottom: -60px;
 	}
 
-	div#hex-second div.col-sm-2{
-		float:none;
-		margin:0 auto;
-		width: 700px;
+}
+
+div#home{
+	margin-top:-200px;
+	margin-bottom: -60px;
+
+	section.home{
+		
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+
+		&.dark{
+			background-color: $dark-brown;
+		}
+
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			padding-bottom: 30px;
+			font-family: 'Jaden';
+			border-bottom: 1pt solid $h2-border-color;
+			text-shadow:1px 1px  black;
+		}
+		h3{
+			text-transform: uppercase;
+			
+			&:before{
+				content:'';
+				position: absolute;
+				height: $h3-font-size;
+				width:5px;
+				left:0px;
+				background-color: $menu-link-color;
+			}
+		}
+		p.subtitle{
+			margin-top: 0px;
+			color:#bbbbbb;
+		}
+
+		div#testimony-pictures{
+			padding-bottom: 40px;
+
+			img{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		
+		div.home-tools{
+
+			padding-bottom: 30px;
+			
+			i.fa{
+				font-size: 30px;
+				color:$brown;
+				padding:30px;		
+				border:1pt solid black;
+				border-color:white;
+				border-radius: 45px;
+				margin-bottom: 5px;
+				background-color: white;
+			}
+			div.text{
+				color:white;
+			}
+		}
 	}
 }
 
@@ -32,8 +97,8 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 	//width: 180px;
 	//height: 224px;
 
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
 	display: inline-block;
 
 	&.right{
@@ -73,31 +138,41 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 			margin-top: 70px;
 			padding-left:15px;
 			padding-right:15px;
+			height: 150px;
 			color:#ffffff;
-			text-align: center;
-			text-transform: uppercase;
+
+			h3{
+				text-transform: uppercase;
+				color:$menu-link-color;
+			}
+			ul{
+				text-align: left;
+				font-weight: $font-light;
+			}
 		}
 
-		div.button{
-			padding-top: 20px;
-			text-align: center;
-			a{
-				background-color: $menu-link-color;
-				color:#ffffff;
-				border: 1pt solid #ffffff;
-				padding: 10px 20px 10px 20px;
-				text-decoration: none;
+	}
+}
 
-				&:hover{
-					background-color:$menu-link-color-light;
-					-moz-transition: background-color 0.3s;
-					-webkit-transition: background-color 0.3s;
-					transition: background-color 0.3s;
-				}
-			}
+div.button{
+ 	padding-top: 20px;
+	text-align: center;
+	a{
+		background-color: $menu-link-color;
+		color:#ffffff;
+		border: 1pt solid #ffffff;
+		padding: 10px 20px 10px 20px;
+		text-decoration: none;
+
+		&:hover{
+			background-color:$menu-link-color-light;
+			-moz-transition: background-color 0.3s;
+			-webkit-transition: background-color 0.3s;
+			transition: background-color 0.3s;
 		}
 	}
 }
+
 div#fans{
 	div.front{
 		background: url(../img/hex_fans.png) center center no-repeat;

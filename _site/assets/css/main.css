@@ -19,9 +19,12 @@ h2 {
 h3 {
   font-size: 15px; }
 
-p {
+p, ul {
   color: #dddddd;
   font-weight: 300; }
+
+p.subtitle {
+  color: #bbbbbb; }
 
 header {
   position: fixed;
@@ -37,14 +40,14 @@ header {
     margin: 0px; }
     header ul li {
       display: inline; }
-  header nav#navbar a {
+  header ul.border-animated a {
     position: relative;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff; }
-    header nav#navbar a:before {
+    header ul.border-animated a:before {
       content: "";
       position: absolute;
       width: 100%;
@@ -57,11 +60,11 @@ header {
       transform: scaleX(0);
       -webkit-transition: all 0.2s ease-in-out 0s;
       transition: all 0.2s ease-in-out 0s; }
-    header nav#navbar a.active:before {
+    header ul.border-animated a.active:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
-    header nav#navbar a:hover:before {
+    header ul.border-animated a:hover:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
@@ -197,11 +200,7 @@ div#banner {
   position: relative;
   margin-top: -100px;
   width: 50px;
-  height: 50px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  height: 50px; }
   div#banner div#text {
     width: 800px;
     margin-left: auto;
@@ -213,6 +212,18 @@ div#banner {
     div#banner div#text #title, div#banner div#text #subtitle {
       font-family: 'Jaden';
       text-shadow: 2px 2px black; }
+  div#banner div#go-down {
+    padding-top: 20px; }
+    div#banner div#go-down a {
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      text-shadow: 1px 1px black; }
+      div#banner div#go-down a:hover {
+        color: #DB4D21;
+        -moz-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s; }
   div#banner a#signup {
     color: white;
     padding: 5px 15px 5px 15px;
@@ -232,21 +243,72 @@ div#banner {
       -webkit-transition: background-color 0.3s;
       transition: background-color 0.3s; }
   div#banner.home {
-    background: url("../img/banner-home-large.jpg") no-repeat center center; }
+    background: url("../img/banner-home-large.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
     div#banner.home #title {
       font-size: 24px; }
     div#banner.home #subtitle {
       font-size: 40px; }
+    div#banner.home div.banner-options {
+      width: 1000px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto; }
+      div#banner.home div.banner-options div.option-box {
+        position: relative;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1pt solid #DB4D21;
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px; }
+        div#banner.home div.banner-options div.option-box h3 {
+          color: #DB4D21;
+          text-align: center;
+          font-size: 24px; }
+        div#banner.home div.banner-options div.option-box ul li {
+          font-weight: 300;
+          font-size: 15px; }
+        div#banner.home div.banner-options div.option-box div.content {
+          height: 200px; }
+    div#banner.home div#learn-more {
+      margin-top: 20px; }
   div#banner.fans {
-    background: url("../img/banner-fans-large.jpg") no-repeat center center; }
+    background: url("../img/banner-fans-large.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   div#banner.musicians {
-    background: url("../img/banner-musicians-large.jpg") no-repeat center center; }
+    background: url("../img/banner-musicians-large.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
     div#banner.musicians #title {
       font-size: 24px; }
     div#banner.musicians #subtitle {
       font-size: 40px; }
   div#banner.promoters {
-    background: url("../img/banner-promoters-large.jpg") no-repeat center center; }
+    background: url("../img/banner-promoters-large.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  div#banner.misc {
+    background-image: url("../img/banner-misc-large.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    div#banner.misc #title {
+      font-size: 40px; }
+    div#banner.misc #subtitle {
+      font-size: 24px; }
 
 footer {
   width: 100%;
@@ -376,24 +438,70 @@ footer {
     padding-left: 20px; }
 
 section.hex {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-bottom: -60px; }
+  section.hex div.row {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+  section.hex div#hex-first div.col-sm-12 {
+    margin-bottom: -60px; }
+
+div#home {
   margin-top: -200px;
   margin-bottom: -60px; }
-section.hex div.row {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto; }
-section div#hex-second div.col-sm-2 {
-  float: none;
-  margin: 0 auto;
-  width: 700px; }
+  div#home section.home {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+    div#home section.home.dark {
+      background-color: #644b28; }
+    div#home section.home h2 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+      font-family: 'Jaden';
+      border-bottom: 1pt solid #75573E;
+      text-shadow: 1px 1px  black; }
+    div#home section.home h3 {
+      text-transform: uppercase; }
+      div#home section.home h3:before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        left: 0px;
+        background-color: #DB4D21; }
+    div#home section.home p.subtitle {
+      margin-top: 0px;
+      color: #bbbbbb; }
+    div#home section.home div#testimony-pictures {
+      padding-bottom: 40px; }
+      div#home section.home div#testimony-pictures img {
+        padding-left: 10px;
+        padding-right: 10px; }
+    div#home section.home div.home-tools {
+      padding-bottom: 30px; }
+      div#home section.home div.home-tools i.fa {
+        font-size: 30px;
+        color: #89664A;
+        padding: 30px;
+        border: 1pt solid black;
+        border-color: white;
+        border-radius: 45px;
+        margin-bottom: 5px;
+        background-color: white; }
+      div#home section.home div.home-tools div.text {
+        color: white; }
 
 div#fans, div#musicians, div#howitworks, div#promoters, div#events {
   width: 280px;
   height: 324px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   display: inline-block; }
   div#fans.right, div#musicians.right, div#howitworks.right, div#promoters.right, div#events.right {
     float: right;
@@ -421,23 +529,29 @@ div#fans, div#musicians, div#howitworks, div#promoters, div#events {
       margin-top: 70px;
       padding-left: 15px;
       padding-right: 15px;
-      color: #ffffff;
-      text-align: center;
-      text-transform: uppercase; }
-    div#fans div.back div.button, div#musicians div.back div.button, div#howitworks div.back div.button, div#promoters div.back div.button, div#events div.back div.button {
-      padding-top: 20px;
-      text-align: center; }
-      div#fans div.back div.button a, div#musicians div.back div.button a, div#howitworks div.back div.button a, div#promoters div.back div.button a, div#events div.back div.button a {
-        background-color: #DB4D21;
-        color: #ffffff;
-        border: 1pt solid #ffffff;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none; }
-        div#fans div.back div.button a:hover, div#musicians div.back div.button a:hover, div#howitworks div.back div.button a:hover, div#promoters div.back div.button a:hover, div#events div.back div.button a:hover {
-          background-color: #ff3d00;
-          -moz-transition: background-color 0.3s;
-          -webkit-transition: background-color 0.3s;
-          transition: background-color 0.3s; }
+      height: 150px;
+      color: #ffffff; }
+      div#fans div.back div.text h3, div#musicians div.back div.text h3, div#howitworks div.back div.text h3, div#promoters div.back div.text h3, div#events div.back div.text h3 {
+        text-transform: uppercase;
+        color: #DB4D21; }
+      div#fans div.back div.text ul, div#musicians div.back div.text ul, div#howitworks div.back div.text ul, div#promoters div.back div.text ul, div#events div.back div.text ul {
+        text-align: left;
+        font-weight: 300; }
+
+div.button {
+  padding-top: 20px;
+  text-align: center; }
+  div.button a {
+    background-color: #DB4D21;
+    color: #ffffff;
+    border: 1pt solid #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none; }
+    div.button a:hover {
+      background-color: #ff3d00;
+      -moz-transition: background-color 0.3s;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s; }
 
 div#fans div.front {
   background: url(../img/hex_fans.png) center center no-repeat; }
@@ -468,11 +582,10 @@ div#fans-content {
   margin-top: -185px;
   margin-bottom: -60px; }
   div#fans-content section.fans {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 60px; }
-    div#fans-content section.fans.dark {
-      background-color: #644b28; }
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
     div#fans-content section.fans h2 {
       text-align: center;
       text-transform: uppercase;
@@ -492,38 +605,69 @@ div#fans-content {
       div#fans-content section.fans div#testimony-pictures img {
         padding-left: 10px;
         padding-right: 10px; }
+  div#fans-content div.dark {
+    background-color: #644b28; }
 
-div#musicians-content section.musicians {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 60px; }
-  div#musicians-content section.musicians.light {
+div#musicians-content {
+  margin-top: -185px; }
+  div#musicians-content section.musicians {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+    div#musicians-content section.musicians h2 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: "Jaden"; }
+    div#musicians-content section.musicians h3 {
+      text-transform: uppercase; }
+      div#musicians-content section.musicians h3:before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        left: 0px;
+        background-color: #DB4D21; }
+    div#musicians-content section.musicians div#testimony-pictures {
+      padding-bottom: 40px; }
+      div#musicians-content section.musicians div#testimony-pictures img {
+        padding-left: 10px;
+        padding-right: 10px; }
+  div#musicians-content div.light {
     background-color: #333333; }
-  div#musicians-content section.musicians h2 {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: "Jaden"; }
-  div#musicians-content section.musicians h3 {
-    text-transform: uppercase; }
-    div#musicians-content section.musicians h3:before {
-      content: '';
-      position: absolute;
-      height: 15px;
-      width: 5px;
-      left: 0px;
-      background-color: #DB4D21; }
-  div#musicians-content section.musicians div#testimony-pictures {
-    padding-bottom: 40px; }
-    div#musicians-content section.musicians div#testimony-pictures img {
-      padding-left: 10px;
-      padding-right: 10px; }
+
+div#misc-content {
+  margin-bottom: -60px; }
+  div#misc-content section.misc {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+    div#misc-content section.misc h2 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      font-family: 'Jaden';
+      border-bottom: 1pt solid #75573E;
+      text-shadow: 1px 1px  black; }
+    div#misc-content section.misc h3 {
+      text-transform: uppercase; }
+      div#misc-content section.misc h3:before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        left: 0px;
+        background-color: #DB4D21; }
+  div#misc-content div.dark {
+    background-color: #644b28; }
 
 html {
   overflow-x: hidden; }
 
-body.home, body.fans {
+body.home, body.fans, body.misc {
   background-color: #89664A; }
 
 body.musicians {
@@ -531,6 +675,6 @@ body.musicians {
 
 p.subtitle {
   text-align: center;
-  margin-top: -25px;
+  margin-top: 0px;
   margin-bottom: 40px;
   font-size: 24px; }

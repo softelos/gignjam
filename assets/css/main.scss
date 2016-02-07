@@ -21,13 +21,13 @@ $light-black: #333333;
 @import 'home';
 @import 'fans';
 @import 'musicians';
-
+@import 'misc';
 
 html{
 	overflow-x: hidden;
 }
 
-body.home, body.fans{
+body.home, body.fans, body.misc{
 	background-color: $brown;
 }
 
@@ -39,7 +39,7 @@ body.musicians{
 p{
 	&.subtitle{
 		text-align: center;
-		margin-top: -25px;
+		margin-top: 0px;
 		margin-bottom: 40px;
 		font-size: $h2-font-size;
 	}

@@ -32,8 +32,14 @@ $(function(){
 
 	// Set right size for banner
 	function updateBanner(){	
-		$('div#banner').css('width',parseInt(window.innerWidth));
-		$('div#banner').css('height',parseInt(window.innerWidth/1.778)+100); // Image used is 1366px x 768px 
+		if(!$('div#banner').hasClass('misc')){
+			$('div#banner').css('width',parseInt(window.innerWidth));
+			$('div#banner').css('height',parseInt(window.innerWidth/1.778)+200); // Image used is 1366px x 768px 
+			$('div#banner div#text').css('padding-top',parseInt(window.innerHeight/2));
+		}else{
+			$('div#banner').css('width',parseInt(window.innerWidth));
+			$('div#banner').css('height',500);
+		}
 	}
 
 	// Checks the nav width, if small, shows the small menu button
