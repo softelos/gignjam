@@ -9,8 +9,6 @@ div#fans-content{
 		margin-right: auto;
 		padding-bottom: 50px;
 
-		
-
 		h2{
 			text-align: center;
 			text-transform: uppercase;
@@ -34,8 +32,27 @@ div#fans-content{
 			padding-bottom: 40px;
 
 			img{
-				padding-left: 10px;
-				padding-right: 10px;
+				margin-left: 10px;
+				margin-right: 10px;
+				border-radius: 75px;
+				opacity: 0.6;
+				-moz-transition:opacity 0.3s;
+				-webkit-transition:opacity 0.3s;
+				transition:opacity 0.3s;
+
+				&:hover{
+					cursor:pointer;
+					opacity:1;
+					-moz-transition:opacity 0.3s;
+					-webkit-transition:opacity 0.3s;
+					transition:opacity 0.3s;
+				};
+			}
+		}
+
+		div#testimony-content{
+			p#text-2,p#text-3{
+				display: none;
 			}
 		}
 		
@@ -44,4 +61,9 @@ div#fans-content{
 	div.dark{
 		background-color: $dark-brown;
 	}
+
+	section.people-party{
+		//background: url(/assets/img/bg-people-party.png) right bottom no-repeat;
+	}
+
 }
