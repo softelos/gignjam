@@ -22,12 +22,13 @@ $light-black: #333333;
 @import 'fans';
 @import 'musicians';
 @import 'misc';
+@import 'promoters';
 
 html{
 	overflow-x: hidden;
 }
 
-body.home, body.fans, body.misc{
+body.home, body.fans, body.promoters, body.misc{
 	background-color: $brown;
 }
 

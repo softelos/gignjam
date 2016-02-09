@@ -5,7 +5,8 @@ section.hex{
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top:0px;
-	margin-bottom: -60px;
+	margin-bottom: -60px; // Required when using a sencond row
+	margin-bottom: 40px;
 
 	div.row{
 		width: 1000px;
@@ -14,14 +15,14 @@ section.hex{
 	}
 
 	div#hex-first div.col-sm-12{
-		margin-bottom: -60px;
+		margin-bottom: -70px;
 	}
 
 }
 
 div#home{
-	margin-top:-200px;
-	margin-bottom: -60px;
+	margin-top:-120px;
+	margin-bottom: -40px;
 
 	section.home{
 		
@@ -32,6 +33,31 @@ div#home{
 
 		&.dark{
 			background-color: $dark-brown;
+		}
+
+		div.featured{
+			a{
+				color:white;
+				text-decoration: none;
+
+				&:hover{
+					color:#aaaaaa;
+					text-decoration: none;
+					-moz-transition:color 0.3s;
+					-webkit-transition:color 0.3s;
+					transition:color 0.3s;
+				};
+			}
+			div.featured-song,div.featured-musician{
+				opacity: 0.6;
+
+				&:hover{
+					opacity:1;
+					-moz-transition:opacity 0.3s;
+					-webkit-transition:opacity 0.3s;
+					transition:opacity 0.3s;					
+				};
+			}
 		}
 
 		h2{
@@ -117,12 +143,11 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 	}
 
 	div.title{
-		padding-top: 145px;
-		font-size: 24px;
+		padding-top: 210px;
+		font-size: 20px;
 		font-family: 'Jaden';
-		color:white;
+		color:$brown;
 		text-align: center;
-		text-shadow: 2px 2px 5px black;
 	}
 
 	
@@ -142,8 +167,12 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 			color:#ffffff;
 
 			h3{
+				font-size:24px;
 				text-transform: uppercase;
 				color:$menu-link-color;
+				&:before{
+					content:none;
+				}
 			}
 			ul{
 				text-align: left;
@@ -175,7 +204,7 @@ div.button{
 
 div#fans{
 	div.front{
-		background: url(../img/hex_fans.png) center center no-repeat;
+		background: url(../img/hex_fans-white.png) center center no-repeat;
 	}
 	div.back{
 		background: url(../img/hex_black.png) center center no-repeat;
@@ -184,7 +213,7 @@ div#fans{
 
 div#musicians{
 	div.front{
-		background: url(../img/hex_musicians.png) center center no-repeat;
+		background: url(../img/hex_musicians-white.png) center center no-repeat;
 	}
 	div.back{
 		background: url(../img/hex_black.png) center center no-repeat;
@@ -201,7 +230,7 @@ div#howitworks{
 }
 div#promoters{
 	div.front{
-		background: url(../img/hex_promoters.png) center center no-repeat;
+		background: url(../img/hex_promoters-white.png) center center no-repeat;
 	}
 	div.back{
 		background: url(../img/hex_black.png) center center no-repeat;

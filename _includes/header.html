@@ -4,11 +4,15 @@
     <ul id="navlogo">
       <li><a href="/{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/logo_uc_wht.png" width="230px" height="65px" alt="gigNjam logo"></li></a>
     </ul>
+    <ul id="menu" class="border-animated">
+      <li><a {% if page.pageName == 'fans' %} class="active" {% endif %} href="{{site.baseurl}}/fans">Fans</a></li>
+      <li><a {% if page.pageName == 'musicians' %} class="active" {% endif %} href="{{site.baseurl}}/musicians">Musicians</a></li>
+      <li><a {% if page.pageName == 'promoters' %} class="active" {% endif %} href="{{site.baseurl}}/promoters">Promoters</a></li>
+    </ul>
     <ul id="minimenu" class="border-animated">
     	<li><div class="hamburger-menu"></div></li>
-	</ul>
-    <ul id="usermenu" class="border-animated">
-     
+	 </ul>
+    <ul id="usermenu" class="border-animated">     
     </ul>
   </nav>
 

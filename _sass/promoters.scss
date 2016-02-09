@@ -1,0 +1,38 @@
+div#promoters-content{
+	margin-top:-120px;
+
+
+	section.promoters{
+
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+		
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			font-family: 'Jaden'
+		}
+		h3{
+			text-transform: uppercase;
+			
+			&:before{
+				content:'';
+				position: absolute;
+				height: $h3-font-size;
+				width:5px;
+				left:0px;
+				background-color: $menu-link-color;
+			}
+		}
+	
+	}
+	div.light{
+		background-color: $light-black;
+	}
+
+
+}

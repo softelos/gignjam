@@ -33,8 +33,10 @@ $(function(){
 	// Set right size for banner
 	function updateBanner(){	
 		if(!$('div#banner').hasClass('misc')){
+			var vOffset=$('header').height()+150;
+			if(window.innerHeight>768) vOffset+=window.innerHeight-768;
 			$('div#banner').css('width',parseInt(window.innerWidth));
-			$('div#banner').css('height',parseInt(window.innerWidth/1.778)+200); // Image used is 1366px x 768px 
+			$('div#banner').css('height',parseInt(window.innerWidth/1.778)+vOffset); // Image used is 1366px x 768px (used to be 200)
 			$('div#banner div#text').css('padding-top',parseInt(window.innerHeight/2));
 		}else{
 			$('div#banner').css('width',parseInt(window.innerWidth));
@@ -68,7 +70,7 @@ $(function(){
 		var pos=$(this).position();
 		var menu=$('div#minimenubox');
 		menu.css('left',pos.left-menu.width());
-		menu.css('top',pos.top+40);
+		menu.css('top',pos.top+55);
 		menu.slideToggle('fast');
 	});
 

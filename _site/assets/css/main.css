@@ -44,6 +44,7 @@ header {
     position: relative;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff; }
@@ -73,12 +74,14 @@ header {
   header ul#usermenu {
     float: right; }
   header ul#menu {
-    float: left; }
+    float: left;
+    margin-top: 5px; }
   header ul#minimenu {
     float: right;
     display: none;
     cursor: pointer;
-    height: 35px; }
+    height: 35px;
+    margin-top: 5px; }
     header ul#minimenu div.hamburger-menu {
       width: 30px;
       height: 5px;
@@ -120,6 +123,7 @@ header {
         position: relative;
         font-family: 'Work Sans', sans-serif;
         font-size: 18px;
+        font-weight: 500;
         text-transform: uppercase;
         text-decoration: none;
         color: #ffffff; }
@@ -153,11 +157,20 @@ header {
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     header.expanded ul#usermenu {
-      padding-top: 14px; }
+      padding-top: 14px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     header.expanded ul#menu {
-      padding-top: 14px; }
+      padding-top: 14px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     header.expanded ul#minimenu {
-      padding-top: 14px; }
+      padding-top: 14px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     header.expanded ul#usermenu li {
       padding: 0px 30px 0px 30px;
       -webkit-transition: padding 0.3s ease;
@@ -172,7 +185,8 @@ header {
     height: 75px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    background-color: #282828; }
     header.collapsed ul#navlogo img {
       width: 150px;
       height: 42px;
@@ -437,21 +451,33 @@ footer {
     float: left;
     padding-left: 20px; }
 
+div#go-up-arrow {
+  padding-right: 50px; }
+  div#go-up-arrow .fa {
+    font-size: 50px;
+    color: white; }
+    div#go-up-arrow .fa:hover {
+      color: #DB4D21;
+      -moz-transition: color 0.3s;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+
 section.hex {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 0px;
-  margin-bottom: -60px; }
+  margin-bottom: -60px;
+  margin-bottom: 40px; }
   section.hex div.row {
     width: 1000px;
     margin-left: auto;
     margin-right: auto; }
   section.hex div#hex-first div.col-sm-12 {
-    margin-bottom: -60px; }
+    margin-bottom: -70px; }
 
 div#home {
-  margin-top: -200px;
-  margin-bottom: -60px; }
+  margin-top: -120px;
+  margin-bottom: -40px; }
   div#home section.home {
     width: 1000px;
     margin-left: auto;
@@ -459,6 +485,22 @@ div#home {
     padding-bottom: 50px; }
     div#home section.home.dark {
       background-color: #644b28; }
+    div#home section.home div.featured a {
+      color: white;
+      text-decoration: none; }
+      div#home section.home div.featured a:hover {
+        color: #aaaaaa;
+        text-decoration: none;
+        -moz-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s; }
+    div#home section.home div.featured div.featured-song, div#home section.home div.featured div.featured-musician {
+      opacity: 0.6; }
+      div#home section.home div.featured div.featured-song:hover, div#home section.home div.featured div.featured-musician:hover {
+        opacity: 1;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s; }
     div#home section.home h2 {
       text-align: center;
       text-transform: uppercase;
@@ -514,12 +556,11 @@ div#fans, div#musicians, div#howitworks, div#promoters, div#events {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s; }
   div#fans div.title, div#musicians div.title, div#howitworks div.title, div#promoters div.title, div#events div.title {
-    padding-top: 145px;
-    font-size: 24px;
+    padding-top: 210px;
+    font-size: 20px;
     font-family: 'Jaden';
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 5px black; }
+    color: #89664A;
+    text-align: center; }
   div#fans div.front, div#musicians div.front, div#howitworks div.front, div#promoters div.front, div#events div.front {
     height: 100%; }
   div#fans div.back, div#musicians div.back, div#howitworks div.back, div#promoters div.back, div#events div.back {
@@ -532,8 +573,11 @@ div#fans, div#musicians, div#howitworks, div#promoters, div#events {
       height: 150px;
       color: #ffffff; }
       div#fans div.back div.text h3, div#musicians div.back div.text h3, div#howitworks div.back div.text h3, div#promoters div.back div.text h3, div#events div.back div.text h3 {
+        font-size: 24px;
         text-transform: uppercase;
         color: #DB4D21; }
+        div#fans div.back div.text h3:before, div#musicians div.back div.text h3:before, div#howitworks div.back div.text h3:before, div#promoters div.back div.text h3:before, div#events div.back div.text h3:before {
+          content: none; }
       div#fans div.back div.text ul, div#musicians div.back div.text ul, div#howitworks div.back div.text ul, div#promoters div.back div.text ul, div#events div.back div.text ul {
         text-align: left;
         font-weight: 300; }
@@ -554,12 +598,12 @@ div.button {
       transition: background-color 0.3s; }
 
 div#fans div.front {
-  background: url(../img/hex_fans.png) center center no-repeat; }
+  background: url(../img/hex_fans-white.png) center center no-repeat; }
 div#fans div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
 div#musicians div.front {
-  background: url(../img/hex_musicians.png) center center no-repeat; }
+  background: url(../img/hex_musicians-white.png) center center no-repeat; }
 div#musicians div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
@@ -569,7 +613,7 @@ div#howitworks div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
 div#promoters div.front {
-  background: url(../img/hex_promoters.png) center center no-repeat; }
+  background: url(../img/hex_promoters-white.png) center center no-repeat; }
 div#promoters div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
@@ -579,7 +623,7 @@ div#events div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
 div#fans-content {
-  margin-top: -185px;
+  margin-top: -120px;
   margin-bottom: -60px; }
   div#fans-content section.fans {
     width: 1000px;
@@ -620,14 +664,32 @@ div#fans-content {
       display: none; }
   div#fans-content div.dark {
     background-color: #644b28; }
+  div#fans-content div.people-party {
+    background: url(/assets/img/bg-people-party.png) right bottom no-repeat #644b28; }
 
 div#musicians-content {
-  margin-top: -185px; }
+  margin-top: -120px; }
   div#musicians-content section.musicians {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px; }
+    div#musicians-content section.musicians div.featured a {
+      color: white;
+      text-decoration: none; }
+      div#musicians-content section.musicians div.featured a:hover {
+        color: #DB4D21;
+        text-decoration: none;
+        -moz-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s; }
+    div#musicians-content section.musicians div.featured div.featured-musician {
+      opacity: 0.6; }
+      div#musicians-content section.musicians div.featured div.featured-musician:hover {
+        opacity: 1;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s; }
     div#musicians-content section.musicians h2 {
       text-align: center;
       text-transform: uppercase;
@@ -646,8 +708,27 @@ div#musicians-content {
     div#musicians-content section.musicians div#testimony-pictures {
       padding-bottom: 40px; }
       div#musicians-content section.musicians div#testimony-pictures img {
-        padding-left: 10px;
-        padding-right: 10px; }
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 75px;
+        opacity: 0.6;
+        -moz-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s; }
+        div#musicians-content section.musicians div#testimony-pictures img:hover {
+          cursor: pointer;
+          opacity: 1;
+          -moz-transition: opacity 0.3s;
+          -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s; }
+    div#musicians-content section.musicians div#testimony-content p#text-2, div#musicians-content section.musicians div#testimony-content p#text-3 {
+      display: none; }
+    div#musicians-content section.musicians.find-apply h3 {
+      margin: 15px 25px 0px 25px;
+      padding-top: 20px;
+      border-top: 4pt solid #DB4D21; }
+      div#musicians-content section.musicians.find-apply h3:before {
+        content: none; }
   div#musicians-content div.light {
     background-color: #333333; }
   div#musicians-content section.guitar-singer {
@@ -660,6 +741,15 @@ div#misc-content {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px; }
+    div#misc-content section.misc a {
+      color: white;
+      text-decoration: none; }
+      div#misc-content section.misc a:hover {
+        color: #aaaaaa;
+        text-decoration: none;
+        -moz-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s; }
     div#misc-content section.misc h2 {
       text-align: center;
       text-transform: uppercase;
@@ -679,10 +769,35 @@ div#misc-content {
   div#misc-content div.dark {
     background-color: #644b28; }
 
+div#promoters-content {
+  margin-top: -120px; }
+  div#promoters-content section.promoters {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+    div#promoters-content section.promoters h2 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: "Jaden"; }
+    div#promoters-content section.promoters h3 {
+      text-transform: uppercase; }
+      div#promoters-content section.promoters h3:before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 5px;
+        left: 0px;
+        background-color: #DB4D21; }
+  div#promoters-content div.light {
+    background-color: #333333; }
+
 html {
   overflow-x: hidden; }
 
-body.home, body.fans, body.misc {
+body.home, body.fans, body.promoters, body.misc {
   background-color: #89664A; }
 
 body.musicians {

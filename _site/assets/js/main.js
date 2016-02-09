@@ -11,8 +11,14 @@ $(function(){
 	// ScrollTo calls
 	$('a.learn-more').on('click',function(e){
 		e.preventDefault();
-		$('section.first').ScrollTo();
+		$('section.first').ScrollTo({offsetTop:100});
 	});
+	// GoUp button
+	$('a#go-up-link').on('click',function(e){
+		e.preventDefault();
+		$('#banner').ScrollTo();
+	});
+
 
 	// Control of testimony pictures
 	$('div#testimony-pictures img').on('mouseover',function(){

@@ -202,3 +202,20 @@ footer{
 	}
 
 }
+
+div#go-up-arrow{
+
+	padding-right: 50px;
+
+	.fa{
+		font-size: 50px;
+		color:white;
+
+		&:hover{
+			color:$menu-link-color;
+			-moz-transition:color 0.3s;
+			-webkit-transition:color 0.3s;
+			transition:color 0.3s;
+		}
+	}
+}

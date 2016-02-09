@@ -9,7 +9,18 @@ div#misc-content{
 		margin-right: auto;
 		padding-bottom: 50px;
 
-		
+		a{
+			color:white;
+			text-decoration: none;
+
+			&:hover{
+				color:#aaaaaa;
+				text-decoration: none;
+				-moz-transition:color 0.3s;
+				-webkit-transition:color 0.3s;
+				transition:color 0.3s;
+			};
+		}
 
 		h2{
 			text-align: center;

@@ -15,39 +15,17 @@ title: Home
         <p class="subtitle">We are a global online music community that provides a suite of tools and resources that connect people, places and events in the music industry regardless of their culture, background and language.</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-2 home-tools text-center">
-        <i class="fa fa-group"></i><div class="text">EVENTS</div>
-      </div>
-      <div class="col-sm-2 home-tools text-center">
-        <i class="fa fa-fort-awesome"></i><div class="text">VENUES</div>
-      </div>
-      <div class="col-sm-2 home-tools text-center">
-        <i class="fa fa-music"></i><div class="text">SONGS</div>
-      </div>
-      <div class="col-sm-2 home-tools text-center">
-        <i class="fa fa-calendar"></i><div class="text">CALENDARS</div>
-      </div>
-      <div class="col-sm-2 home-tools text-center">
-        <i class="fa fa-envelope-o"></i><div class="text">ALERTS</div>
-      </div>
-      <div class="col-sm-2 home-tools text-center">
-        <i class="fa fa-microphone"></i><div class="text">GIGS</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <div class="button"><a href="">JOIN NOW!</a></div>
-      </div>
-    </div>
+    
+  {% include home/_hex.html %}
+
   </section>
 
   <section class="home">
     
     <div class="row">
       <div class="col-sm-12">
-        <h2>What do you get as a Gig-n-Jam member?</h2>
-        <p class="subtitle">This is a sample subtitle that needs to be changed</p>
+        <h2>What do you get as a {{site.title}} member?</h2>
+        <p class="subtitle">Many tools and different levels of access to satisfy the needs of the music industry</p>
       </div>
     </div>
 
@@ -108,9 +86,66 @@ title: Home
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="button"><a href="">JOIN NOW!</a></div>
+      </div>
+    </div>
+
   </section>
 
-  {% include home/_hex.html %}
+  <section class="home">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Featured In</h2>
+        <p class="subtitle">The most voted by the {{site.title}} community</p>       
+      </div>
+    </div>
+
+    <div class="row featured">
+
+      <div class="col-sm-6">
+        <h3>Songs</h3>
+        <div class="row">
+          {% for item in (1..4) %}
+            <div class="col-sm-3 text-center featured-song"><a href=""><img src="http://placehold.it/75x75" alt=""><p>Title</p></a></div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          {% for item in (1..4) %}
+            <div class="col-sm-3 text-center featured-song"><a href=""><img src="http://placehold.it/75x75" alt=""><p>Title</p></a></div>
+          {% endfor %}
+        </div>        
+        <div class="row">
+          <div class="col-sm-12 text-left">
+            <a href="{{site.app}}/songs">See more..</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <h3>Musicians</h3>
+        <div class="row">
+          {% for item in (1..4) %}
+            <div class="col-sm-3 text-center featured-musician"><a href=""><img src="http://placehold.it/75x75" alt=""><p>Name</p></a></div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          {% for item in (1..4) %}
+            <div class="col-sm-3 text-center featured-musician"><a href=""><img src="http://placehold.it/75x75" alt=""><p>Name</p></a></div>
+          {% endfor %}
+        </div>        
+        <div class="row">
+          <div class="col-sm-12 text-left featured-musician">
+            <a href="{{site.app}}/directory">See more..</a>
+          </div>
+        </div>        
+      </div>
+
+    </div>
+
+  </section>
 
 </div>
 

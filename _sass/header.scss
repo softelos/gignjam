@@ -37,9 +37,9 @@ header{
 
 	ul.border-animated a{
 		position: relative;
-		//font-family: 'Jaden',Fallback, sans-serif;
 		font-family: 'Work Sans', sans-serif;;
 		font-size: $menu-font-size;
+		font-weight: 500;
 		text-decoration: none;
 		text-transform: uppercase;
 		color:$menu-text-color;
@@ -83,6 +83,7 @@ header{
 
 	ul#menu{
 		float:left;		
+		margin-top:5px;
 	}
 
 	ul#minimenu{
@@ -90,6 +91,7 @@ header{
 		display: none;
 		cursor: pointer;
 		height: 35px;
+		margin-top: 5px;
 
 		div.hamburger-menu{
 			width:30px;
@@ -147,9 +149,9 @@ header{
 
 			a{
 				position: relative;
-				//font-family: 'Jaden',Fallback, sans-serif;
 				font-family: 'Work Sans', sans-serif;
 				font-size: $menu-font-size;
+				font-weight: 500;
 				text-transform: uppercase;
 				text-decoration: none;
 				color:$menu-text-color;
@@ -202,14 +204,23 @@ header{
 
 		ul#usermenu{
 			padding-top: $menu-top-expanded-padding;
+			-webkit-transition: all 0.3s ease;
+   			-moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;		
 		}
 
 		ul#menu{
 			padding-top: $menu-top-expanded-padding;
+			-webkit-transition: all 0.3s ease;
+   			-moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;		
 		}
 
 		ul#minimenu{
 			padding-top: $menu-top-expanded-padding;
+			-webkit-transition: all 0.3s ease;
+   			-moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;		
 		}
 
 		ul#usermenu li{
@@ -233,6 +244,7 @@ header{
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
+		background-color: $header-collapsed-bg-color;
 
 		ul#navlogo img{
 			width: 150px;

@@ -1,5 +1,5 @@
 div#musicians-content{
-	margin-top:-185px;
+	margin-top:-120px;
 	//margin-bottom: -60px;
 
 	section.musicians{
@@ -9,6 +9,31 @@ div#musicians-content{
 		margin-right: auto;
 		padding-bottom: 50px;
 
+		div.featured{
+			a{
+				color:white;
+				text-decoration: none;
+
+				&:hover{
+					color:$menu-link-color;
+					text-decoration: none;
+					-moz-transition:color 0.3s;
+					-webkit-transition:color 0.3s;
+					transition:color 0.3s;
+				};
+			}
+			div.featured-musician{
+				opacity: 0.6;
+
+				&:hover{
+					opacity:1;
+					-moz-transition:opacity 0.3s;
+					-webkit-transition:opacity 0.3s;
+					transition:opacity 0.3s;					
+				};
+			}
+		}
+		
 		h2{
 			text-align: center;
 			text-transform: uppercase;
@@ -28,14 +53,49 @@ div#musicians-content{
 				background-color: $menu-link-color;
 			}
 		}
-
+	
 		div#testimony-pictures{
 			padding-bottom: 40px;
 
 			img{
-				padding-left: 10px;
-				padding-right: 10px;
+				margin-left: 10px;
+				margin-right: 10px;
+				border-radius: 75px;
+				opacity: 0.6;
+				-moz-transition:opacity 0.3s;
+				-webkit-transition:opacity 0.3s;
+				transition:opacity 0.3s;
+
+				&:hover{
+					cursor:pointer;
+					opacity:1;
+					-moz-transition:opacity 0.3s;
+					-webkit-transition:opacity 0.3s;
+					transition:opacity 0.3s;
+				};
 			}
+		}
+
+		div#testimony-content{
+			p#text-2,p#text-3{
+				display: none;
+			}
+		}
+
+		&.find-apply{
+			img.border{
+			}
+
+			h3{				
+				margin: 15px 25px 0px 25px;
+				padding-top: 20px;
+				border-top:4pt solid $menu-link-color;
+
+				&:before{
+					content: none;
+				}
+			}
+
 		}
 		
 	}
@@ -46,5 +106,6 @@ div#musicians-content{
 	section.guitar-singer{
 		background: url('/assets/img/girl-guitar.png') right 100px no-repeat;
 	}
+
 
 }
