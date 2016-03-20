@@ -2,7 +2,7 @@ $banner-minimum-height:50px;
 
 div#banner{
 	position: relative;
-	margin-top: -$header-expanded-height;
+	
 	width:50px;
 	height:$banner-minimum-height;
 	
@@ -50,7 +50,7 @@ div#banner{
 		border:1pt solid white;
 
 		&.black{
-			background-color: #000000;
+			background-color: $menu-link-color;
 
 			&:hover{
 				background-color: #333333;

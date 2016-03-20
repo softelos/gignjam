@@ -1,5 +1,5 @@
 div#fans-content{
-	margin-top:-120px;
+	margin-top:20px;
 	margin-bottom: -60px;
 
 	section.fans{
@@ -13,7 +13,7 @@ div#fans-content{
 			text-align: center;
 			text-transform: uppercase;
 			padding-bottom: 20px;
-			font-family: 'Jaden'
+			font-family: 'Jaden';
 		}
 		h3{
 			text-transform: uppercase;
@@ -27,6 +27,52 @@ div#fans-content{
 				background-color: $menu-link-color;
 			}
 		}
+
+		div.events{
+			
+			div.item{
+				display: inline-block;
+				width:200px;
+				height:200px;
+				background-image: url('/assets/img/festival.jpg');
+			}
+
+			div.item div.text{
+
+				&.on{
+					visibility: visible;
+				}
+
+				&.off{
+					visibility: hidden;
+				}
+
+			}
+
+		}
+
+		div.talents{
+			
+			div.item{
+				display: inline-block;
+				width:200px;
+				height:200px;
+				background-image: url('/assets/img/festival.jpg');
+			}
+
+			div.item div.text{
+
+				&.on{
+					visibility: visible;
+				}
+
+				&.off{
+					visibility: hidden;
+				}
+
+			}
+
+		}		
 
 		div#testimony-pictures{
 			padding-bottom: 40px;

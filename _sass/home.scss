@@ -5,6 +5,7 @@ section.hex{
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top:0px;
+	margin-top: 20px;
 	margin-bottom: -60px; // Required when using a sencond row
 	margin-bottom: 40px;
 
@@ -21,8 +22,6 @@ section.hex{
 }
 
 div#home{
-	margin-top:-120px;
-	margin-bottom: -40px;
 
 	section.home{
 		
@@ -35,37 +34,41 @@ div#home{
 			background-color: $dark-brown;
 		}
 
-		div.featured{
-			a{
-				color:white;
-				text-decoration: none;
+		div#testimony-pictures{
+			padding-bottom: 40px;
 
-				&:hover{
-					color:#aaaaaa;
-					text-decoration: none;
-					-moz-transition:color 0.3s;
-					-webkit-transition:color 0.3s;
-					transition:color 0.3s;
-				};
-			}
-			div.featured-song,div.featured-musician{
+			img{
+				margin-left: 10px;
+				margin-right: 10px;
+				border-radius: 75px;
 				opacity: 0.6;
+				-moz-transition:opacity 0.3s;
+				-webkit-transition:opacity 0.3s;
+				transition:opacity 0.3s;
 
 				&:hover{
+					cursor:pointer;
 					opacity:1;
 					-moz-transition:opacity 0.3s;
 					-webkit-transition:opacity 0.3s;
-					transition:opacity 0.3s;					
+					transition:opacity 0.3s;
 				};
 			}
 		}
+
+		div#testimony-content{
+			p#text-2,p#text-3{
+				display: none;
+			}
+		}
+
+
 
 		h2{
 			text-align: center;
 			text-transform: uppercase;
 			padding-bottom: 30px;
 			font-family: 'Jaden';
-			border-bottom: 1pt solid $h2-border-color;
 			text-shadow:1px 1px  black;
 		}
 		h3{
@@ -112,7 +115,27 @@ div#home{
 				color:white;
 			}
 		}
+
+
+		div.explore{
+			div.item{
+				width: 200px;
+				height: 200px;
+				display:inline-block;
+				background-image: url(/assets/img/festival.jpg);
+				color:white;
+
+				p{
+					font-size: 20px;
+					font-weight: $font-medium;
+				}
+
+			}
+		}
+
+
 	}
+
 }
 
 
@@ -161,8 +184,8 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 
 		div.text{
 			margin-top: 70px;
-			padding-left:15px;
-			padding-right:15px;
+			padding-left:5px;
+			padding-right:5px;
 			height: 150px;
 			color:#ffffff;
 

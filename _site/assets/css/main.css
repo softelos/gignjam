@@ -212,7 +212,6 @@ header {
 
 div#banner {
   position: relative;
-  margin-top: -100px;
   width: 50px;
   height: 50px; }
   div#banner div#text {
@@ -245,7 +244,7 @@ div#banner {
     font-size: 15px;
     border: 1pt solid white; }
     div#banner a#signup.black {
-      background-color: #000000; }
+      background-color: #DB4D21; }
       div#banner a#signup.black:hover {
         background-color: #333333; }
     div#banner a#signup.orange {
@@ -466,6 +465,7 @@ section.hex {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: -60px;
   margin-bottom: 40px; }
   section.hex div.row {
@@ -475,69 +475,76 @@ section.hex {
   section.hex div#hex-first div.col-sm-12 {
     margin-bottom: -70px; }
 
-div#home {
-  margin-top: -120px;
-  margin-bottom: -40px; }
-  div#home section.home {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px; }
-    div#home section.home.dark {
-      background-color: #644b28; }
-    div#home section.home div.featured a {
-      color: white;
-      text-decoration: none; }
-      div#home section.home div.featured a:hover {
-        color: #aaaaaa;
-        text-decoration: none;
-        -moz-transition: color 0.3s;
-        -webkit-transition: color 0.3s;
-        transition: color 0.3s; }
-    div#home section.home div.featured div.featured-song, div#home section.home div.featured div.featured-musician {
-      opacity: 0.6; }
-      div#home section.home div.featured div.featured-song:hover, div#home section.home div.featured div.featured-musician:hover {
+div#home section.home {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px; }
+  div#home section.home.dark {
+    background-color: #644b28; }
+  div#home section.home div#testimony-pictures {
+    padding-bottom: 40px; }
+    div#home section.home div#testimony-pictures img {
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 75px;
+      opacity: 0.6;
+      -moz-transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      div#home section.home div#testimony-pictures img:hover {
+        cursor: pointer;
         opacity: 1;
         -moz-transition: opacity 0.3s;
         -webkit-transition: opacity 0.3s;
         transition: opacity 0.3s; }
-    div#home section.home h2 {
-      text-align: center;
-      text-transform: uppercase;
-      padding-bottom: 30px;
-      font-family: 'Jaden';
-      border-bottom: 1pt solid #75573E;
-      text-shadow: 1px 1px  black; }
-    div#home section.home h3 {
-      text-transform: uppercase; }
-      div#home section.home h3:before {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 5px;
-        left: 0px;
-        background-color: #DB4D21; }
-    div#home section.home p.subtitle {
-      margin-top: 0px;
-      color: #bbbbbb; }
-    div#home section.home div#testimony-pictures {
-      padding-bottom: 40px; }
-      div#home section.home div#testimony-pictures img {
-        padding-left: 10px;
-        padding-right: 10px; }
-    div#home section.home div.home-tools {
-      padding-bottom: 30px; }
-      div#home section.home div.home-tools i.fa {
-        font-size: 30px;
-        color: #89664A;
-        padding: 30px;
-        border: 1pt solid black;
-        border-color: white;
-        border-radius: 45px;
-        margin-bottom: 5px;
-        background-color: white; }
-      div#home section.home div.home-tools div.text {
-        color: white; }
+  div#home section.home div#testimony-content p#text-2, div#home section.home div#testimony-content p#text-3 {
+    display: none; }
+  div#home section.home h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-family: 'Jaden';
+    text-shadow: 1px 1px  black; }
+  div#home section.home h3 {
+    text-transform: uppercase; }
+    div#home section.home h3:before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 5px;
+      left: 0px;
+      background-color: #DB4D21; }
+  div#home section.home p.subtitle {
+    margin-top: 0px;
+    color: #bbbbbb; }
+  div#home section.home div#testimony-pictures {
+    padding-bottom: 40px; }
+    div#home section.home div#testimony-pictures img {
+      padding-left: 10px;
+      padding-right: 10px; }
+  div#home section.home div.home-tools {
+    padding-bottom: 30px; }
+    div#home section.home div.home-tools i.fa {
+      font-size: 30px;
+      color: #89664A;
+      padding: 30px;
+      border: 1pt solid black;
+      border-color: white;
+      border-radius: 45px;
+      margin-bottom: 5px;
+      background-color: white; }
+    div#home section.home div.home-tools div.text {
+      color: white; }
+  div#home section.home div.explore div.item {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-image: url(/assets/img/festival.jpg);
+    color: white; }
+    div#home section.home div.explore div.item p {
+      font-size: 20px;
+      font-weight: 500; }
 
 div#fans, div#musicians, div#howitworks, div#promoters, div#events {
   width: 280px;
@@ -568,8 +575,8 @@ div#fans, div#musicians, div#howitworks, div#promoters, div#events {
     height: 100%; }
     div#fans div.back div.text, div#musicians div.back div.text, div#howitworks div.back div.text, div#promoters div.back div.text, div#events div.back div.text {
       margin-top: 70px;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
       height: 150px;
       color: #ffffff; }
       div#fans div.back div.text h3, div#musicians div.back div.text h3, div#howitworks div.back div.text h3, div#promoters div.back div.text h3, div#events div.back div.text h3 {
@@ -623,7 +630,7 @@ div#events div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
 div#fans-content {
-  margin-top: -120px;
+  margin-top: 20px;
   margin-bottom: -60px; }
   div#fans-content section.fans {
     width: 1000px;
@@ -634,7 +641,7 @@ div#fans-content {
       text-align: center;
       text-transform: uppercase;
       padding-bottom: 20px;
-      font-family: "Jaden"; }
+      font-family: 'Jaden'; }
     div#fans-content section.fans h3 {
       text-transform: uppercase; }
       div#fans-content section.fans h3:before {
@@ -644,6 +651,24 @@ div#fans-content {
         width: 5px;
         left: 0px;
         background-color: #DB4D21; }
+    div#fans-content section.fans div.events div.item {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background-image: url("/assets/img/festival.jpg"); }
+    div#fans-content section.fans div.events div.item div.text.on {
+      visibility: visible; }
+    div#fans-content section.fans div.events div.item div.text.off {
+      visibility: hidden; }
+    div#fans-content section.fans div.talents div.item {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background-image: url("/assets/img/festival.jpg"); }
+    div#fans-content section.fans div.talents div.item div.text.on {
+      visibility: visible; }
+    div#fans-content section.fans div.talents div.item div.text.off {
+      visibility: hidden; }
     div#fans-content section.fans div#testimony-pictures {
       padding-bottom: 40px; }
       div#fans-content section.fans div#testimony-pictures img {
@@ -667,72 +692,70 @@ div#fans-content {
   div#fans-content div.people-party {
     background: url(/assets/img/bg-people-party.png) right bottom no-repeat #644b28; }
 
-div#musicians-content {
-  margin-top: -120px; }
-  div#musicians-content section.musicians {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px; }
-    div#musicians-content section.musicians div.featured a {
-      color: white;
-      text-decoration: none; }
-      div#musicians-content section.musicians div.featured a:hover {
-        color: #DB4D21;
-        text-decoration: none;
-        -moz-transition: color 0.3s;
-        -webkit-transition: color 0.3s;
-        transition: color 0.3s; }
-    div#musicians-content section.musicians div.featured div.featured-musician {
-      opacity: 0.6; }
-      div#musicians-content section.musicians div.featured div.featured-musician:hover {
+div#musicians-content section.musicians {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px; }
+  div#musicians-content section.musicians div.featured a {
+    color: white;
+    text-decoration: none; }
+    div#musicians-content section.musicians div.featured a:hover {
+      color: #DB4D21;
+      text-decoration: none;
+      -moz-transition: color 0.3s;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+  div#musicians-content section.musicians div.featured div.featured-musician {
+    opacity: 0.6; }
+    div#musicians-content section.musicians div.featured div.featured-musician:hover {
+      opacity: 1;
+      -moz-transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+  div#musicians-content section.musicians h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Jaden'; }
+  div#musicians-content section.musicians h3 {
+    text-transform: uppercase; }
+    div#musicians-content section.musicians h3:before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 5px;
+      left: 0px;
+      background-color: #DB4D21; }
+  div#musicians-content section.musicians div#testimony-pictures {
+    padding-bottom: 40px; }
+    div#musicians-content section.musicians div#testimony-pictures img {
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 75px;
+      opacity: 0.6;
+      -moz-transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      div#musicians-content section.musicians div#testimony-pictures img:hover {
+        cursor: pointer;
         opacity: 1;
         -moz-transition: opacity 0.3s;
         -webkit-transition: opacity 0.3s;
         transition: opacity 0.3s; }
-    div#musicians-content section.musicians h2 {
-      text-align: center;
-      text-transform: uppercase;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      font-family: "Jaden"; }
-    div#musicians-content section.musicians h3 {
-      text-transform: uppercase; }
-      div#musicians-content section.musicians h3:before {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 5px;
-        left: 0px;
-        background-color: #DB4D21; }
-    div#musicians-content section.musicians div#testimony-pictures {
-      padding-bottom: 40px; }
-      div#musicians-content section.musicians div#testimony-pictures img {
-        margin-left: 10px;
-        margin-right: 10px;
-        border-radius: 75px;
-        opacity: 0.6;
-        -moz-transition: opacity 0.3s;
-        -webkit-transition: opacity 0.3s;
-        transition: opacity 0.3s; }
-        div#musicians-content section.musicians div#testimony-pictures img:hover {
-          cursor: pointer;
-          opacity: 1;
-          -moz-transition: opacity 0.3s;
-          -webkit-transition: opacity 0.3s;
-          transition: opacity 0.3s; }
-    div#musicians-content section.musicians div#testimony-content p#text-2, div#musicians-content section.musicians div#testimony-content p#text-3 {
-      display: none; }
-    div#musicians-content section.musicians.find-apply h3 {
-      margin: 15px 25px 0px 25px;
-      padding-top: 20px;
-      border-top: 4pt solid #DB4D21; }
-      div#musicians-content section.musicians.find-apply h3:before {
-        content: none; }
-  div#musicians-content div.light {
-    background-color: #333333; }
-  div#musicians-content section.guitar-singer {
-    background: url("/assets/img/girl-guitar.png") right 100px no-repeat; }
+  div#musicians-content section.musicians div#testimony-content p#text-2, div#musicians-content section.musicians div#testimony-content p#text-3 {
+    display: none; }
+  div#musicians-content section.musicians.find-apply h3 {
+    margin: 15px 25px 0px 25px;
+    padding-top: 20px;
+    border-top: 4pt solid #DB4D21; }
+    div#musicians-content section.musicians.find-apply h3:before {
+      content: none; }
+div#musicians-content div.light {
+  background-color: #333333; }
+div#musicians-content section.guitar-singer {
+  background: url("/assets/img/girl-guitar.png") right 100px no-repeat; }
 
 div#misc-content {
   margin-bottom: -60px; }
@@ -769,30 +792,28 @@ div#misc-content {
   div#misc-content div.dark {
     background-color: #644b28; }
 
-div#promoters-content {
-  margin-top: -120px; }
-  div#promoters-content section.promoters {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px; }
-    div#promoters-content section.promoters h2 {
-      text-align: center;
-      text-transform: uppercase;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      font-family: "Jaden"; }
-    div#promoters-content section.promoters h3 {
-      text-transform: uppercase; }
-      div#promoters-content section.promoters h3:before {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 5px;
-        left: 0px;
-        background-color: #DB4D21; }
-  div#promoters-content div.light {
-    background-color: #333333; }
+div#promoters-content section.promoters {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px; }
+  div#promoters-content section.promoters h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Jaden"; }
+  div#promoters-content section.promoters h3 {
+    text-transform: uppercase; }
+    div#promoters-content section.promoters h3:before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 5px;
+      left: 0px;
+      background-color: #DB4D21; }
+div#promoters-content div.light {
+  background-color: #333333; }
 
 html {
   overflow-x: hidden; }

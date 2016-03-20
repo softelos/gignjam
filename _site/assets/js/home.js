@@ -4,6 +4,7 @@ $(function(){
 
 	// Start up
 	updateBanner();
+	updateExplorePictures();
 	checkNavSize($(window).width());
 
 	// When the main window changes size
@@ -12,6 +13,7 @@ $(function(){
 		$('div#minimenubox').hide();
 		// Update banner
 		updateBanner();
+		updateExplorePictures();
 		checkNavSize($(window).width());
 	});
 
@@ -32,17 +34,42 @@ $(function(){
 
 	// Set right size for banner
 	function updateBanner(){	
-		if(!$('div#banner').hasClass('misc')){
-			var vOffset=$('header').height()+150;
-			if(window.innerHeight>768) vOffset+=window.innerHeight-768;
-			$('div#banner').css('width',parseInt(window.innerWidth));
-			$('div#banner').css('height',parseInt(window.innerWidth/1.778)+vOffset); // Image used is 1366px x 768px (used to be 200)
-			$('div#banner div#text').css('padding-top',parseInt(window.innerHeight/2));
-		}else{
-			$('div#banner').css('width',parseInt(window.innerWidth));
-			$('div#banner').css('height',500);
-		}
+		var vOffset=$('header').height()+150;
+		if(window.innerHeight>768) vOffset+=window.innerHeight-768;
+		$('div#banner').css('width',parseInt(window.innerWidth));
+		$('div#banner').css('height',(parseInt(window.outerHeight)+vOffset)*0.5);
+		$('div#banner div#text').css('padding-top',(parseInt($('div#banner').outerHeight))/2);
 	}
+
+	function updateExplorePictures(){
+		$('div.explore div.item').each(function(){
+			var boxHeight=parseInt($(this).outerHeight());
+			var textHeight=parseInt($(this).find('p:first').outerHeight());
+			var padding=(boxHeight-textHeight)/2;
+			$(this).css('padding-top',padding);
+		});
+	}
+
+	// Fans, events
+	$('div.events div.item').on('mouseover',function(){
+		$(this).find('div.text:first').removeClass('off');
+		$(this).find('div.text:first').addClass('on');
+	});
+	$('div.events div.item').on('mouseleave',function(){
+		$(this).find('div.text:first').removeClass('on');
+		$(this).find('div.text:first').addClass('off');
+	});
+
+	// Fans, talents
+	$('div.talents div.item').on('mouseover',function(){
+		$(this).find('div.text:first').removeClass('off');
+		$(this).find('div.text:first').addClass('on');
+	});
+	$('div.talents div.item').on('mouseleave',function(){
+		$(this).find('div.text:first').removeClass('on');
+		$(this).find('div.text:first').addClass('off');
+	});
+
 
 	// Checks the nav width, if small, shows the small menu button
 	function checkNavSize(width){
