@@ -38,7 +38,7 @@ $(function(){
 		if(window.innerHeight>768) vOffset+=window.innerHeight-768;
 		$('div#banner').css('width',parseInt(window.innerWidth));
 		$('div#banner').css('height',(parseInt(window.outerHeight)+vOffset)*0.5);
-		$('div#banner div#text').css('padding-top',(parseInt($('div#banner').outerHeight))/2);
+		$('div#banner div#text').css('padding-top',(parseInt($('div#banner').innerHeight))/2);
 	}
 
 	function updateExplorePictures(){

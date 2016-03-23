@@ -7,8 +7,11 @@
 html, body {
   font-family: 'Work Sans', sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
+div#banner h1, div#banner h2, div#banner h3, div#banner h4, div#banner h5, div#banner h6 {
   color: white; }
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  color: #DB4D21; }
 
 h1 {
   font-size: 40px; }
@@ -256,7 +259,7 @@ div#banner {
       -webkit-transition: background-color 0.3s;
       transition: background-color 0.3s; }
   div#banner.home {
-    background: url("../img/banner-home-large.jpg") no-repeat center center;
+    background: url("../img/home-banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -291,13 +294,13 @@ div#banner {
     div#banner.home div#learn-more {
       margin-top: 20px; }
   div#banner.fans {
-    background: url("../img/banner-fans-large.jpg") no-repeat center center;
+    background: url("../img/fans-banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
   div#banner.musicians {
-    background: url("../img/banner-musicians-large.jpg") no-repeat center center;
+    background: url("../img/musician-banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -307,7 +310,7 @@ div#banner {
     div#banner.musicians #subtitle {
       font-size: 40px; }
   div#banner.promoters {
-    background: url("../img/banner-promoters-large.jpg") no-repeat center center;
+    background: url("../img/venue-banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -326,25 +329,18 @@ div#banner {
 footer {
   width: 100%;
   font-family: 'Work Sans', sans-serif;
-  color: #ffffff; }
+  color: black;
+  background-color: #CEC8B2; }
   @media (max-width: 599px) {
     footer {
       height: 600px;
       padding-top: 80px;
       padding-left: 20px;
-      padding-right: 20px; }
-      footer.light {
-        background: url("../img/footer-mobile-background.jpg") no-repeat center center; }
-      footer.dark {
-        background: url("../img/footer-mobile-background-dark.jpg") no-repeat center center; } }
+      padding-right: 20px; } }
   @media (min-width: 600px) {
     footer {
       height: 390px;
-      padding: 70px 80px 30px 80px; }
-      footer.light {
-        background: url("../img/footer-background.jpg") no-repeat center center; }
-      footer.dark {
-        background: url("../img/footer-background-dark.jpg") no-repeat center center; } }
+      padding: 70px 80px 30px 80px; } }
   footer h3.title {
     text-transform: uppercase;
     position: relative; }
@@ -358,7 +354,7 @@ footer {
   footer a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff; }
+    color: black; }
     footer a:hover {
       color: #DB4D21;
       text-decoration: none;
@@ -383,11 +379,12 @@ footer {
     footer div#info h3 sup {
       font-weight: 300; }
   footer div#info p#trademark {
+    color: black;
     font-weight: 300; }
   footer div#info p#powered {
     font-weight: 300;
     margin-top: 30px;
-    color: #666666; }
+    color: black; }
     footer div#info p#powered a {
       text-transform: none; }
   footer div.social ul li {
@@ -454,7 +451,7 @@ div#go-up-arrow {
   padding-right: 50px; }
   div#go-up-arrow .fa {
     font-size: 50px;
-    color: white; }
+    color: black; }
     div#go-up-arrow .fa:hover {
       color: #DB4D21;
       -moz-transition: color 0.3s;
@@ -464,10 +461,8 @@ div#go-up-arrow {
 section.hex {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 0px;
   margin-top: 20px;
-  margin-bottom: -60px;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
   section.hex div.row {
     width: 1000px;
     margin-left: auto;
@@ -475,6 +470,16 @@ section.hex {
   section.hex div#hex-first div.col-sm-12 {
     margin-bottom: -70px; }
 
+div#home section.full {
+  background-color: #DB4D21;
+  width: 100% !important;
+  padding-bottom: 0px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important; }
+  div#home section.full h2 {
+    color: white;
+    padding-bottom: 0px !important;
+    margin-bottom: 20px !important; }
 div#home section.home {
   width: 1000px;
   margin-left: auto;
@@ -504,8 +509,7 @@ div#home section.home {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 30px;
-    font-family: 'Jaden';
-    text-shadow: 1px 1px  black; }
+    font-family: 'Jaden'; }
   div#home section.home h3 {
     text-transform: uppercase; }
     div#home section.home h3:before {
@@ -536,15 +540,38 @@ div#home section.home {
       background-color: white; }
     div#home section.home div.home-tools div.text {
       color: white; }
-  div#home section.home div.explore div.item {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    background-image: url(/assets/img/festival.jpg);
-    color: white; }
-    div#home section.home div.explore div.item p {
-      font-size: 20px;
-      font-weight: 500; }
+  div#home section.home div.explore {
+    padding-bottom: 5px; }
+    div#home section.home div.explore div.item {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #DB4D21;
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: multiply; }
+      div#home section.home div.explore div.item:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: background-color 0.2s; }
+      div#home section.home div.explore div.item.festivals {
+        background-image: url(/assets/img/home-festivals.jpg); }
+      div#home section.home div.explore div.item.concerts {
+        background-image: url(/assets/img/home-concerts.jpg); }
+      div#home section.home div.explore div.item.college-music {
+        background-image: url(/assets/img/home-college-music.jpg); }
+      div#home section.home div.explore div.item.gigs {
+        background-image: url(/assets/img/home-gigs.jpg); }
+      div#home section.home div.explore div.item.indie {
+        background-image: url(/assets/img/home-indie.jpg); }
+      div#home section.home div.explore div.item.pop {
+        background-image: url(/assets/img/home-pop.jpg); }
+      div#home section.home div.explore div.item.country {
+        background-image: url(/assets/img/home-country.jpg); }
+      div#home section.home div.explore div.item.alternative {
+        background-image: url(/assets/img/home-alternative.jpg); }
+      div#home section.home div.explore div.item p {
+        font-size: 20px;
+        font-weight: 500; }
 
 div#fans, div#musicians, div#howitworks, div#promoters, div#events {
   width: 280px;
@@ -605,28 +632,18 @@ div.button {
       transition: background-color 0.3s; }
 
 div#fans div.front {
-  background: url(../img/hex_fans-white.png) center center no-repeat; }
+  background: url(../img/hex-fans.png) center center no-repeat; }
 div#fans div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
 div#musicians div.front {
-  background: url(../img/hex_musicians-white.png) center center no-repeat; }
+  background: url(../img/hex-musician.png) center center no-repeat; }
 div#musicians div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
-div#howitworks div.front {
-  background: url(../img/hex_how_it_works.png) center center no-repeat; }
-div#howitworks div.back {
-  background: url(../img/hex_black.png) center center no-repeat; }
-
 div#promoters div.front {
-  background: url(../img/hex_promoters-white.png) center center no-repeat; }
+  background: url(../img/hex-venue.png) center center no-repeat; }
 div#promoters div.back {
-  background: url(../img/hex_black.png) center center no-repeat; }
-
-div#events div.front {
-  background: url(../img/hex_events.png) center center no-repeat; }
-div#events div.back {
   background: url(../img/hex_black.png) center center no-repeat; }
 
 div#fans-content {
@@ -818,11 +835,9 @@ div#promoters-content div.light {
 html {
   overflow-x: hidden; }
 
-body.home, body.fans, body.promoters, body.misc {
-  background-color: #89664A; }
-
-body.musicians {
-  background-color: #000000; }
+body.home, body.fans, body.musicians, body.promoters, body.misc {
+  background-color: #eeeeee;
+  background-image: url(/assets/img/background-pattern.png); }
 
 p.subtitle {
   text-align: center;

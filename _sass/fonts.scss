@@ -18,13 +18,27 @@ $h1-font-size: 40px;
 $h2-font-size: 24px;
 $h3-font-size: 15px;
 
+$orange:#DB4D21;
+
 
 html,body{
 	font-family: 'Work Sans', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
-	color:white;
+
+div#banner{
+  h1,h2,h3,h4,h5,h6{
+  	color:white;
+  }
 }
+
+section{
+  h1,h2,h3,h4,h5,h6{
+    color:$orange;
+  }
+
+}
+
+
 h1 {font-size: $h1-font-size;}
 h2 {font-size: $h2-font-size;}
 h3 {font-size: $h3-font-size;}

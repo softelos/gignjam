@@ -4,34 +4,19 @@ $footer-height-xs: 600px;
 footer{
 	width: 100%;
 	font-family: 'Work Sans', sans-serif;
-	color: $menu-text-color;
+	color: black;
+	background-color: #CEC8B2;
 
 	@media (max-width: $screen-xs-max){
 		height: $footer-height-xs;
 		padding-top: 80px;
 		padding-left: 20px;
 		padding-right: 20px;
-
-		&.light{
-			background:url('../img/footer-mobile-background.jpg') no-repeat center center;
-		}
-		&.dark{
-			background:url('../img/footer-mobile-background-dark.jpg') no-repeat center center;
-		}
-
 	}
 
 	@media (min-width: $screen-sm-min){
 		height: $footer-height;
 		padding: 70px 80px 30px 80px;
-
-		&.light{
-			background:url('../img/footer-background.jpg') no-repeat center center;
-		}
-		&.dark{
-			background:url('../img/footer-background-dark.jpg') no-repeat center center;
-		}
-
 	}
 
 	h3.title{
@@ -51,7 +36,7 @@ footer{
 	a{
 		text-transform: uppercase;
 		text-decoration: none;
-		color:$menu-text-color;
+		color:black;
 
 		&:hover{
 			color:$menu-link-color;
@@ -94,13 +79,14 @@ footer{
 		}
 
 		p#trademark{
+			color:black;
 			font-weight: $font-light;
 		}
 
 		p#powered{
 			font-weight: $font-light;
 			margin-top: 30px;
-			color:#666666;
+			color:black;
 
 			a{
 				text-transform: none;
@@ -209,7 +195,7 @@ div#go-up-arrow{
 
 	.fa{
 		font-size: 50px;
-		color:white;
+		color:black;
 
 		&:hover{
 			color:$menu-link-color;

@@ -4,10 +4,8 @@ $h2-border-color:#75573E;
 section.hex{
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top:0px;
 	margin-top: 20px;
-	margin-bottom: -60px; // Required when using a sencond row
-	margin-bottom: 40px;
+	margin-bottom:20px;
 
 	div.row{
 		width: 1000px;
@@ -22,6 +20,20 @@ section.hex{
 }
 
 div#home{
+
+	section.full{
+		background-color:$orange;
+		width: 100% !important;
+		padding-bottom: 0px !important;
+		margin-top:20px !important;
+		margin-bottom:20px !important;
+
+		h2{
+			color:white;
+			padding-bottom: 0px !important;
+			margin-bottom:20px !important;
+		}
+	}
 
 	section.home{
 		
@@ -69,7 +81,6 @@ div#home{
 			text-transform: uppercase;
 			padding-bottom: 30px;
 			font-family: 'Jaden';
-			text-shadow:1px 1px  black;
 		}
 		h3{
 			text-transform: uppercase;
@@ -118,12 +129,47 @@ div#home{
 
 
 		div.explore{
+
+			padding-bottom: 5px;
+
 			div.item{
 				width: 200px;
 				height: 200px;
 				display:inline-block;
-				background-image: url(/assets/img/festival.jpg);
-				color:white;
+				text-transform: uppercase;
+				color:$menu-link-color;
+				background-color: rgba(0,0,0,.6);
+  				background-blend-mode: multiply;
+
+  				&:hover{
+  					background-color:rgba(0,0,0,.3);
+  					transition: background-color 0.2s;
+  				}
+
+				&.festivals{
+					background-image: url(/assets/img/home-festivals.jpg);
+				}
+				&.concerts{
+					background-image: url(/assets/img/home-concerts.jpg);
+				}
+				&.college-music{
+					background-image: url(/assets/img/home-college-music.jpg);
+				}
+				&.gigs{
+					background-image: url(/assets/img/home-gigs.jpg);
+				}
+				&.indie{
+					background-image: url(/assets/img/home-indie.jpg);
+				}
+				&.pop{
+					background-image: url(/assets/img/home-pop.jpg);
+				}
+				&.country{
+					background-image: url(/assets/img/home-country.jpg);
+				}
+				&.alternative{
+					background-image: url(/assets/img/home-alternative.jpg);
+				}
 
 				p{
 					font-size: 20px;
@@ -142,10 +188,6 @@ div#home{
 div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 	width: 280px;
 	height: 324px;
-
-	//width: 180px;
-	//height: 224px;
-
 	margin-right: 5px;
 	margin-left: 5px;
 	display: inline-block;
@@ -227,7 +269,7 @@ div.button{
 
 div#fans{
 	div.front{
-		background: url(../img/hex_fans-white.png) center center no-repeat;
+		background: url(../img/hex-fans.png) center center no-repeat;
 	}
 	div.back{
 		background: url(../img/hex_black.png) center center no-repeat;
@@ -236,16 +278,7 @@ div#fans{
 
 div#musicians{
 	div.front{
-		background: url(../img/hex_musicians-white.png) center center no-repeat;
-	}
-	div.back{
-		background: url(../img/hex_black.png) center center no-repeat;
-	}
-}
-div#howitworks{
-
-	div.front{
-		background: url(../img/hex_how_it_works.png) center center no-repeat;
+		background: url(../img/hex-musician.png) center center no-repeat;
 	}
 	div.back{
 		background: url(../img/hex_black.png) center center no-repeat;
@@ -253,15 +286,7 @@ div#howitworks{
 }
 div#promoters{
 	div.front{
-		background: url(../img/hex_promoters-white.png) center center no-repeat;
-	}
-	div.back{
-		background: url(../img/hex_black.png) center center no-repeat;
-	}
-}
-div#events{
-	div.front{
-		background: url(../img/hex_events.png) center center no-repeat;
+		background: url(../img/hex-venue.png) center center no-repeat;
 	}
 	div.back{
 		background: url(../img/hex_black.png) center center no-repeat;
