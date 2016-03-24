@@ -38,7 +38,13 @@ $(function(){
 		if(window.innerHeight>768) vOffset+=window.innerHeight-768;
 		$('div#banner').css('width',parseInt(window.innerWidth));
 		$('div#banner').css('height',(parseInt(window.outerHeight)+vOffset)*0.5);
-		$('div#banner div#text').css('padding-top',(parseInt($('div#banner').innerHeight))/2);
+
+		var textHeight=parseInt($('div#banner div#text').innerHeight())-parseInt($('div#banner div#text').css('padding-top'))-parseInt($('div#banner div#text').css('padding-bottom')),
+			bannerHeight=parseInt($('div#banner').innerHeight());
+
+		$('div#banner div#text').css('padding-top',(bannerHeight/2)-(textHeight/2));
+
+		console.log('Banner: %s Tex:%s',bannerHeight,textHeight);
 	}
 
 	function updateExplorePictures(){

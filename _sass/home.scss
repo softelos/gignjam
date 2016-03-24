@@ -21,20 +21,6 @@ section.hex{
 
 div#home{
 
-	section.full{
-		background-color:$orange;
-		width: 100% !important;
-		padding-bottom: 0px !important;
-		margin-top:20px !important;
-		margin-bottom:20px !important;
-
-		h2{
-			color:white;
-			padding-bottom: 0px !important;
-			margin-bottom:20px !important;
-		}
-	}
-
 	section.home{
 		
 		width: 1000px;
@@ -50,8 +36,6 @@ div#home{
 			padding-bottom: 40px;
 
 			img{
-				margin-left: 10px;
-				margin-right: 10px;
 				border-radius: 75px;
 				opacity: 0.6;
 				-moz-transition:opacity 0.3s;
@@ -98,16 +82,7 @@ div#home{
 			margin-top: 0px;
 			color:#bbbbbb;
 		}
-
-		div#testimony-pictures{
-			padding-bottom: 40px;
-
-			img{
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-		}
-		
+	
 		div.home-tools{
 
 			padding-bottom: 30px;
@@ -137,13 +112,16 @@ div#home{
 				height: 200px;
 				display:inline-block;
 				text-transform: uppercase;
-				color:$menu-link-color;
 				background-color: rgba(0,0,0,.6);
   				background-blend-mode: multiply;
 
   				&:hover{
   					background-color:rgba(0,0,0,.3);
   					transition: background-color 0.2s;
+
+  					p{
+  						color:white;
+  					}
   				}
 
 				&.festivals{
@@ -174,6 +152,7 @@ div#home{
 				p{
 					font-size: 20px;
 					font-weight: $font-medium;
+					color:$color-light-gray;
 				}
 
 			}
@@ -181,11 +160,59 @@ div#home{
 
 
 	}
+	
+	section.full{
+		background-color: white;
+		padding-bottom: 30px;
+		margin-top:20px;
+		margin-bottom:0px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+		h2{
+			color:$orange;
+			padding-bottom: 0px;
+			margin-top: 40px;
+			margin-bottom:40px;
+		}
+	}
+
+	section.ready-to-explore{
+		width: 100%;
+		background-image: url(/assets/img/readytoexplore.jpg);
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;	
+
+  		h2{
+  			color:white;
+  			padding-top: 25px;
+  			padding-bottom: 0px;
+  			margin-bottom: 0px;
+  		}
+
+  		div.button a{
+  			background-color: transparent;
+  			color:white;
+  			border: 1pt solid white;
+  			font-size:22px;
+  		}
+
+	}
+
+	section.testimonial{
+		background-color: white;
+		
+		p{
+			font-size: 16px;
+		}
+	}
 
 }
 
 
-div#fans,div#musicians,div#howitworks,div#promoters,div#events{
+div#fans,div#musicians,div#promoters{
 	width: 280px;
 	height: 324px;
 	margin-right: 5px;
@@ -207,29 +234,16 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 		transition: opacity 0.3s;
 	}
 
-	div.title{
-		padding-top: 210px;
-		font-size: 20px;
-		font-family: 'Jaden';
-		color:$brown;
-		text-align: center;
-	}
-
-	
-
-	div.front{
-		height: 100%;
-	}
 	div.back{
 		position: relative;
 		height: 100%;
 
 		div.text{
-			margin-top: 70px;
+			margin-top: 50px;
 			padding-left:5px;
 			padding-right:5px;
 			height: 150px;
-			color:#ffffff;
+			color:$color-light-gray;
 
 			h3{
 				font-size:24px;
@@ -242,6 +256,8 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 			ul{
 				text-align: left;
 				font-weight: $font-light;
+				font-size: 16px;
+				color:white;
 			}
 		}
 
@@ -249,14 +265,14 @@ div#fans,div#musicians,div#howitworks,div#promoters,div#events{
 }
 
 div.button{
- 	padding-top: 20px;
+ 	padding-top: 40px;
 	text-align: center;
 	a{
-		background-color: $menu-link-color;
+		background-color: $orange;
 		color:#ffffff;
-		border: 1pt solid #ffffff;
 		padding: 10px 20px 10px 20px;
 		text-decoration: none;
+		text-transform: uppercase;
 
 		&:hover{
 			background-color:$menu-link-color-light;

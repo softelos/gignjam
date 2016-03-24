@@ -1,72 +1,49 @@
 $banner-minimum-height:50px;
+$title-font-size:62px;
+$subtitle-font-size:48px;
+$button-font-size:22px;
+
 
 div#banner{
 	position: relative;
-	
 	width:50px;
 	height:$banner-minimum-height;
 	
 	div#text{
-		width: 800px;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 300px;
 		text-align: center;
 
-		#subtitle{
-			margin-bottom: 20px;
-		}
-
 		#title,#subtitle{
 			font-family: 'Jaden';
 			text-shadow: 2px 2px black;
 		}
-	}
-
-	div#go-down{
-		padding-top: 20px;
-		a{
-			font-size: 40px;
-			color:white;
-			text-decoration: none;
-			text-shadow: 1px 1px black;
-
-			&:hover{
-				color:$menu-link-color;
-				-moz-transition: color 0.3s;
-				-webkit-transition: color 0.3s;
-				transition: color 0.3s;
-			};
+		#title{
+			font-size: $title-font-size;
+			margin-bottom: 30px;
 		}
+		#subtitle{
+			margin-bottom: 20px;
+			font-size:$subtitle-font-size;
+		}
+
 	}
 	
+	a#signup{		
 
-	a#signup{
-
+		font-family: 'Jaden';
+		letter-spacing: 2px;
 		color:white;
-		padding: 5px 15px 5px 15px;
+		padding: 25px 25px 25px 25px;
 		text-decoration: none;
-		font-size: $h3-font-size;
-		border:1pt solid white;
-
-		&.black{
-			background-color: $menu-link-color;
-
-			&:hover{
-				background-color: #333333;
-			}
-		}
-
-		&.orange{
-			background-color: $menu-link-color;
-
-			&:hover{
-				background-color: $menu-link-color-light;
-			}
-
-		}
+		font-size: $button-font-size;
+		border:none;
+		background-color: $color-orange;
 
 		&:hover{
+			background-color: $color-dark-orange;
 			-moz-transition: background-color 0.3s;
 			-webkit-transition: background-color 0.3s;
 			transition: background-color 0.3s;
@@ -79,52 +56,6 @@ div#banner{
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;	
-		
-		#title{
-  			font-size: $h2-font-size;
-  		}
-  		#subtitle{
-  			font-size: $h1-font-size;
-  		}		
-
-  		div.banner-options{
-  			width: 1000px;
-  			margin-top: 50px;
-  			margin-left: auto;
-  			margin-right: auto;
-
-  			div.option-box{
-  				position: relative;
-  				color:white;
-  				background-color: rgba(0,0,0,0.7);
-  				border:1pt solid $menu-link-color;
-  				width: 300px;
-  				height: 300px;
-  				margin-left: 10px;
-  				margin-right: 10px;
-
-  				h3{
-  					color:$menu-link-color;
-  					text-align: center;
-  					font-size:$h2-font-size;
-  				}
-
-  				ul{
-
-  					li{
-  						font-weight: 300;
-  						font-size: $h3-font-size;
-  					}
-  				}
-				div.content{
-					height: 200px;
-				}
-  			}
-  		}
-
-  		div#learn-more{
-  			margin-top: 20px;
-  		}
   	}
 
   	&.fans{

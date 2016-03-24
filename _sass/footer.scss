@@ -5,18 +5,18 @@ footer{
 	width: 100%;
 	font-family: 'Work Sans', sans-serif;
 	color: black;
-	background-color: #CEC8B2;
+	background-color:#4FA3A3;
 
 	@media (max-width: $screen-xs-max){
 		height: $footer-height-xs;
-		padding-top: 80px;
+		padding-top: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 
 	@media (min-width: $screen-sm-min){
 		height: $footer-height;
-		padding: 70px 80px 30px 80px;
+		padding: 20px 80px 30px 80px;
 	}
 
 	h3.title{
