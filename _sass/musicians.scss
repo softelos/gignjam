@@ -1,11 +1,17 @@
 div#musicians-content{
 
+	margin-top:20px;
+	
 	section.musicians{
 
 		width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 50px;
+
+		&.white{
+			background-color:white;
+		}
 
 		div.featured{
 			a{
@@ -97,6 +103,47 @@ div#musicians-content{
 		}
 		
 	}
+
+	section.full{
+		background-color: white;
+		padding-bottom: 30px;
+		margin-top:20px;
+		margin-bottom:0px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+		h2{
+			color:$orange;
+			padding-bottom: 0px;
+			margin-top: 40px;
+			margin-bottom:40px;
+		}
+	}
+
+	section.increase-tickets{
+		width: 100%;
+		background-image: url(/assets/img/readytoexplore.jpg);
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;	
+
+  		h2{
+  			color:white;
+  			padding-top: 25px;
+  			padding-bottom: 0px;
+  			margin-bottom: 0px;
+  		}
+
+  		div.button a{
+  			background-color: transparent;
+  			color:white;
+  			border: 1pt solid white;
+  			font-size:22px;
+  		}
+
+	}
+
 	div.light{
 		background-color: $light-black;
 	}
@@ -105,5 +152,5 @@ div#musicians-content{
 		background: url('/assets/img/girl-guitar.png') right 100px no-repeat;
 	}
 
-
+	
 }

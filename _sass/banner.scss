@@ -1,7 +1,7 @@
 $banner-minimum-height:50px;
-$title-font-size:62px;
+$title-font-size:42px;
 $subtitle-font-size:48px;
-$button-font-size:22px;
+$button-font-size:18px;
 
 
 div#banner{
@@ -33,14 +33,15 @@ div#banner{
 	
 	a#signup{		
 
-		font-family: 'Jaden';
+		font-family: 'Work Sans', sans-serif;
 		letter-spacing: 2px;
 		color:white;
-		padding: 25px 25px 25px 25px;
+		padding: 15px 15px 15px 15px;
 		text-decoration: none;
 		font-size: $button-font-size;
 		border:none;
 		background-color: $color-orange;
+		display:inline-block;
 
 		&:hover{
 			background-color: $color-dark-orange;
@@ -64,6 +65,14 @@ div#banner{
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;	  		
+
+  		a#signup{
+  			width: 15em !important;
+
+  			&.last{
+  				margin-left: 30px;
+  			}
+  		}
   	}
 
 	&.musicians{
@@ -72,12 +81,13 @@ div#banner{
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;	
-  		
-  		#title{
-  			font-size: $h2-font-size;
-  		}
-  		#subtitle{
-  			font-size: $h1-font-size;
+
+  		a#signup{
+  			width: 15em !important;
+
+  			&.last{
+  				margin-left: 30px;
+  			}
   		}
   	}
 

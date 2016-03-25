@@ -1,6 +1,5 @@
 div#fans-content{
 	margin-top:20px;
-	margin-bottom: -60px;
 
 	section.fans{
 
@@ -8,6 +7,10 @@ div#fans-content{
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 50px;
+
+		&.white{
+			background-color: white;
+		}
 
 		h2{
 			text-align: center;
@@ -17,15 +20,41 @@ div#fans-content{
 		}
 		h3{
 			text-transform: uppercase;
-			
-			&:before{
-				content:'';
-				position: absolute;
-				height: $h3-font-size;
-				width:5px;
-				left:0px;
-				background-color: $menu-link-color;
+			text-align: center;
+			color:#555555;
+			font-size: 16px;
+		}
+
+		div.icon{
+
+			width: 73px;
+			height: 73px;
+			display: inline-block;
+
+			&.create-events{
+				background-image: url('/assets/img/icon-create-events.png');
 			}
+
+			&.book-music{
+				background-image: url('/assets/img/icon-book-music.png');
+			}
+
+			&.playlists{
+				background-image: url('/assets/img/icon-playlists.png');
+			}
+
+			&.rave-rant{
+				background-image: url('/assets/img/icon-rave-rant.png');
+			}
+
+			&.track{
+				background-image: url('/assets/img/icon-track.png');
+			}
+
+			&.directory{
+				background-image: url('/assets/img/icon-directory.png');
+			}
+
 		}
 
 		div.events{
@@ -101,6 +130,13 @@ div#fans-content{
 				display: none;
 			}
 		}
+
+		div.button a{
+  			background-color: transparent;
+  			color:#555555;
+  			border: 1pt solid #555555;
+  			font-size:22px;
+  		}
 		
 	}
 
@@ -110,6 +146,46 @@ div#fans-content{
 
 	div.people-party{
 		background: url(/assets/img/bg-people-party.png) right bottom no-repeat $dark-brown;
+	}
+
+	section.full{
+		background-color: white;
+		padding-bottom: 30px;
+		margin-top:20px;
+		margin-bottom:0px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+		h2{
+			color:$orange;
+			padding-bottom: 0px;
+			margin-top: 40px;
+			margin-bottom:40px;
+		}
+	}
+
+	section.ready-to-explore{
+		width: 100%;
+		background-image: url(/assets/img/readytoexplore.jpg);
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;	
+
+  		h2{
+  			color:white;
+  			padding-top: 25px;
+  			padding-bottom: 0px;
+  			margin-bottom: 0px;
+  		}
+
+  		div.button a{
+  			background-color: transparent;
+  			color:white;
+  			border: 1pt solid white;
+  			font-size:22px;
+  		}
+
 	}
 
 }

@@ -56,23 +56,3 @@ p{
 		font-size: $h2-font-size;
 	}
 }
-
-div.photo-icons{
-	
-	i.fa{
-		font-size: 30px;
-		color:$brown;
-		padding:20px;		
-		border:1pt solid black;
-		border-color:white;
-		border-radius: 35px;
-		background-color: white;
-	}
-
-	&.black{
-
-		i.fa{
-			color:black;
-		}
-	}
-}
