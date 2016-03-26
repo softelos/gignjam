@@ -97,11 +97,18 @@ div#banner{
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;	
+		
+		a#signup{
+  			width: 15em !important;
 
+  			&.last{
+  				margin-left: 30px;
+  			}
+  		}
   	}
 	
 	&.misc{
-  		background-image:url('../img/banner-misc-large.jpg');
+  		background-image:url('../img/banner-misc.jpg');
   		-webkit-background-size: cover;
   		-moz-background-size: cover;
   		-o-background-size: cover;

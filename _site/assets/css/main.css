@@ -5,7 +5,7 @@
   src: url("../fonts/Jaden.eot?#iefix") format("embedded-opentype"), url("../fonts/Jaden.woff2") format("woff2"), url("../fonts/Jaden.woff") format("woff"), url("../fonts/Jaden.ttf") format("truetype"), url("../fonts/Jaden.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 html, body {
-  font-family: 'Work Sans', sans-serif; }
+  font-family: 'Arial', sans-serif; }
 
 div#banner h1, div#banner h2, div#banner h3, div#banner h4, div#banner h5, div#banner h6 {
   color: white; }
@@ -23,8 +23,9 @@ h3 {
   font-size: 15px; }
 
 p, ul {
-  color: #000000;
-  font-weight: 300; }
+  color: #666666;
+  font-weight: 300;
+  font-size: 16px; }
 
 p.subtitle {
   color: #bbbbbb; }
@@ -279,8 +280,12 @@ div#banner {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
+    div#banner.promoters a#signup {
+      width: 15em !important; }
+      div#banner.promoters a#signup.last {
+        margin-left: 30px; }
   div#banner.misc {
-    background-image: url("../img/banner-misc-large.jpg");
+    background-image: url("../img/banner-misc.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -293,8 +298,9 @@ div#banner {
 footer {
   width: 100%;
   font-family: 'Work Sans', sans-serif;
-  color: black;
-  background-color: #4FA3A3; }
+  color: white;
+  background-color: #4FA3A3;
+  background-color: #0855B2; }
   @media (max-width: 599px) {
     footer {
       height: 600px;
@@ -318,7 +324,7 @@ footer {
   footer a {
     text-transform: uppercase;
     text-decoration: none;
-    color: black; }
+    color: white; }
     footer a:hover {
       color: #DB4D21;
       text-decoration: none;
@@ -326,9 +332,9 @@ footer {
       -webkit-transition: color 0.3s;
       transition: color 0.3s; }
     footer a#email {
-      color: #DB4D21; }
+      color: white; }
       footer a#email:hover {
-        color: #ff3d00;
+        color: #DB4D21;
         -moz-transition: color 0.3s;
         -webkit-transition: color 0.3s;
         transition: color 0.3s; }
@@ -343,12 +349,12 @@ footer {
     footer div#info h3 sup {
       font-weight: 300; }
   footer div#info p#trademark {
-    color: black;
+    color: white;
     font-weight: 300; }
   footer div#info p#powered {
     font-weight: 300;
     margin-top: 30px;
-    color: black; }
+    color: white; }
     footer div#info p#powered a {
       text-transform: none; }
   footer div.social ul li {
@@ -425,17 +431,15 @@ div#go-up-arrow {
 section.hex {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: -30px; }
   section.hex div.row {
-    width: 1000px;
     margin-left: auto;
     margin-right: auto; }
   section.hex div#hex-first div.col-sm-12 {
     margin-bottom: -70px; }
 
 div#home section.home {
-  width: 1000px;
+  width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px; }
@@ -556,8 +560,8 @@ div#home section.testimonial {
     font-size: 16px; }
 
 div#fans, div#musicians, div#promoters {
-  width: 280px;
-  height: 324px;
+  width: 300px;
+  height: 347px;
   margin-right: 5px;
   margin-left: 5px;
   display: inline-block; }
@@ -575,10 +579,10 @@ div#fans, div#musicians, div#promoters {
     position: relative;
     height: 100%; }
     div#fans div.back div.text, div#musicians div.back div.text, div#promoters div.back div.text {
-      margin-top: 50px;
+      margin-top: 60px;
       padding-left: 5px;
       padding-right: 5px;
-      height: 150px;
+      height: 160px;
       color: #B3B3B3; }
       div#fans div.back div.text h3, div#musicians div.back div.text h3, div#promoters div.back div.text h3 {
         font-size: 24px;
@@ -591,6 +595,11 @@ div#fans, div#musicians, div#promoters {
         font-weight: 300;
         font-size: 16px;
         color: white; }
+    div#fans div.back div.button a, div#musicians div.back div.button a, div#promoters div.back div.button a {
+      background-color: white;
+      color: #0855B2; }
+      div#fans div.back div.button a:hover, div#musicians div.back div.button a:hover, div#promoters div.back div.button a:hover {
+        background-color: #DB4D21; }
 
 div.button {
   padding-top: 40px;
@@ -741,6 +750,30 @@ div#musicians-content {
     padding-bottom: 50px; }
     div#musicians-content section.musicians.white {
       background-color: white; }
+    div#musicians-content section.musicians div.icon {
+      width: 73px;
+      height: 73px;
+      display: inline-block; }
+      div#musicians-content section.musicians div.icon.get-noticed {
+        background-image: url("/assets/img/icon-get-noticed.png"); }
+      div#musicians-content section.musicians div.icon.connect {
+        background-image: url("/assets/img/icon-connect.png"); }
+      div#musicians-content section.musicians div.icon.promote {
+        background-image: url("/assets/img/icon-promote.png"); }
+      div#musicians-content section.musicians div.icon.be-heard {
+        background-image: url("/assets/img/icon-be-heard.png"); }
+    div#musicians-content section.musicians div.steps div {
+      width: 73px;
+      height: 73px;
+      display: inline-block; }
+    div#musicians-content section.musicians div.steps div.find-gig {
+      background-image: url("/assets/img/icon-drums.png"); }
+    div#musicians-content section.musicians div.steps div.apply-online {
+      background-image: url("/assets/img/icon-envelope.png"); }
+    div#musicians-content section.musicians div.steps div.add-gig {
+      background-image: url("/assets/img/icon-ipod.png"); }
+    div#musicians-content section.musicians div.steps div.share-invite {
+      background-image: url("/assets/img/icon-headphone.png"); }
     div#musicians-content section.musicians div.featured a {
       color: white;
       text-decoration: none; }
@@ -764,14 +797,9 @@ div#musicians-content {
       padding-bottom: 20px;
       font-family: 'Jaden'; }
     div#musicians-content section.musicians h3 {
-      text-transform: uppercase; }
-      div#musicians-content section.musicians h3:before {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 5px;
-        left: 0px;
-        background-color: #DB4D21; }
+      text-transform: uppercase;
+      color: #555555;
+      font-size: 16px; }
     div#musicians-content section.musicians div#testimony-pictures {
       padding-bottom: 40px; }
       div#musicians-content section.musicians div#testimony-pictures img {
@@ -830,40 +858,59 @@ div#musicians-content {
   div#musicians-content section.guitar-singer {
     background: url("/assets/img/girl-guitar.png") right 100px no-repeat; }
 
-div#misc-content {
-  margin-bottom: -60px; }
-  div#misc-content section.misc {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px; }
-    div#misc-content section.misc a {
-      color: white;
-      text-decoration: none; }
-      div#misc-content section.misc a:hover {
-        color: #aaaaaa;
-        text-decoration: none;
-        -moz-transition: color 0.3s;
-        -webkit-transition: color 0.3s;
-        transition: color 0.3s; }
-    div#misc-content section.misc h2 {
-      text-align: center;
-      text-transform: uppercase;
-      padding-bottom: 20px;
-      font-family: 'Jaden';
-      border-bottom: 1pt solid #75573E;
-      text-shadow: 1px 1px  black; }
-    div#misc-content section.misc h3 {
-      text-transform: uppercase; }
-      div#misc-content section.misc h3:before {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 5px;
-        left: 0px;
-        background-color: #DB4D21; }
-  div#misc-content div.dark {
-    background-color: #644b28; }
+div#misc-content section.misc {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px; }
+  div#misc-content section.misc a {
+    color: white;
+    text-decoration: none; }
+    div#misc-content section.misc a:hover {
+      color: #aaaaaa;
+      text-decoration: none;
+      -moz-transition: color 0.3s;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+  div#misc-content section.misc h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Jaden';
+    text-shadow: 1px 1px  black; }
+  div#misc-content section.misc h3 {
+    text-transform: uppercase; }
+div#misc-content div.dark {
+  background-color: #644b28; }
+div#misc-content section.full {
+  background-color: white;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+  div#misc-content section.full h2 {
+    color: #DB4D21;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+div#misc-content section.ready-to-join {
+  width: 100%;
+  background-image: url(/assets/img/readytoexplore.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  div#misc-content section.ready-to-join h2 {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  div#misc-content section.ready-to-join div.button a {
+    background-color: transparent;
+    color: white;
+    border: 1pt solid white;
+    font-size: 22px; }
 
 div#promoters-content section.promoters {
   width: 1000px;
@@ -875,18 +922,54 @@ div#promoters-content section.promoters {
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: "Jaden"; }
+    font-family: 'Jaden'; }
   div#promoters-content section.promoters h3 {
-    text-transform: uppercase; }
-    div#promoters-content section.promoters h3:before {
-      content: '';
-      position: absolute;
-      height: 15px;
-      width: 5px;
-      left: 0px;
-      background-color: #DB4D21; }
+    text-transform: uppercase;
+    text-align: center;
+    color: #666666; }
+  div#promoters-content section.promoters div.icon {
+    width: 73px;
+    height: 73px;
+    display: inline-block; }
+    div#promoters-content section.promoters div.icon.publish-event {
+      background-image: url("/assets/img/icon-publish-event.png"); }
+    div#promoters-content section.promoters div.icon.post-gigs {
+      background-image: url("/assets/img/icon-post-gig.png"); }
+    div#promoters-content section.promoters div.icon.book {
+      background-image: url("/assets/img/icon-book-talents.png"); }
+    div#promoters-content section.promoters div.icon.manage {
+      background-image: url("/assets/img/icon-manage.png"); }
 div#promoters-content div.light {
   background-color: #333333; }
+div#promoters-content section.full {
+  background-color: white;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+  div#promoters-content section.full h2 {
+    color: #DB4D21;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+div#promoters-content section.ready-to-increase-tickets {
+  width: 100%;
+  background-image: url(/assets/img/readytoexplore.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  div#promoters-content section.ready-to-increase-tickets h2 {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  div#promoters-content section.ready-to-increase-tickets div.button a {
+    background-color: transparent;
+    color: white;
+    border: 1pt solid white;
+    font-size: 22px; }
 
 html {
   overflow-x: hidden; }
@@ -895,8 +978,9 @@ body.home, body.fans, body.musicians, body.promoters, body.misc {
   background-color: #eeeeee;
   background-image: url(/assets/img/background-pattern.png); }
 
-p.subtitle {
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  font-size: 24px; }
+section {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px; }
+  section div.row {
+    padding-bottom: 30px; }

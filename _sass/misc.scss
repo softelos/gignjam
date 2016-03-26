@@ -1,6 +1,4 @@
 div#misc-content{
-	//margin-top:-100px;
-	margin-bottom: -60px;
 
 	section.misc{
 
@@ -27,20 +25,11 @@ div#misc-content{
 			text-transform: uppercase;
 			padding-bottom: 20px;
 			font-family: 'Jaden';
-			border-bottom: 1pt solid $h2-border-color;
 			text-shadow:1px 1px  black;
 		}
 		h3{
 			text-transform: uppercase;
 			
-			&:before{
-				content:'';
-				position: absolute;
-				height: $h3-font-size;
-				width:5px;
-				left:0px;
-				background-color: $menu-link-color;
-			}
 		}
 		
 	}
@@ -48,4 +37,44 @@ div#misc-content{
 	div.dark{
 		background-color: $dark-brown;
 	}
+
+	section.full{
+		background-color: white;
+		padding-bottom: 30px;
+		margin-top:20px;
+		margin-bottom:0px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+		h2{
+			color:$orange;
+			padding-bottom: 0px;
+			margin-top: 40px;
+			margin-bottom:40px;
+		}
+	}
+
+	section.ready-to-join{
+		width: 100%;
+		background-image: url(/assets/img/readytoexplore.jpg);
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;	
+
+  		h2{
+  			color:white;
+  			padding-top: 25px;
+  			padding-bottom: 0px;
+  			margin-bottom: 0px;
+  		}
+
+  		div.button a{
+  			background-color: transparent;
+  			color:white;
+  			border: 1pt solid white;
+  			font-size:22px;
+  		}
+
+	}	
 }

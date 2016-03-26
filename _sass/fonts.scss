@@ -22,7 +22,8 @@ $orange:#DB4D21;
 
 
 html,body{
-	font-family: 'Work Sans', sans-serif;
+	//font-family: 'Work Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 div#banner{
@@ -43,8 +44,9 @@ h1 {font-size: $h1-font-size;}
 h2 {font-size: $h2-font-size;}
 h3 {font-size: $h3-font-size;}
 p,ul{
-	color:$black;
+	color:#666666;
 	font-weight: $font-light;
+  font-size: 16px;
 }
 p.subtitle{
   color:#bbbbbb;

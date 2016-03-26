@@ -4,8 +4,9 @@ $footer-height-xs: 600px;
 footer{
 	width: 100%;
 	font-family: 'Work Sans', sans-serif;
-	color: black;
+	color: white;
 	background-color:#4FA3A3;
+	background-color: $color-blue;
 
 	@media (max-width: $screen-xs-max){
 		height: $footer-height-xs;
@@ -29,17 +30,17 @@ footer{
 			height: $h3-font-size;
 			width: 5px;
 			left:-10px;
-			background-color: $menu-link-color;
+			background-color: $orange;
 		}
 	}
 
 	a{
 		text-transform: uppercase;
 		text-decoration: none;
-		color:black;
+		color:white;
 
 		&:hover{
-			color:$menu-link-color;
+			color:$color-orange;
 			text-decoration: none;
 			-moz-transition: color 0.3s;
 			-webkit-transition: color 0.3s;
@@ -47,10 +48,10 @@ footer{
 		}
 
 		&#email{
-			color: $menu-link-color;
+			color: white;
 
 			&:hover{
-				color: $menu-link-color-light;
+				color: $color-orange;
 				-moz-transition: color 0.3s;
 				-webkit-transition: color 0.3s;
 				transition: color 0.3s;
@@ -79,14 +80,14 @@ footer{
 		}
 
 		p#trademark{
-			color:black;
+			color:white;
 			font-weight: $font-light;
 		}
 
 		p#powered{
 			font-weight: $font-light;
 			margin-top: 30px;
-			color:black;
+			color:white;
 
 			a{
 				text-transform: none;

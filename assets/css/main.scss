@@ -48,11 +48,12 @@ body.home, body.fans, body.musicians,body.promoters, body.misc{
 	background-image: url(/assets/img/background-pattern.png);
 }
 
-p{
-	&.subtitle{
-		text-align: center;
-		margin-top: 0px;
-		margin-bottom: 40px;
-		font-size: $h2-font-size;
+section{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+
+	div.row{
+		padding-bottom: 30px;
 	}
 }

@@ -12,25 +12,82 @@ div#promoters-content{
 			text-transform: uppercase;
 			padding-top: 20px;
 			padding-bottom: 20px;
-			font-family: 'Jaden'
+			font-family: 'Jaden';
 		}
 		h3{
 			text-transform: uppercase;
-			
-			&:before{
-				content:'';
-				position: absolute;
-				height: $h3-font-size;
-				width:5px;
-				left:0px;
-				background-color: $menu-link-color;
-			}
+			text-align: center;			
+			color:#666666;
 		}
+
+		div.icon{
+
+			width: 73px;
+			height: 73px;
+			display: inline-block;
+
+			&.publish-event{
+				background-image: url('/assets/img/icon-publish-event.png');
+			}
+
+			&.post-gigs{
+				background-image: url('/assets/img/icon-post-gig.png');
+			}
+
+			&.book{
+				background-image: url('/assets/img/icon-book-talents.png');
+			}
+
+			&.manage{
+				background-image: url('/assets/img/icon-manage.png');
+			}
+
+		}
+
 	
 	}
 	div.light{
 		background-color: $light-black;
 	}
 
+	section.full{
+		background-color: white;
+		padding-bottom: 30px;
+		margin-top:20px;
+		margin-bottom:0px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+
+		h2{
+			color:$orange;
+			padding-bottom: 0px;
+			margin-top: 40px;
+			margin-bottom:40px;
+		}
+	}
+
+	section.ready-to-increase-tickets{
+		width: 100%;
+		background-image: url(/assets/img/readytoexplore.jpg);
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;	
+
+  		h2{
+  			color:white;
+  			padding-top: 25px;
+  			padding-bottom: 0px;
+  			margin-bottom: 0px;
+  		}
+
+  		div.button a{
+  			background-color: transparent;
+  			color:white;
+  			border: 1pt solid white;
+  			font-size:22px;
+  		}
+
+	}
 
 }

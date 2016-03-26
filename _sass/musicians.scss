@@ -1,7 +1,7 @@
 div#musicians-content{
 
 	margin-top:20px;
-	
+
 	section.musicians{
 
 		width: 1000px;
@@ -11,6 +11,55 @@ div#musicians-content{
 
 		&.white{
 			background-color:white;
+		}
+
+		div.icon{
+
+			width: 73px;
+			height: 73px;
+			display: inline-block;
+
+			&.get-noticed{
+				background-image: url('/assets/img/icon-get-noticed.png');
+			}
+
+			&.connect{
+				background-image: url('/assets/img/icon-connect.png');
+			}
+
+			&.promote{
+				background-image: url('/assets/img/icon-promote.png');
+			}
+
+			&.be-heard{
+				background-image: url('/assets/img/icon-be-heard.png');
+			}
+
+		}
+
+		div.steps{
+
+			div{
+				width: 73px;
+				height: 73px;
+				display: inline-block;
+			}
+
+			div.find-gig{
+				background-image: url('/assets/img/icon-drums.png');
+			}
+			div.apply-online{
+				background-image: url('/assets/img/icon-envelope.png');
+			}
+
+			div.add-gig{
+				background-image: url('/assets/img/icon-ipod.png');
+			}
+
+			div.share-invite{
+				background-image: url('/assets/img/icon-headphone.png');
+			}
+
 		}
 
 		div.featured{
@@ -47,15 +96,8 @@ div#musicians-content{
 		}
 		h3{
 			text-transform: uppercase;
-			
-			&:before{
-				content:'';
-				position: absolute;
-				height: $h3-font-size;
-				width:5px;
-				left:0px;
-				background-color: $menu-link-color;
-			}
+			color:#555555;
+			font-size: 16px;			
 		}
 	
 		div#testimony-pictures{
