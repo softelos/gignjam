@@ -4,16 +4,13 @@ $h2-border-color:#75573E;
 section.hex{
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top:-30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
 
 	div.row{
-		//width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	div#hex-first div.col-sm-12{
-		margin-bottom: -70px;
 	}
 
 }
@@ -25,7 +22,6 @@ div#home{
 		width: 1100px;
 		margin-left: auto;
 		margin-right: auto;
-		padding-bottom: 50px;
 
 		&.dark{
 			background-color: $dark-brown;
@@ -62,7 +58,6 @@ div#home{
 		h2{
 			text-align: center;
 			text-transform: uppercase;
-			padding-bottom: 30px;
 			font-family: 'Jaden';
 		}
 		h3{
@@ -151,7 +146,7 @@ div#home{
 				p{
 					font-size: 20px;
 					font-weight: $font-medium;
-					color:$color-light-gray;
+					color:white;
 				}
 
 			}
@@ -160,45 +155,7 @@ div#home{
 
 	}
 	
-	section.full{
-		background-color: white;
-		padding-bottom: 30px;
-		margin-top:20px;
-		margin-bottom:0px;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-
-		h2{
-			color:$orange;
-			padding-bottom: 0px;
-			margin-top: 40px;
-			margin-bottom:40px;
-		}
-	}
-
-	section.ready-to-explore{
-		width: 100%;
-		background-image: url(/assets/img/readytoexplore.jpg);
-		-webkit-background-size: cover;
-  		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;	
-
-  		h2{
-  			color:white;
-  			padding-top: 25px;
-  			padding-bottom: 0px;
-  			margin-bottom: 0px;
-  		}
-
-  		div.button a{
-  			background-color: transparent;
-  			color:white;
-  			border: 1pt solid white;
-  			font-size:22px;
-  		}
-
-	}
+	
 
 	section.testimonial{
 		background-color: white;
@@ -238,16 +195,16 @@ div#fans,div#musicians,div#promoters{
 		height: 100%;
 
 		div.text{
-			margin-top: 60px;
+			margin-top: 65px;
 			padding-left:5px;
 			padding-right:5px;
-			height: 160px;
+			height: 150px;
 			color:$color-light-gray;
 
 			h3{
 				font-size:24px;
 				text-transform: uppercase;
-				color:$color-orange;
+				color:white;
 				&:before{
 					content:none;
 				}
@@ -257,16 +214,20 @@ div#fans,div#musicians,div#promoters{
 				font-weight: $font-light;
 				font-size: 16px;
 				color:white;
+
+				
 			}
 		}
 
 		div.button{
 			a{
-				background-color: white;
-				color:#0855B2;
+				background-color: transparent;
+				border: 1pt solid white;
+				color:white;
 
 				&:hover{
-					background-color:$color-orange;
+					background-color:white;
+					color:#DB4D21;
 				}
 			}
 		}

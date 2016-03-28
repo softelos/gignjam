@@ -6,9 +6,11 @@ div#misc-content{
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 50px;
+		padding-left: 30px;
+		padding-right: 30px;
 
 		a{
-			color:white;
+			color:$color-orange;
 			text-decoration: none;
 
 			&:hover{
@@ -25,11 +27,23 @@ div#misc-content{
 			text-transform: uppercase;
 			padding-bottom: 20px;
 			font-family: 'Jaden';
-			text-shadow:1px 1px  black;
 		}
 		h3{
 			text-transform: uppercase;
+			text-align: center;
 			
+		}
+
+		p{
+			//padding-left: 100px;
+			//padding-right: 100px;
+			
+		}
+
+		&.terms{
+			h3{
+				text-align: left;
+			}
 		}
 		
 	}
@@ -37,6 +51,7 @@ div#misc-content{
 	div.dark{
 		background-color: $dark-brown;
 	}
+
 
 	section.full{
 		background-color: white;
@@ -52,6 +67,11 @@ div#misc-content{
 			margin-top: 40px;
 			margin-bottom:40px;
 		}
+	}
+
+
+	section.white{
+		background-color: white;
 	}
 
 	section.ready-to-join{

@@ -40,7 +40,16 @@ $(function(){
 		//$('div#banner').css('height',(parseInt(window.outerHeight)+vOffset)*0.3);
 
 		$('div#banner').css('width','100%');
-		$('div#banner').css('height','400px');
+
+		if($('div#banner').hasClass('home')){
+			$('div#banner').css('height',(parseInt(window.outerHeight))-450);
+		}else{
+			if($('div#banner').hasClass('misc')){
+				$('div#banner').css('height',400);
+			}else{
+				$('div#banner').css('height',(parseInt(window.outerHeight))-320);
+			}
+		}
 
 		var textHeight=parseInt($('div#banner div#text').innerHeight())-parseInt($('div#banner div#text').css('padding-top'))-parseInt($('div#banner div#text').css('padding-bottom')),
 			bannerHeight=parseInt($('div#banner').innerHeight());

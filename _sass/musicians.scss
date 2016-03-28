@@ -13,10 +13,31 @@ div#musicians-content{
 			background-color:white;
 		}
 
+		&.full{
+
+			padding-left: 30px;
+			padding-right: 30px;
+
+			div{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+
+			div.text{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+
+		div.narrow{
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+
 		div.icon{
 
-			width: 73px;
-			height: 73px;
+			width: 125px;
+			height: 125px;
 			display: inline-block;
 
 			&.get-noticed{
@@ -40,8 +61,8 @@ div#musicians-content{
 		div.steps{
 
 			div{
-				width: 73px;
-				height: 73px;
+				width: 125px;
+				height: 125px;
 				display: inline-block;
 			}
 
@@ -58,6 +79,10 @@ div#musicians-content{
 
 			div.share-invite{
 				background-image: url('/assets/img/icon-headphone.png');
+			}
+
+			h3{
+				color:#555555;
 			}
 
 		}
@@ -96,8 +121,10 @@ div#musicians-content{
 		}
 		h3{
 			text-transform: uppercase;
-			color:#555555;
-			font-size: 16px;			
+			color:$color-orange;
+			font-size: 16px;	
+			font-weight: bold;	
+			text-align: center;	
 		}
 	
 		div#testimony-pictures{

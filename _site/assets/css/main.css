@@ -108,7 +108,7 @@ header {
     position: absolute;
     display: none;
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #444444;
     padding: 20px; }
     header div#minimenubox li {
       display: block;
@@ -431,18 +431,16 @@ div#go-up-arrow {
 section.hex {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: -30px; }
+  padding-top: 0px;
+  padding-bottom: 0px; }
   section.hex div.row {
     margin-left: auto;
     margin-right: auto; }
-  section.hex div#hex-first div.col-sm-12 {
-    margin-bottom: -70px; }
 
 div#home section.home {
   width: 1100px;
   margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px; }
+  margin-right: auto; }
   div#home section.home.dark {
     background-color: #644b28; }
   div#home section.home div#testimony-pictures {
@@ -464,7 +462,6 @@ div#home section.home {
   div#home section.home h2 {
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 30px;
     font-family: 'Jaden'; }
   div#home section.home h3 {
     text-transform: uppercase; }
@@ -524,36 +521,7 @@ div#home section.home {
       div#home section.home div.explore div.item p {
         font-size: 20px;
         font-weight: 500;
-        color: #B3B3B3; }
-div#home section.full {
-  background-color: white;
-  padding-bottom: 30px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px; }
-  div#home section.full h2 {
-    color: #DB4D21;
-    padding-bottom: 0px;
-    margin-top: 40px;
-    margin-bottom: 40px; }
-div#home section.ready-to-explore {
-  width: 100%;
-  background-image: url(/assets/img/readytoexplore.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  div#home section.ready-to-explore h2 {
-    color: white;
-    padding-top: 25px;
-    padding-bottom: 0px;
-    margin-bottom: 0px; }
-  div#home section.ready-to-explore div.button a {
-    background-color: transparent;
-    color: white;
-    border: 1pt solid white;
-    font-size: 22px; }
+        color: white; }
 div#home section.testimonial {
   background-color: white; }
   div#home section.testimonial p {
@@ -579,15 +547,15 @@ div#fans, div#musicians, div#promoters {
     position: relative;
     height: 100%; }
     div#fans div.back div.text, div#musicians div.back div.text, div#promoters div.back div.text {
-      margin-top: 60px;
+      margin-top: 65px;
       padding-left: 5px;
       padding-right: 5px;
-      height: 160px;
+      height: 150px;
       color: #B3B3B3; }
       div#fans div.back div.text h3, div#musicians div.back div.text h3, div#promoters div.back div.text h3 {
         font-size: 24px;
         text-transform: uppercase;
-        color: #DB4D21; }
+        color: white; }
         div#fans div.back div.text h3:before, div#musicians div.back div.text h3:before, div#promoters div.back div.text h3:before {
           content: none; }
       div#fans div.back div.text ul, div#musicians div.back div.text ul, div#promoters div.back div.text ul {
@@ -596,10 +564,12 @@ div#fans, div#musicians, div#promoters {
         font-size: 16px;
         color: white; }
     div#fans div.back div.button a, div#musicians div.back div.button a, div#promoters div.back div.button a {
-      background-color: white;
-      color: #0855B2; }
+      background-color: transparent;
+      border: 1pt solid white;
+      color: white; }
       div#fans div.back div.button a:hover, div#musicians div.back div.button a:hover, div#promoters div.back div.button a:hover {
-        background-color: #DB4D21; }
+        background-color: white;
+        color: #DB4D21; }
 
 div.button {
   padding-top: 40px;
@@ -634,10 +604,18 @@ div#promoters div.back {
 div#fans-content {
   margin-top: 20px; }
   div#fans-content section.fans {
-    width: 1000px;
+    width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px; }
+    div#fans-content section.fans.full {
+      padding-left: 30px;
+      padding-right: 30px; }
+      div#fans-content section.fans.full h3 {
+        color: #DB4D21; }
+      div#fans-content section.fans.full div {
+        padding-left: 0px;
+        padding-right: 0px; }
     div#fans-content section.fans.white {
       background-color: white; }
     div#fans-content section.fans h2 {
@@ -649,10 +627,11 @@ div#fans-content {
       text-transform: uppercase;
       text-align: center;
       color: #555555;
-      font-size: 16px; }
+      font-size: 16px;
+      font-weight: bold; }
     div#fans-content section.fans div.icon {
-      width: 73px;
-      height: 73px;
+      width: 125px;
+      height: 125px;
       display: inline-block; }
       div#fans-content section.fans div.icon.create-events {
         background-image: url("/assets/img/icon-create-events.png"); }
@@ -669,21 +648,51 @@ div#fans-content {
     div#fans-content section.fans div.events div.item {
       display: inline-block;
       width: 200px;
-      height: 200px;
-      background-image: url("/assets/img/festival.jpg"); }
-    div#fans-content section.fans div.events div.item div.text.on {
-      visibility: visible; }
-    div#fans-content section.fans div.events div.item div.text.off {
-      visibility: hidden; }
+      height: 200px; }
+      div#fans-content section.fans div.events div.item.event1 {
+        background-image: url("/assets/img/event1.jpeg"); }
+      div#fans-content section.fans div.events div.item.event2 {
+        background-image: url("/assets/img/event2.jpeg"); }
+      div#fans-content section.fans div.events div.item.event3 {
+        background-image: url("/assets/img/event3.jpeg"); }
+      div#fans-content section.fans div.events div.item.event4 {
+        background-image: url("/assets/img/event4.jpeg"); }
+    div#fans-content section.fans div.events div.item div.text {
+      padding-top: 50px;
+      height: 100%; }
+      div#fans-content section.fans div.events div.item div.text p {
+        color: white; }
+      div#fans-content section.fans div.events div.item div.text.on {
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: multiply;
+        transition: background-color 0.3s; }
+      div#fans-content section.fans div.events div.item div.text.off {
+        visibility: hidden; }
     div#fans-content section.fans div.talents div.item {
       display: inline-block;
       width: 200px;
-      height: 200px;
-      background-image: url("/assets/img/festival.jpg"); }
-    div#fans-content section.fans div.talents div.item div.text.on {
-      visibility: visible; }
-    div#fans-content section.fans div.talents div.item div.text.off {
-      visibility: hidden; }
+      height: 200px; }
+      div#fans-content section.fans div.talents div.item.talent1 {
+        background-image: url("/assets/img/talent1.jpeg"); }
+      div#fans-content section.fans div.talents div.item.talent2 {
+        background-image: url("/assets/img/talent2.jpeg"); }
+      div#fans-content section.fans div.talents div.item.talent3 {
+        background-image: url("/assets/img/talent3.jpeg"); }
+      div#fans-content section.fans div.talents div.item.talent4 {
+        background-image: url("/assets/img/talent4.jpeg"); }
+    div#fans-content section.fans div.talents div.item div.text {
+      padding-top: 50px;
+      height: 100%; }
+      div#fans-content section.fans div.talents div.item div.text p {
+        color: white; }
+      div#fans-content section.fans div.talents div.item div.text.on {
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: multiply;
+        transition: background-color 0.3s; }
+      div#fans-content section.fans div.talents div.item div.text.off {
+        visibility: hidden; }
     div#fans-content section.fans div#testimony-pictures {
       padding-bottom: 40px; }
       div#fans-content section.fans div#testimony-pictures img {
@@ -702,44 +711,19 @@ div#fans-content {
           transition: opacity 0.3s; }
     div#fans-content section.fans div#testimony-content p#text-2, div#fans-content section.fans div#testimony-content p#text-3 {
       display: none; }
+    div#fans-content section.fans div.button {
+      padding-top: 20px; }
     div#fans-content section.fans div.button a {
-      background-color: transparent;
-      color: #555555;
-      border: 1pt solid #555555;
-      font-size: 22px; }
+      color: white;
+      background-color: #DB4D21;
+      font-size: 16px; }
+      div#fans-content section.fans div.button a:hover {
+        background-color: #0855B2;
+        color: white; }
   div#fans-content div.dark {
     background-color: #644b28; }
   div#fans-content div.people-party {
     background: url(/assets/img/bg-people-party.png) right bottom no-repeat #644b28; }
-  div#fans-content section.full {
-    background-color: white;
-    padding-bottom: 30px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; }
-    div#fans-content section.full h2 {
-      color: #DB4D21;
-      padding-bottom: 0px;
-      margin-top: 40px;
-      margin-bottom: 40px; }
-  div#fans-content section.ready-to-explore {
-    width: 100%;
-    background-image: url(/assets/img/readytoexplore.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    div#fans-content section.ready-to-explore h2 {
-      color: white;
-      padding-top: 25px;
-      padding-bottom: 0px;
-      margin-bottom: 0px; }
-    div#fans-content section.ready-to-explore div.button a {
-      background-color: transparent;
-      color: white;
-      border: 1pt solid white;
-      font-size: 22px; }
 
 div#musicians-content {
   margin-top: 20px; }
@@ -750,9 +734,21 @@ div#musicians-content {
     padding-bottom: 50px; }
     div#musicians-content section.musicians.white {
       background-color: white; }
+    div#musicians-content section.musicians.full {
+      padding-left: 30px;
+      padding-right: 30px; }
+      div#musicians-content section.musicians.full div {
+        padding-left: 0px;
+        padding-right: 0px; }
+      div#musicians-content section.musicians.full div.text {
+        padding-left: 30px;
+        padding-right: 30px; }
+    div#musicians-content section.musicians div.narrow {
+      padding-left: 50px;
+      padding-right: 50px; }
     div#musicians-content section.musicians div.icon {
-      width: 73px;
-      height: 73px;
+      width: 125px;
+      height: 125px;
       display: inline-block; }
       div#musicians-content section.musicians div.icon.get-noticed {
         background-image: url("/assets/img/icon-get-noticed.png"); }
@@ -763,8 +759,8 @@ div#musicians-content {
       div#musicians-content section.musicians div.icon.be-heard {
         background-image: url("/assets/img/icon-be-heard.png"); }
     div#musicians-content section.musicians div.steps div {
-      width: 73px;
-      height: 73px;
+      width: 125px;
+      height: 125px;
       display: inline-block; }
     div#musicians-content section.musicians div.steps div.find-gig {
       background-image: url("/assets/img/icon-drums.png"); }
@@ -774,6 +770,8 @@ div#musicians-content {
       background-image: url("/assets/img/icon-ipod.png"); }
     div#musicians-content section.musicians div.steps div.share-invite {
       background-image: url("/assets/img/icon-headphone.png"); }
+    div#musicians-content section.musicians div.steps h3 {
+      color: #555555; }
     div#musicians-content section.musicians div.featured a {
       color: white;
       text-decoration: none; }
@@ -798,8 +796,10 @@ div#musicians-content {
       font-family: 'Jaden'; }
     div#musicians-content section.musicians h3 {
       text-transform: uppercase;
-      color: #555555;
-      font-size: 16px; }
+      color: #DB4D21;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center; }
     div#musicians-content section.musicians div#testimony-pictures {
       padding-bottom: 40px; }
       div#musicians-content section.musicians div#testimony-pictures img {
@@ -862,9 +862,11 @@ div#misc-content section.misc {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px; }
   div#misc-content section.misc a {
-    color: white;
+    color: #DB4D21;
     text-decoration: none; }
     div#misc-content section.misc a:hover {
       color: #aaaaaa;
@@ -876,10 +878,12 @@ div#misc-content section.misc {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 20px;
-    font-family: 'Jaden';
-    text-shadow: 1px 1px  black; }
+    font-family: 'Jaden'; }
   div#misc-content section.misc h3 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
+  div#misc-content section.misc.terms h3 {
+    text-align: left; }
 div#misc-content div.dark {
   background-color: #644b28; }
 div#misc-content section.full {
@@ -894,6 +898,8 @@ div#misc-content section.full {
     padding-bottom: 0px;
     margin-top: 40px;
     margin-bottom: 40px; }
+div#misc-content section.white {
+  background-color: white; }
 div#misc-content section.ready-to-join {
   width: 100%;
   background-image: url(/assets/img/readytoexplore.jpg);
@@ -913,10 +919,24 @@ div#misc-content section.ready-to-join {
     font-size: 22px; }
 
 div#promoters-content section.promoters {
-  width: 1000px;
+  width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px; }
+  div#promoters-content section.promoters.white {
+    background-color: white; }
+  div#promoters-content section.promoters.full {
+    padding-left: 30px;
+    padding-right: 30px; }
+    div#promoters-content section.promoters.full div {
+      padding-left: 0px;
+      padding-right: 0px; }
+    div#promoters-content section.promoters.full div.text {
+      padding-left: 30px;
+      padding-right: 30px; }
+  div#promoters-content section.promoters div.narrow {
+    padding-left: 50px;
+    padding-right: 50px; }
   div#promoters-content section.promoters h2 {
     text-align: center;
     text-transform: uppercase;
@@ -926,10 +946,11 @@ div#promoters-content section.promoters {
   div#promoters-content section.promoters h3 {
     text-transform: uppercase;
     text-align: center;
-    color: #666666; }
+    color: #DB4D21;
+    font-weight: bold; }
   div#promoters-content section.promoters div.icon {
-    width: 73px;
-    height: 73px;
+    width: 125px;
+    height: 125px;
     display: inline-block; }
     div#promoters-content section.promoters div.icon.publish-event {
       background-image: url("/assets/img/icon-publish-event.png"); }
@@ -979,8 +1000,44 @@ body.home, body.fans, body.musicians, body.promoters, body.misc {
   background-image: url(/assets/img/background-pattern.png); }
 
 section {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px; }
-  section div.row {
-    padding-bottom: 30px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  section h2 {
+    margin-top: 0px;
+    padding-bottom: 20px; }
+
+section.full {
+  padding-top: 40px;
+  background-color: white;
+  margin-bottom: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+  section.full h2 {
+    color: #DB4D21; }
+
+section.ready-to-explore {
+  width: 100%;
+  background-image: url(/assets/img/readytoexplore.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0px;
+  padding-bottom: 40px;
+  padding-bottom: 40px; }
+  section.ready-to-explore h2 {
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center; }
+  section.ready-to-explore div.button a {
+    background-color: transparent;
+    color: white;
+    border: 1pt solid white;
+    font-size: 22px; }
+    section.ready-to-explore div.button a:hover {
+      background-color: white;
+      color: #808080;
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      transition: background-color 0.3s; }

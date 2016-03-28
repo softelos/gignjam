@@ -49,11 +49,56 @@ body.home, body.fans, body.musicians,body.promoters, body.misc{
 }
 
 section{
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	h2{
+		margin-top: 0px;
+		padding-bottom: 20px;
+	}
+}
 
-	div.row{
-		padding-bottom: 30px;
+section.full{
+	padding-top: 40px;
+	background-color: white;
+	margin-bottom:0px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	h2{
+		color:$orange;
+	}
+}
+
+section.ready-to-explore{
+	width: 100%;
+	background-image: url(/assets/img/readytoexplore.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	margin-top: 0px;
+	padding-bottom: 40px;
+	padding-bottom: 40px;
+
+	h2{
+		color:white;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	div.button a{
+		background-color: transparent;
+		color:white;
+		border: 1pt solid white;
+		font-size:22px;
+
+		&:hover{
+			background-color:white;
+			color:$color-gray;
+			-webkit-transition:background-color 0.3s;
+			-moz-transition:background-color 0.3s;
+			transition:background-color 0.3s;
+		}
 	}
 }
