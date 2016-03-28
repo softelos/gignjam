@@ -43,13 +43,13 @@
       <li><a  class="active"  href="/fans">Fans</a></li>
       <li><a  href="/musicians">Musicians</a></li>
       <li class="separator"><a  href="/promoters">Promoters</a></li>
-      <li><a href="http://localhost:3000/events">Events</a></li>
-      <li><a href="http://localhost:3000/directory">Directory</a></li>
-      <li><a href="http://localhost:3000/gigs">Gigs</a></li>
-      <li><a href="http://localhost:3000/songs">Songs</a></li>
+      <li><a href="http://app.gignjam.com/events">Events</a></li>
+      <li><a href="http://app.gignjam.com/directory">Directory</a></li>
+      <li><a href="http://app.gignjam.com/gigs">Gigs</a></li>
+      <li><a href="http://app.gignjam.com/songs">Songs</a></li>
       <li class="separator"><a href="">Post a Gig</a></li>
-      <li><a href="http://localhost:3000/signin">Sign In</a></li>
-      <li><a href="http://localhost:3000/signup">Join Now</a></li>
+      <li><a href="http://app.gignjam.com/signin">Sign In</a></li>
+      <li><a href="http://app.gignjam.com/signup">Join Now</a></li>
   	</ul>
   	<div id="minimenupullbutton"><div id="button"></div></div>
   </div>
@@ -61,8 +61,25 @@
 			<div class="col-sm-12">
 				<h1 id="title">Entertain Your Guests.</h1>
 				<h1 id="title">Make it memorable.</h2>
-				<a href="http://localhost:3000/signup" id="signup" class="orange">BOOK PERFORMER</a>
-				<a href="http://localhost:3000/signup" id="signup" class="orange last">BOOK VENUE</a>
+				
+				<div class="row visible-md-inline visible-lg-inline">
+					<div class="col-md-12 col-lg-12">
+						<a href="http://app.gignjam.com/musician/book" id="signup" class="orange">BOOK PERFORMER</a>
+						<a href="http://app.gignjam.com/venue/book" id="signup" class="orange last">BOOK VENUE</a>
+					</div>
+				</div>
+
+				<div class="row visible-xs-inline visible-sm-inline">
+					<div class="col-xs-12 col-sm-12">
+						<a href="http://app.gignjam.com/musician/book" id="signup" class="orange">BOOK PERFORMER</a>
+					</div>
+				</div>
+				<div class="row visible-xs-inline visible-sm-inline">
+					<div class="col-xs-12 col-sm-12">				
+						<a href="http://app.gignjam.com/venue/book" id="signup" class="orange">BOOK VENUE</a>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -72,75 +89,223 @@
 	
 	<section class="fans full">
 
-		<div class="row">
-
-			<div class="col-sm-2">
-				<div class="row">
-					<div class="col sm-12">
-						<h3>Create Events</h3>
+		<div class="visible-xs-inline visible-sm-inline">
+			<div class="row text-center">
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Create Events</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-center"><div class="icon create-events"></div></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 text-center"><div class="icon create-events"></div></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<h3>Book Live Music</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-center"><div class="icon book-music"></div></div>
+					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-2">
-				<div class="row">
-					<div class="col sm-12">
-						<h3>Book Live Music</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<h3>Playlists</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-center"><div class="icon playlists"></div></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 text-center"><div class="icon book-music"></div></div>
+			</div>
+			<div class="row">			
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<h3>Rave & Rant</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-center"><div class="icon rave-rant"></div></div>
+					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-2">
-				<div class="row">
-					<div class="col sm-12">
-						<h3>Playlists</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<h3>Track Your Faves</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-center"><div class="icon track"></div></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 text-center"><div class="icon playlists"></div></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<h3>Directory</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 text-center"><div class="icon directory"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="visible-md-inline">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Create Events</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon create-events"></div></div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Book Live Music</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon book-music"></div></div>
+					</div>
 				</div>
 			</div>
 
-
-			<div class="col-sm-2">
-				<div class="row">
-					<div class="col sm-12">
-						<h3>Rave & Rant</h3>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Playlists</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon playlists"></div></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 text-center"><div class="icon rave-rant"></div></div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Rave & Rant</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon rave-rant"></div></div>
+					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-2">
-				<div class="row">
-					<div class="col sm-12">
-						<h3>Track Your Faves</h3>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Track Your Faves</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon track"></div></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 text-center"><div class="icon track"></div></div>
-				</div>
-			</div>
-
-			<div class="col-sm-2">
-				<div class="row">
-					<div class="col sm-12">
-						<h3>Directory</h3>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Directory</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon directory"></div></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 text-center"><div class="icon directory"></div></div>
+			</div>
+		</div>
+
+		<div class="visible-lg-inline">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Create Events</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon create-events"></div></div>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Book Live Music</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon book-music"></div></div>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Playlists</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon playlists"></div></div>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Rave & Rant</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon rave-rant"></div></div>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Track Your Faves</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon track"></div></div>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="row">
+						<div class="col sm-12">
+							<h3>Directory</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center"><div class="icon directory"></div></div>
+					</div>
 				</div>
 			</div>
-
+		</div>
 
 	</section>
 
@@ -154,8 +319,8 @@
 		</div>
 
 		<div class="row events">
-			<div class="col-md-12 text-center">
-				<a href="http://localhost:3000/event/1">
+			<div class="col-sm-12 text-center">
+				<a href="http://app.gignjam.com/event/1">
 					<div class="item event1">
 						<div class="text off">
 							<p class="name"><b>Justin Bieber</b></p>
@@ -166,7 +331,7 @@
 					</div>
 				</a>
 
-				<a href="http://localhost:3000/event/2">
+				<a href="http://app.gignjam.com/event/2">
 					<div class="item event2">
 						<div class="text off">
 							<p class="name"><b>Bruce Springsteen</b></p>
@@ -177,7 +342,7 @@
 					</div>
 				</a>
 
-				<a href="http://localhost:3000/event/3">
+				<a href="http://app.gignjam.com/event/3">
 					<div class="item event3">
 						<div class="text off">
 							<p class="name"><b>Jimmy Buffet</b></p>
@@ -188,7 +353,7 @@
 					</div>
 				</a>
 
-				<a href="http://localhost:3000/event/4">
+				<a href="http://app.gignjam.com/event/4">
 					<div class="item event4">
 						<div class="text off">
 							<p class="name"><b>The Cure Paris</b></p>
@@ -205,7 +370,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="button browse">
-					<a href="http://localhost:3000/events" id="browseevents" class="black">BROWSE EVENTS</a>
+					<a href="http://app.gignjam.com/events" id="browseevents" class="black">BROWSE EVENTS</a>
 				</div>
 			</div>
 		</div>
@@ -220,8 +385,8 @@
 		</div>
 
 		<div class="row talents">
-			<div class="col-md-12 text-center">
-				<a href="http://localhost:3000/musician/1">
+			<div class="col-sm-12 text-center">
+				<a href="http://app.gignjam.com/musician/1">
 					<div class="item talent1">
 						<div class="text off">
 							<p class="name"><b>Rihanna</b></p>
@@ -231,7 +396,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="http://localhost:3000/musician/2">
+				<a href="http://app.gignjam.com/musician/2">
 					<div class="item talent2">
 						<div class="text off">
 							<p class="name"><b>Beyonce</b></p>
@@ -241,7 +406,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="http://localhost:3000/musician/3">
+				<a href="http://app.gignjam.com/musician/3">
 					<div class="item talent3">
 						<div class="text off">
 							<p class="name"><b>Eminem</b></p>
@@ -252,7 +417,7 @@
 					</div>
 				</a>
 
-				<a href="http://localhost:3000/musician/4">
+				<a href="http://app.gignjam.com/musician/4">
 					<div class="item talent4">
 						<div class="text off">
 							<p class="name"><b>John Riche</b></p>
@@ -267,7 +432,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="button">
-					<a href="http://localhost:3000/musicians" id="browsemusicians" class="black">BROWSE ARTISTS</a>
+					<a href="http://app.gignjam.com/musicians" id="browsemusicians" class="black">BROWSE ARTISTS</a>
 				</div>
 			</div>
 		</div>
@@ -280,7 +445,7 @@
 		<div class="col-sm-12">
 			<h2>EXPLORE. DISCOVER. ENGAGE.</h2>
 			<div class="button">
-				<a href="http://localhost:3000/signup" id="signup" class="black">LET'S GO! IT'S FREE!</a>
+				<a href="http://app.gignjam.com/signup" id="signup" class="black">LET'S GO! IT'S FREE!</a>
 			</div>
         </div>
 	</div>

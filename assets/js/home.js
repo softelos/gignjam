@@ -2,6 +2,8 @@ $(function(){
 
 	const headerTriggerPos=50;
 
+	var mobileWindowHeight=window.innerHeight;
+
 	// Start up
 	updateBanner();
 	updateExplorePictures();
@@ -12,7 +14,7 @@ $(function(){
 		// Hide mini menu in case it was visible
 		$('div#minimenubox').hide();
 		// Update banner
-		updateBanner();
+		//updateBanner();
 		updateExplorePictures();
 		checkNavSize($(window).width());
 	});
@@ -41,22 +43,24 @@ $(function(){
 
 		$('div#banner').css('width','100%');
 
-		if($('div#banner').hasClass('home')){
-			$('div#banner').css('height',(parseInt(window.outerHeight))-450);
-		}else{
-			if($('div#banner').hasClass('misc')){
-				$('div#banner').css('height',400);
+		if(window.innerHeight>600){
+			if($('div#banner').hasClass('home')){
+				$('div#banner').css('height',(parseInt(window.outerHeight))-450);
 			}else{
-				$('div#banner').css('height',(parseInt(window.outerHeight))-320);
+				if($('div#banner').hasClass('misc')){
+					$('div#banner').css('height',400);
+				}else{
+					$('div#banner').css('height',(parseInt(window.outerHeight))-320);
+				}
 			}
+		}else{
+			$('div#banner').css('height',mobileWindowHeight);
 		}
 
 		var textHeight=parseInt($('div#banner div#text').innerHeight())-parseInt($('div#banner div#text').css('padding-top'))-parseInt($('div#banner div#text').css('padding-bottom')),
 			bannerHeight=parseInt($('div#banner').innerHeight());
 
 		$('div#banner div#text').css('padding-top',(bannerHeight/2)-(textHeight/2));
-
-		console.log('Banner: %s Tex:%s',bannerHeight,textHeight);
 	}
 
 	function updateExplorePictures(){

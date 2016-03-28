@@ -43,13 +43,13 @@
       <li><a  href="/fans">Fans</a></li>
       <li><a  href="/musicians">Musicians</a></li>
       <li class="separator"><a  href="/promoters">Promoters</a></li>
-      <li><a href="http://localhost:3000/events">Events</a></li>
-      <li><a href="http://localhost:3000/directory">Directory</a></li>
-      <li><a href="http://localhost:3000/gigs">Gigs</a></li>
-      <li><a href="http://localhost:3000/songs">Songs</a></li>
+      <li><a href="http://app.gignjam.com/events">Events</a></li>
+      <li><a href="http://app.gignjam.com/directory">Directory</a></li>
+      <li><a href="http://app.gignjam.com/gigs">Gigs</a></li>
+      <li><a href="http://app.gignjam.com/songs">Songs</a></li>
       <li class="separator"><a href="">Post a Gig</a></li>
-      <li><a href="http://localhost:3000/signin">Sign In</a></li>
-      <li><a href="http://localhost:3000/signup">Join Now</a></li>
+      <li><a href="http://app.gignjam.com/signin">Sign In</a></li>
+      <li><a href="http://app.gignjam.com/signup">Join Now</a></li>
   	</ul>
   	<div id="minimenupullbutton"><div id="button"></div></div>
   </div>
@@ -60,7 +60,7 @@
 		<div id="text" class="row">
 			<div class="col-sm-12">
 				<h1 id="title">ONLINE MUSIC COMMUNITY</h1>
-				<a href="http://localhost:3000/signup" id="signup">JOIN NOW FOR FREE</a>
+				<a href="http://app.gignjam.com/signup" id="signup">JOIN NOW FOR FREE</a>
 			</div>
 		</div>
 	</div>
@@ -72,70 +72,137 @@
     
   <section class="hex">
   
-  <div id="hex-first" class="row">
    
-    <div class="col-sm-12 text-center">
-
-      <div id="fans" class="flip">
-        <div class="front">
-          <div class="title"></div>
-        </div>        
-        <div class="back">
-          <div class="text">
-           <h3>FANS</h3>
-              <ul>
-                <li>Find awesome music.</li>
-                <li>Discover breakout artists.</li>
-                <li>Follow artists and events.</li>
-                <li>Hire musicians for my events.</li>
-              </ul>
-            </div>
-          <div class="button"><a href="/fans">Learn More</a></div>
-        </div>      
-      </div>
-
-      <div id="musicians" class="flip">
-        <div class="front">
-          <div class="title"></div>
+  <div class="visible-xs-inline visible-sm-inline">
+    <div id="hex-first" class="row">
+      <div class="col-xs-12 col-sm-12 text-center">
+        <div id="fans" class="flip">
+          <div class="front">
+            <div class="title"></div>
+          </div>        
+          <div class="back">
+            <div class="text">
+             <h3>FANS</h3>
+                <ul>
+                  <li>Find awesome music.</li>
+                  <li>Discover breakout artists.</li>
+                  <li>Follow artists and events.</li>
+                  <li>Hire musicians for my events.</li>
+                </ul>
+              </div>
+            <div class="button"><a href="/fans">Learn More</a></div>
+          </div>      
         </div>
-        <div class="back">
-          <div class="text">
-            <h3>MUSICIANS</h3>
-            <ul>
-              <li>Find and apply for gigs.</li>
-              <li>Promote my band to fans, promoters and labels.</li>
-              <li>Manage and publish tour schedule.</li>
-              <li>Connect with fans and musicians.</li>
-            </ul>
-          </div>
-          <div class="button"><a href="/musicians">Learn More</a></div>
-        </div>      
       </div>
-
-      <div id="promoters" class="flip">
-        <div class="front">
-          <div class="title"></div>
-        </div>
-        <div class="back">
-          <div class="text">
-            <h3>PROMOTERS</h3>
-            <ul>
-              <li>Post gigs and performance opportunities.</li>
-              <li>Manage postings and applications.</li>
-              <li>Find talents.</li>
-              <li>Promote multiple events/venues in one place.</li>
-            </ul>
-          </div>
-          <div class="button"><a href="/promoters">Learn More</a></div>
-        </div>      
-      </div>
-
     </div>
 
+    <div id="hex-first" class="row">
+      <div class="col-xs-12 col-sm-12 text-center">
+        <div id="musicians" class="flip">
+          <div class="front">
+            <div class="title"></div>
+          </div>
+          <div class="back">
+            <div class="text">
+              <h3>MUSICIANS</h3>
+              <ul>
+                <li>Find and apply for gigs.</li>
+                <li>Promote my band to fans, promoters and labels.</li>
+                <li>Manage and publish tour schedule.</li>
+                <li>Connect with fans and musicians.</li>
+              </ul>
+            </div>
+            <div class="button"><a href="/musicians">Learn More</a></div>
+          </div>      
+        </div>
+      </div>
+    </div>
+
+    <div id="hex-first" class="row">
+      <div class="col-xs-12 col-sm-12 text-center">
+        <div id="promoters" class="flip">
+          <div class="front">
+            <div class="title"></div>
+          </div>
+          <div class="back">
+            <div class="text">
+              <h3>PROMOTERS</h3>
+              <ul>
+                <li>Post gigs and performance opportunities.</li>
+                <li>Manage postings and applications.</li>
+                <li>Find talents.</li>
+                <li>Promote multiple events/venues in one place.</li>
+              </ul>
+            </div>
+            <div class="button"><a href="/promoters">Learn More</a></div>
+          </div>      
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="visible-md-inline visible-lg-inline">
+    <div id="hex-first" class="row">
+      <div class="col-md-12 col-lg-12 text-center">
+
+        <div id="fans" class="flip">
+          <div class="front">
+            <div class="title"></div>
+          </div>        
+          <div class="back">
+            <div class="text">
+             <h3>FANS</h3>
+                <ul>
+                  <li>Find awesome music.</li>
+                  <li>Discover breakout artists.</li>
+                  <li>Follow artists and events.</li>
+                  <li>Hire musicians for my events.</li>
+                </ul>
+              </div>
+            <div class="button"><a href="/fans">Learn More</a></div>
+          </div>      
+        </div>
+
+        <div id="musicians" class="flip">
+          <div class="front">
+            <div class="title"></div>
+          </div>
+          <div class="back">
+            <div class="text">
+              <h3>MUSICIANS</h3>
+              <ul>
+                <li>Find and apply for gigs.</li>
+                <li>Promote my band to fans, promoters and labels.</li>
+                <li>Manage and publish tour schedule.</li>
+                <li>Connect with fans and musicians.</li>
+              </ul>
+            </div>
+            <div class="button"><a href="/musicians">Learn More</a></div>
+          </div>      
+        </div>
+
+        <div id="promoters" class="flip">
+          <div class="front">
+            <div class="title"></div>
+          </div>
+          <div class="back">
+            <div class="text">
+              <h3>PROMOTERS</h3>
+              <ul>
+                <li>Post gigs and performance opportunities.</li>
+                <li>Manage postings and applications.</li>
+                <li>Find talents.</li>
+                <li>Promote multiple events/venues in one place.</li>
+              </ul>
+            </div>
+            <div class="button"><a href="/promoters">Learn More</a></div>
+          </div>      
+        </div>
+      </div>
+    </div>
   </div>
 
   
-
 </section>
 
   </section>
@@ -148,22 +215,52 @@
       </div>
     </div>    
     
-    <div class="row explore">
-      <div class="col-md-12 text-center">
-        <a href="http://localhost:3000/events/festivals"><div class="item festivals"><p>Festivals</p></div></a>
-        <a href="http://localhost:3000/events/concerts"><div class="item concerts"><p>Concerts</p></div></a>
-        <a href="http://localhost:3000/events/college-music"><div class="item college-music"><p>College Music</p></div></a>
-        <a href="http://localhost:3000/gigs"><div class="item gigs"><p>Gigs</p></div></a>
+    <div class="visible-xs-inline visible-sm-inline">
+      <div class="row explore">
+        <div class="col-xs-12 col-sm-12 text-center">
+          <a href="http://app.gignjam.com/events/festivals"><div class="item festivals"><p>Festivals</p></div></a>
+          <a href="http://app.gignjam.com/events/concerts"><div class="item concerts"><p>Concerts</p></div></a>
+        </div>
+      </div>
+      <div class="row explore">
+        <div class="col-xs-12 col-sm-12 text-center">
+          <a href="http://app.gignjam.com/events/college-music"><div class="item college-music"><p>College Music</p></div></a>
+          <a href="http://app.gignjam.com/gigs"><div class="item gigs"><p>Gigs</p></div></a>
+        </div>
+      </div>
+      <div class="row explore">
+        <div class="col-xs-12 col-sm-12 text-center">
+          <a href="http://app.gignjam.com/musicians/indie"><div class="item indie"><p>Indie</p></div></a>
+          <a href="http://app.gignjam.com/musicians/pop"><div class="item pop"><p>Pop</p></div></a>
+        </div>
+      </div>
+      <div class="row explore">
+        <div class="col-xs-12 col-sm-12 text-center">      
+          <a href="http://app.gignjam.com/musicians/country"><div class="item country"><p>Country</p></div></a>
+          <a href="http://app.gignjam.com/musicians/alternative"><div class="item alternative"><p>Alternative</p></div></a>
+        </div>
       </div>
     </div>
-    <div class="row explore">
-      <div class="col-md-12 text-center">
-        <a href="http://localhost:3000/musicians/indie"><div class="item indie"><p>Indie</p></div></a>
-        <a href="http://localhost:3000/musicians/pop"><div class="item pop"><p>Pop</p></div></a>
-        <a href="http://localhost:3000/musicians/country"><div class="item country"><p>Country</p></div></a>
-        <a href="http://localhost:3000/musicians/alternative"><div class="item alternative"><p>Alternative</p></div></a>
+
+   <div class="visible-md-inline visible-lg-inline">
+      <div class="row explore">
+        <div class="col-md-12 col-lg-12 text-center">
+          <a href="http://app.gignjam.com/events/festivals"><div class="item festivals"><p>Festivals</p></div></a>
+          <a href="http://app.gignjam.com/events/concerts"><div class="item concerts"><p>Concerts</p></div></a>
+          <a href="http://app.gignjam.com/events/college-music"><div class="item college-music"><p>College Music</p></div></a>
+          <a href="http://app.gignjam.com/gigs"><div class="item gigs"><p>Gigs</p></div></a>
+        </div>
+      </div>
+      <div class="row explore">
+        <div class="col-md-12 col-lg-12 text-center">
+          <a href="http://app.gignjam.com/musicians/indie"><div class="item indie"><p>Indie</p></div></a>
+          <a href="http://app.gignjam.com/musicians/pop"><div class="item pop"><p>Pop</p></div></a>
+          <a href="http://app.gignjam.com/musicians/country"><div class="item country"><p>Country</p></div></a>
+          <a href="http://app.gignjam.com/musicians/alternative"><div class="item alternative"><p>Alternative</p></div></a>
+        </div>
       </div>
     </div>
+
 
   </section>
 
@@ -175,27 +272,40 @@
       </div>
     </div>    
       
-      <div id="testimony-pictures" class="row">
-        <div class="col-sm-12 text-center">
-          <img id="1" class="selected" src="/assets/img/ref-small-1.jpg" width="75px" height="75px" alt="">
-          <img id="2" src="/assets/img/ref-small-2.jpg" width="75px" height="75px" alt="">
-          <img id="3" src="/assets/img/ref-small-3.jpg" width="75px" height="75px" alt="">
+    <div id="testimony-pictures" class="row">
+      <div class="col-sm-12 text-center">
+        <img id="1" class="selected" src="/assets/img/ref-small-1.jpg" width="75px" height="75px" alt="">
+        <img id="2" src="/assets/img/ref-small-2.jpg" width="75px" height="75px" alt="">
+        <img id="3" src="/assets/img/ref-small-3.jpg" width="75px" height="75px" alt="">
+      </div>
+    </div>
+
+    <div class="visible-xs-inline visible-sm-inline">
+      <div id="testimony-content" class="row">
+        <div class="col-xs-12 col-sm-12 text-center"><img src="/assets/img/ref-big-1.jpg" alt=""></div>
+      </div>
+      <div id="testimony-content" class="row">      
+        <div class="col-xs-12 col-sm-12 text-left">
+          <p id="text-1">NUMBER-1 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p>
+          <p id="text-2">NUMBER-2 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p>
+          <p id="text-3">NUMBER-3 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p>
         </div>
       </div>
+    </div>
 
+
+    <div class="visible-md-inline visible-lg-inline">
       <div id="testimony-content" class="row">
         <div class="col-sm-6 text-right"><img src="/assets/img/ref-big-1.jpg" alt=""></div>
         <div class="col-sm-4 text-left">
           <p id="text-1">NUMBER-1 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p>
           <p id="text-2">NUMBER-2 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p>
           <p id="text-3">NUMBER-3 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet"</p>
-
-
         </div>
-
       </div>
+    </div>
 
-    </section>
+  </section>
 
 </div>
 
@@ -204,7 +314,7 @@
         <div class="col-sm-12">
           <h2>ARE YOU READY TO EXPLORE?</h2>
           <div class="button">
-            <a href="http://localhost:3000/signup" id="signup" class="black">LET'S GO! IT'S FREE!</a>
+            <a href="http://app.gignjam.com/signup" id="signup" class="black">LET'S GO! IT'S FREE!</a>
           </div>
         </div>
     </div>
