@@ -24,12 +24,14 @@ $(function(){
 		var vPos=$(this).scrollTop();
 		// Hide mini menu in case it was visible
 		$('div#minimenubox').hide();
-		if(vPos>headerTriggerPos){
-			$('header').removeClass('expanded');
-			$('header').addClass('collapsed');
-		}else{
-			$('header').removeClass('collapsed');
-			$('header').addClass('expanded');
+		if(!$('header').hasClass('misc')){
+			if(vPos>headerTriggerPos){
+				$('header').removeClass('expanded');
+				$('header').addClass('collapsed');
+			}else{
+				$('header').removeClass('collapsed');
+				$('header').addClass('expanded');
+			}
 		}
 	});
 

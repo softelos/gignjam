@@ -5,7 +5,6 @@ footer{
 	width: 100%;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
-	background-color:#4FA3A3;
 	background-color: $color-blue;
 
 	@media (max-width: $screen-xs-max){
@@ -13,11 +12,13 @@ footer{
 		padding-top: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
+		background-image: url(/assets/img/footer-mobile-background-dark.jpg);
 	}
 
 	@media (min-width: $screen-sm-min){
 		height: $footer-height;
 		padding: 20px 80px 30px 80px;
+		background-image: url(/assets/img/footer-background-dark.jpg);
 	}
 
 	h3.title{

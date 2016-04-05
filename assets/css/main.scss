@@ -43,9 +43,9 @@ html{
 	overflow-x: hidden;
 }
 
-body.home, body.fans, body.musicians,body.promoters, body.misc{
-	background-color: #eeeeee;
-	background-image: url(/assets/img/background-pattern.png);
+body.home,body.fans, body.musicians,body.promoters, body.misc{
+	background-color: transparent;
+	background-image: url(/assets/img/background_lightgrey.jpg);
 	overflow-x: hidden;
 }
 
@@ -58,18 +58,41 @@ section{
 		margin-top: 0px;
 		padding-bottom: 20px;
 	}
+
+	div.text{
+		p{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
 }
 
+
+
 section.full{
-	padding-top: 40px;
 	background-color: white;
+	padding-bottom: 30px;
+	//margin-top:20px;
 	margin-bottom:0px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+	
+	border:solid $color-light-gray;
+	border-width:0pt 1pt 0pt 1pt;
+
+	//border-top-left-radius: 15px;
+	//border-top-right-radius: 15px;
 
 	h2{
 		color:$orange;
+		padding-bottom: 0px;
+		margin-top: 40px;
+		margin-bottom:40px;
 	}
+}
+
+section.white{
+	background-color: white;
+	border:solid $color-light-gray;
+	border-width:0pt 1pt 0pt 1pt;
 }
 
 section.ready-to-explore{

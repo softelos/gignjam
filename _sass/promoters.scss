@@ -18,27 +18,6 @@ div#promoters-content{
 			width: 350px;
 		}
 			
-
-		&.white{
-			background-color:white;
-		}
-
-		&.full{
-
-			padding-left: 30px;
-			padding-right: 30px;
-
-			div{
-				padding-left: 0px;
-				padding-right: 0px;
-			}
-
-			div.text{
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-		}
-
 		div.narrow{
 			padding-left: 50px;
 			padding-right: 50px;
@@ -58,7 +37,7 @@ div#promoters-content{
 			color:$color-orange;
 			font-weight: bold;
 		}
-
+		
 		div.icon{
 
 			width: 125px;
@@ -87,22 +66,6 @@ div#promoters-content{
 	}
 	div.light{
 		background-color: $light-black;
-	}
-
-	section.full{
-		background-color: white;
-		padding-bottom: 30px;
-		margin-top:20px;
-		margin-bottom:0px;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-
-		h2{
-			color:$orange;
-			padding-bottom: 0px;
-			margin-top: 40px;
-			margin-bottom:40px;
-		}
 	}
 
 	section.ready-to-increase-tickets{

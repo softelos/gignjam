@@ -1,7 +1,5 @@
 div#musicians-content{
 
-	margin-top:20px;
-
 	section.musicians{
 
 		margin-left: auto;
@@ -17,26 +15,6 @@ div#musicians-content{
 		}
 		@media (max-width:$screen-sm-max){		
 			width: 350px;
-		}
-	
-		&.white{
-			background-color:white;
-		}
-
-		&.full{
-
-			padding-left: 30px;
-			padding-right: 30px;
-
-			div{
-				padding-left: 0px;
-				padding-right: 0px;
-			}
-
-			div.text{
-				padding-left: 30px;
-				padding-right: 30px;
-			}
 		}
 
 		div.narrow{
@@ -183,22 +161,7 @@ div#musicians-content{
 		
 	}
 
-	section.full{
-		background-color: white;
-		padding-bottom: 30px;
-		margin-top:20px;
-		margin-bottom:0px;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-
-		h2{
-			color:$orange;
-			padding-bottom: 0px;
-			margin-top: 40px;
-			margin-bottom:40px;
-		}
-	}
-
+	
 	section.increase-tickets{
 		width: 100%;
 		background-image: url(/assets/img/readytoexplore.jpg);
