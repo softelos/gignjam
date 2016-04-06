@@ -24,31 +24,34 @@ div#fans-content{
 			padding-bottom: 20px;
 			font-family: 'Jaden';
 
-			position: relative;
-			width:700px;
-			margin-left:auto;
-			margin-right:auto;
+			@media (min-width: $screen-md-min){		
+	
+				position: relative;
+				width:700px;
+				margin-left:auto;
+				margin-right:auto;
 
-			span {
-			  background: #fff;
-			  padding: 0 15px;
-			  position: relative;
-			  z-index: 1;
-			}
+				span {
+				  background: #fff;
+				  padding: 0 15px;
+				  position: relative;
+				  z-index: 1;
+				}
 
-			&:before{
-			  background: #ddd;
-			  content: "";
-			  display: block;
-			  height: 1px;
-			  position: absolute;
-			  top: 50%;
-			  width: 100%;
-			}
-			
-			&:before {
-			  left: 0px;
-			  top:10px;
+				&:before{
+				  background: #ddd;
+				  content: "";
+				  display: block;
+				  height: 1px;
+				  position: absolute;
+				  top: 50%;
+				  width: 100%;
+				}
+				
+				&:before {
+				  left: 0px;
+				  top:10px;
+				}
 			}
 
 
@@ -56,7 +59,7 @@ div#fans-content{
 		h3{
 			text-transform: uppercase;
 			text-align: center;
-			color:#555555;
+			color:$color-orange;
 			font-size: 16px;
 			font-weight: bold;
 		}
@@ -94,39 +97,110 @@ div#fans-content{
 		}
 
 		div.events{
+
+			margin-right: auto;
+			margin-left: auto;
+
+			div.col-xs-6{
+				@media (max-width:$screen-sm-max){
+					width: 165px;
+					height: 160px;
+
+				}
+			}
 			
 			div.item{
 				display: inline-block;
-				width:200px;
-				height:200px;
 
 				@media (max-width: $screen-sm-max){
+
+					width:150px;
+					height:150px;
 					margin-bottom: 5px;
+					
+					&.event1{
+						background-image: url('/assets/img/event1-small.jpeg');	
+					}
+					&.event2{
+						background-image: url('/assets/img/event2-small.jpeg');	
+					}
+					&.event3{
+						background-image: url('/assets/img/event3-small.jpeg');	
+					}
+					&.event4{
+						background-image: url('/assets/img/event4-small.jpeg');	
+					}
 				}
+
+				@media (min-width: $screen-md-min){
+
+					width:250px;
+					height:250px;
 				
-				&.event1{
-					background-image: url('/assets/img/event1.jpeg');	
-				}
-				&.event2{
-					background-image: url('/assets/img/event2.jpeg');	
-				}
-				&.event3{
-					background-image: url('/assets/img/event3.jpeg');	
-				}
-				&.event4{
-					background-image: url('/assets/img/event4.jpeg');	
-				}
+					&.event1{
+						background-image: url('/assets/img/event1.jpeg');	
+					}
+					&.event2{
+						background-image: url('/assets/img/event2.jpeg');	
+					}
+					&.event3{
+						background-image: url('/assets/img/event3.jpeg');	
+					}
+					&.event4{
+						background-image: url('/assets/img/event4.jpeg');	
+					}
+				}				
 
 			}
 
 			div.item div.text{
 
-				padding-top: 50px;
-				height: 100%;
-				
-				p{
-					color:white;
+				@media (min-width: $screen-md-min){
+					padding-top: 45px;
+					height: 100%;
+					
+					p{
+						color:white;
+						b{
+							font-size:22px;
+						}				
+					}
+
+					i.fa-plus-circle{
+						font-size: 32px;
+					}	
 				}
+
+				@media (max-width: $screen-xs-max){
+					padding-top: 25px;
+					height: 100%;
+
+					p{
+						color:white;
+						margin-top: 0px;
+						margin-bottom:0px;
+
+						b{
+							font-size:14px;
+						}				
+						font-size: 12px;
+					}
+
+					i.fa-plus-circle{
+						font-size: 22px;
+					}	
+				}
+
+
+				a{
+					color:$color-light-gray;
+
+					&:hover{
+						color:white;
+					}
+				}
+
+
 
 				&.on{
 					visibility: visible;
@@ -145,44 +219,112 @@ div#fans-content{
 		}
 
 		div.talents{
+
+			margin-right: auto;
+			margin-left: auto;
+
+			div.col-xs-6{
+				@media (max-width:$screen-sm-max){
+					width: 165px;
+					height: 160px;
+
+				}
+			}
 			
 			div.item{
 				display: inline-block;
-				width:200px;
-				height:200px;
 
-				
 				@media (max-width: $screen-sm-max){
 					margin-bottom: 5px;
-				}
+
+					width:150px;
+					height:150px;		
 					
-				&.talent1{
-					background-image: url('/assets/img/talent1.jpeg');	
+					&.talent1{
+						background-image: url('/assets/img/talent1-small.jpeg');	
+					}
+
+					&.talent2{
+						background-image: url('/assets/img/talent2-small.jpeg');	
+					}
+
+					&.talent3{
+						background-image: url('/assets/img/talent3-small.jpeg');	
+					}
+
+					&.talent4{
+						background-image: url('/assets/img/talent4-small.jpeg');	
+					}
 				}
 
-				&.talent2{
-					background-image: url('/assets/img/talent2.jpeg');	
-				}
+				@media (min-width: $screen-md-min){
 
-				&.talent3{
-					background-image: url('/assets/img/talent3.jpeg');	
-				}
+					width:250px;
+					height:250px;		
+					
+					&.talent1{
+						background-image: url('/assets/img/talent1.jpeg');	
+					}
 
-				&.talent4{
-					background-image: url('/assets/img/talent4.jpeg');	
-				}
+					&.talent2{
+						background-image: url('/assets/img/talent2.jpeg');	
+					}
+
+					&.talent3{
+						background-image: url('/assets/img/talent3.jpeg');	
+					}
+
+					&.talent4{
+						background-image: url('/assets/img/talent4.jpeg');	
+					}
+				}				
 
 			}
 
 			div.item div.text{
 
+				@media (min-width: $screen-md-min){
+					padding-top: 45px;
+					height: 100%;
+					
+					p{
+						color:white;
+						b{
+							font-size:22px;
+						}				
+					}
 
-				padding-top: 50px;
-				height: 100%;
-				
-				p{
-					color:white;
-				}				
+					i.fa-plus-circle{
+						font-size: 32px;
+					}	
+				}
+
+				@media (max-width: $screen-xs-max){
+					padding-top: 25px;
+					height: 100%;
+
+					p{
+						color:white;
+						margin-top: 0px;
+						margin-bottom:0px;
+
+						b{
+							font-size:14px;
+						}				
+						font-size: 12px;
+					}
+
+					i.fa-plus-circle{
+						font-size: 22px;
+					}	
+				}
+				a{
+					color:$color-light-gray;
+
+					&:hover{
+						color:white;
+					}
+				}
 
 				&.on{
 					visibility: visible;
@@ -234,11 +376,11 @@ div#fans-content{
 
 		div.button a{  		
   			color:white;
-  			background-color: $color-orange;
+  			background-color: $orange;
   			font-size:16px;
 
   			&:hover{
-  				background-color:$color-blue;
+  				background-color:$menu-link-color-light;
   				color:white;
   			}
 

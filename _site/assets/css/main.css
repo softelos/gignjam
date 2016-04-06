@@ -256,7 +256,7 @@ div#banner {
     -o-background-size: cover;
     background-size: cover; }
   div#banner.fans {
-    background: url("../img/fans-banner.jpg") no-repeat center center;
+    background: url("../img/fans-banner2.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -669,31 +669,33 @@ div#fans-content section.fans {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 20px;
-    font-family: 'Jaden';
-    position: relative;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto; }
-    div#fans-content section.fans h2 span {
-      background: #fff;
-      padding: 0 15px;
-      position: relative;
-      z-index: 1; }
-    div#fans-content section.fans h2:before {
-      background: #ddd;
-      content: "";
-      display: block;
-      height: 1px;
-      position: absolute;
-      top: 50%;
-      width: 100%; }
-    div#fans-content section.fans h2:before {
-      left: 0px;
-      top: 10px; }
+    font-family: 'Jaden'; }
+    @media (min-width: 992px) {
+      div#fans-content section.fans h2 {
+        position: relative;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto; }
+        div#fans-content section.fans h2 span {
+          background: #fff;
+          padding: 0 15px;
+          position: relative;
+          z-index: 1; }
+        div#fans-content section.fans h2:before {
+          background: #ddd;
+          content: "";
+          display: block;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          width: 100%; }
+        div#fans-content section.fans h2:before {
+          left: 0px;
+          top: 10px; } }
   div#fans-content section.fans h3 {
     text-transform: uppercase;
     text-align: center;
-    color: #555555;
+    color: #DB4D21;
     font-size: 16px;
     font-weight: bold; }
   div#fans-content section.fans div.icon {
@@ -712,26 +714,67 @@ div#fans-content section.fans {
       background-image: url("/assets/img/icon-track.png"); }
     div#fans-content section.fans div.icon.directory {
       background-image: url("/assets/img/icon-directory.png"); }
-  div#fans-content section.fans div.events div.item {
-    display: inline-block;
-    width: 200px;
-    height: 200px; }
+  div#fans-content section.fans div.events {
+    margin-right: auto;
+    margin-left: auto; }
     @media (max-width: 991px) {
-      div#fans-content section.fans div.events div.item {
-        margin-bottom: 5px; } }
-    div#fans-content section.fans div.events div.item.event1 {
-      background-image: url("/assets/img/event1.jpeg"); }
-    div#fans-content section.fans div.events div.item.event2 {
-      background-image: url("/assets/img/event2.jpeg"); }
-    div#fans-content section.fans div.events div.item.event3 {
-      background-image: url("/assets/img/event3.jpeg"); }
-    div#fans-content section.fans div.events div.item.event4 {
-      background-image: url("/assets/img/event4.jpeg"); }
-  div#fans-content section.fans div.events div.item div.text {
-    padding-top: 50px;
-    height: 100%; }
-    div#fans-content section.fans div.events div.item div.text p {
-      color: white; }
+      div#fans-content section.fans div.events div.col-xs-6 {
+        width: 165px;
+        height: 160px; } }
+    div#fans-content section.fans div.events div.item {
+      display: inline-block; }
+      @media (max-width: 991px) {
+        div#fans-content section.fans div.events div.item {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 5px; }
+          div#fans-content section.fans div.events div.item.event1 {
+            background-image: url("/assets/img/event1-small.jpeg"); }
+          div#fans-content section.fans div.events div.item.event2 {
+            background-image: url("/assets/img/event2-small.jpeg"); }
+          div#fans-content section.fans div.events div.item.event3 {
+            background-image: url("/assets/img/event3-small.jpeg"); }
+          div#fans-content section.fans div.events div.item.event4 {
+            background-image: url("/assets/img/event4-small.jpeg"); } }
+      @media (min-width: 992px) {
+        div#fans-content section.fans div.events div.item {
+          width: 250px;
+          height: 250px; }
+          div#fans-content section.fans div.events div.item.event1 {
+            background-image: url("/assets/img/event1.jpeg"); }
+          div#fans-content section.fans div.events div.item.event2 {
+            background-image: url("/assets/img/event2.jpeg"); }
+          div#fans-content section.fans div.events div.item.event3 {
+            background-image: url("/assets/img/event3.jpeg"); }
+          div#fans-content section.fans div.events div.item.event4 {
+            background-image: url("/assets/img/event4.jpeg"); } }
+    @media (min-width: 992px) {
+      div#fans-content section.fans div.events div.item div.text {
+        padding-top: 45px;
+        height: 100%; }
+        div#fans-content section.fans div.events div.item div.text p {
+          color: white; }
+          div#fans-content section.fans div.events div.item div.text p b {
+            font-size: 22px; }
+        div#fans-content section.fans div.events div.item div.text i.fa-plus-circle {
+          font-size: 32px; } }
+    @media (max-width: 599px) {
+      div#fans-content section.fans div.events div.item div.text {
+        padding-top: 25px;
+        height: 100%; }
+        div#fans-content section.fans div.events div.item div.text p {
+          color: white;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-size: 12px; }
+          div#fans-content section.fans div.events div.item div.text p b {
+            font-size: 14px; }
+        div#fans-content section.fans div.events div.item div.text i.fa-plus-circle {
+          font-size: 22px; } }
+    div#fans-content section.fans div.events div.item div.text a {
+      color: #B3B3B3; }
+      div#fans-content section.fans div.events div.item div.text a:hover {
+        color: white; }
     div#fans-content section.fans div.events div.item div.text.on {
       visibility: visible;
       background-color: rgba(0, 0, 0, 0.6);
@@ -739,26 +782,67 @@ div#fans-content section.fans {
       transition: background-color 0.3s; }
     div#fans-content section.fans div.events div.item div.text.off {
       visibility: hidden; }
-  div#fans-content section.fans div.talents div.item {
-    display: inline-block;
-    width: 200px;
-    height: 200px; }
+  div#fans-content section.fans div.talents {
+    margin-right: auto;
+    margin-left: auto; }
     @media (max-width: 991px) {
-      div#fans-content section.fans div.talents div.item {
-        margin-bottom: 5px; } }
-    div#fans-content section.fans div.talents div.item.talent1 {
-      background-image: url("/assets/img/talent1.jpeg"); }
-    div#fans-content section.fans div.talents div.item.talent2 {
-      background-image: url("/assets/img/talent2.jpeg"); }
-    div#fans-content section.fans div.talents div.item.talent3 {
-      background-image: url("/assets/img/talent3.jpeg"); }
-    div#fans-content section.fans div.talents div.item.talent4 {
-      background-image: url("/assets/img/talent4.jpeg"); }
-  div#fans-content section.fans div.talents div.item div.text {
-    padding-top: 50px;
-    height: 100%; }
-    div#fans-content section.fans div.talents div.item div.text p {
-      color: white; }
+      div#fans-content section.fans div.talents div.col-xs-6 {
+        width: 165px;
+        height: 160px; } }
+    div#fans-content section.fans div.talents div.item {
+      display: inline-block; }
+      @media (max-width: 991px) {
+        div#fans-content section.fans div.talents div.item {
+          margin-bottom: 5px;
+          width: 150px;
+          height: 150px; }
+          div#fans-content section.fans div.talents div.item.talent1 {
+            background-image: url("/assets/img/talent1-small.jpeg"); }
+          div#fans-content section.fans div.talents div.item.talent2 {
+            background-image: url("/assets/img/talent2-small.jpeg"); }
+          div#fans-content section.fans div.talents div.item.talent3 {
+            background-image: url("/assets/img/talent3-small.jpeg"); }
+          div#fans-content section.fans div.talents div.item.talent4 {
+            background-image: url("/assets/img/talent4-small.jpeg"); } }
+      @media (min-width: 992px) {
+        div#fans-content section.fans div.talents div.item {
+          width: 250px;
+          height: 250px; }
+          div#fans-content section.fans div.talents div.item.talent1 {
+            background-image: url("/assets/img/talent1.jpeg"); }
+          div#fans-content section.fans div.talents div.item.talent2 {
+            background-image: url("/assets/img/talent2.jpeg"); }
+          div#fans-content section.fans div.talents div.item.talent3 {
+            background-image: url("/assets/img/talent3.jpeg"); }
+          div#fans-content section.fans div.talents div.item.talent4 {
+            background-image: url("/assets/img/talent4.jpeg"); } }
+    @media (min-width: 992px) {
+      div#fans-content section.fans div.talents div.item div.text {
+        padding-top: 45px;
+        height: 100%; }
+        div#fans-content section.fans div.talents div.item div.text p {
+          color: white; }
+          div#fans-content section.fans div.talents div.item div.text p b {
+            font-size: 22px; }
+        div#fans-content section.fans div.talents div.item div.text i.fa-plus-circle {
+          font-size: 32px; } }
+    @media (max-width: 599px) {
+      div#fans-content section.fans div.talents div.item div.text {
+        padding-top: 25px;
+        height: 100%; }
+        div#fans-content section.fans div.talents div.item div.text p {
+          color: white;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-size: 12px; }
+          div#fans-content section.fans div.talents div.item div.text p b {
+            font-size: 14px; }
+        div#fans-content section.fans div.talents div.item div.text i.fa-plus-circle {
+          font-size: 22px; } }
+    div#fans-content section.fans div.talents div.item div.text a {
+      color: #B3B3B3; }
+      div#fans-content section.fans div.talents div.item div.text a:hover {
+        color: white; }
     div#fans-content section.fans div.talents div.item div.text.on {
       visibility: visible;
       background-color: rgba(0, 0, 0, 0.6);
@@ -791,7 +875,7 @@ div#fans-content section.fans {
     background-color: #DB4D21;
     font-size: 16px; }
     div#fans-content section.fans div.button a:hover {
-      background-color: #0855B2;
+      background-color: #ff3d00;
       color: white; }
 div#fans-content div.dark {
   background-color: #644b28; }
@@ -814,6 +898,8 @@ div#musicians-content section.musicians {
   div#musicians-content section.musicians div.narrow {
     padding-left: 50px;
     padding-right: 50px; }
+    div#musicians-content section.musicians div.narrow p {
+      font-size: 20px; }
   div#musicians-content section.musicians div.icon {
     width: 125px;
     height: 125px;
@@ -1069,6 +1155,30 @@ section.white {
   background-color: white;
   border: solid #B3B3B3;
   border-width: 0pt 1pt 0pt 1pt; }
+
+section.dark {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #444444;
+  border: solid #B3B3B3;
+  border-width: 0pt 1pt 0pt 1pt; }
+  section.dark h2 {
+    color: white; }
+  section.dark h3 {
+    color: white !important;
+    padding-top: 10px;
+    border-top: 2pt solid #DB4D21;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto; }
+  section.dark div.button a {
+    border: 1pt solid #DB4D21;
+    background-color: transparent;
+    color: #DB4D21; }
+    section.dark div.button a:hover {
+      color: #444444;
+      background-color: white;
+      border: 1pt solid white; }
 
 section.ready-to-explore {
   width: 100%;

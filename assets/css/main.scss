@@ -94,6 +94,39 @@ section.white{
 	border:solid $color-light-gray;
 	border-width:0pt 1pt 0pt 1pt;
 }
+section.dark{
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #444444;
+	border:solid $color-light-gray;
+	border-width:0pt 1pt 0pt 1pt;
+
+	h2{
+		color:white;
+	}
+
+	h3{
+		color:white !important;
+		padding-top: 10px;
+		border-top:2pt solid $orange;
+		width: 200px;
+		margin-right:auto;
+		margin-left: auto;
+	}
+
+	div.button a{
+		border:1pt solid $orange;
+		background-color: transparent;
+		color:$orange;
+
+		&:hover{
+			color:#444444;
+			background-color:white;
+			border:1pt solid white;
+		}
+	}
+
+}
 
 section.ready-to-explore{
 	width: 100%;
