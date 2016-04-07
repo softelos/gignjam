@@ -51,6 +51,7 @@ body.home,body.fans, body.musicians,body.promoters, body.misc{
 
 section{
 	padding-top: 20px;
+	
 	padding-bottom: 20px;
 	overflow-x: hidden;
 
@@ -160,4 +161,8 @@ section.ready-to-explore{
 			transition:background-color 0.3s;
 		}
 	}
+}
+
+video:hover{
+	cursor:pointer;
 }

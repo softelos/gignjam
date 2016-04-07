@@ -23,6 +23,9 @@ div#banner{
 		#title{
 			font-size: $title-font-size;
 			margin-bottom: 30px;
+			@media (max-width: $screen-sm-max){
+				font-size:32px;
+			}		
 		}
 		#subtitle{
 			margin-bottom: 20px;

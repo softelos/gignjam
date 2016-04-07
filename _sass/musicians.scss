@@ -1,11 +1,13 @@
-div#musicians-content{
+#musicians-content{
 
 	section.musicians{
 
 		margin-left: auto;
 		margin-right: auto;
-		padding-bottom: 50px;
 
+		@media (min-width: $screen-md-min){		
+			padding-bottom: 50px;
+		}
 
 		@media (min-width: $screen-lg-min){		
 			width: 1100px;
@@ -21,7 +23,7 @@ div#musicians-content{
 			padding-left: 50px;
 			padding-right: 50px;
 			p{
-				font-size:20px;
+				font-size:22px;
 			}
 		}
 

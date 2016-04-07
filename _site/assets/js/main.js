@@ -32,4 +32,10 @@ $(function(){
 		}
 		
 	});
+
+	// Video tags
+	$('video').on('click',function(e){
+		e.preventDefault();
+		this.paused ? this.play() : this.pause();
+	});
 });
